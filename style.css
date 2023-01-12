@@ -1,0 +1,22 @@
+#navbar {
+    background: linear-gradient(90deg, #4DF6C6 0%, #4254F5 100%);
+    position: absolute;
+    width: 1440px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+}
+
+#menuinicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    position: absolute;
+    width: 392px;
+    height: 20px;
+    left: calc(50% - 392px/2 - 0.5px);
+    top: calc(50% - 20px/2);
+}
