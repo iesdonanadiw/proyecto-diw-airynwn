@@ -1,4 +1,13 @@
-#navbar {
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+nav {
     background: linear-gradient(90deg, #4DF6C6 0%, #4254F5 100%);
     position: absolute;
     width: 1440px;
@@ -11,12 +20,34 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: absolute;
     padding: 0px;
     gap: 32px;
-
-    position: absolute;
     width: 392px;
     height: 20px;
     left: calc(50% - 392px/2 - 0.5px);
     top: calc(50% - 20px/2);
+}
+
+li {
+    display: inline;
+}
+
+#login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 4px white;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #3AA89B;
+    position: absolute;
+    width: 1440px;
+    height: 72px;
+    bottom: 0px;
+    left: 0px;
 }
