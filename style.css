@@ -15,25 +15,16 @@ h3 {
     font-family: 'Fredoka One', sans-serif;
     text-align: center;
 }
-
+/*
 header {
     display: flex;
     justify-content: space-between;
-    /* position: sticky; */
     align-items: center;
     padding: 5px 10%;
     background: linear-gradient(90deg, #4DF6C6 0%, #4254F5 100%);
 }
 
-#logo {
-    /* display: block; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    height: 35px;
-}
-
-
- li {
+li {
     list-style: none;
 }
 
@@ -42,6 +33,30 @@ nav ul {
     justify-content: space-between;
     gap: 32px;
     font-size: 1.25em;
+}
+*/
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    background: linear-gradient(90deg, #4DF6C6 0%, #4254F5 100%);
+    padding: 1% 10%;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    font-size: 1.15em;
+    gap: 2em;
+}
+
+#logo {
+    height: 35px;
 }
 
 #login {
