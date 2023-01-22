@@ -5,72 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <!-- Navbar -->
     <header>
         <!-- Logo a la izquierda -->
-        <div id="div-logo">
+        <figure>
             <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
-        </div>
+        </figure>
         <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="cartas.html">Cartas</a></li>
-                <!-- abre modal personajes -->
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="comunidad.html">Comunidad</a></li>
-            </ul>
+            <a href="index.html">Inicio</a>
+            <a href="cartas.html">Cartas</a>
+            <a href="personajes.html">Personajes</a> 
+            <a href="comunidad.html">Comunidad</a>
         </nav>
         <a href="login.html" id="login">Iniciar sesión</a>
         <!-- Botón Iniciar sesión || Icon + Username -->
     </header>
     <!--  -->
     <main>
+        hola
         <!-- IZQ: tarjeta de login: (containers?)
         redondeado, 'Iniciar sesión' con linea abajo, lila+azul+verde
         boton 'Entrar' lila
         usuario+contraseña-->
-        <div id="loginbox">
-            <h2>Iniciar sesión</h2>
-            <!-- rayita -->
-            <form action="">
-                <label for="usuario">Usuario</label>
-                <br>
-                <input type="text" name="usuario" id="usuario">
-                <br>
-                <label for="contrasena">Contraseña</label>
-                <br>
-                <input type="password" name="contrasena" id="contrasena">
-                <br>
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
+        <div class="grid-container">
+            <div id="login-box">
+                <h3>Iniciar sesión</h3>
+                <!-- rayita -->
+                <hr>
+                <form action="">
+                    <div class="campo">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="usuario" class="input-form">
+                    </div>
+                    <div class="campo">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" name="contrasena" class="input-form">
+                    </div>
+                    <br>
+                    <button type="submit" class="button-form">Entrar</button>
+                </form>
+            </div>
+    
+            <div id="registro-box">
+                <h3>Registro</h3>
+                <!-- rayita -->
+                <hr>
+                <form action="">
+                    <div class="campo">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="usuario" class="input-form">
+                    </div>
+                    <div class="campo">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" name="contrasena" class="input-form">
+                    </div>
+                    <div class="campo">
+                        <label for="contrasena2">Repetir contraseña</label>
+                        <input type="password" name="contrasena2" class="input-form">
+                    </div>
+                    <div class="campo">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" name="correo" class="input-form">
+                    </div>
+                    <br>
+                    <button type="submit" class="button-form">Registrarse</button>
+                </form>
+            </div>
 
-        <div id="registrobox">
-            <h2>Registro</h2>
-            <!-- rayita -->
-            <form action="">
-                <label for="usuario">Usuario</label>
-                <br>
-                <input type="text" name="usuario" id="usuario">
-                <br>
-                <label for="contrasena">Contraseña</label>
-                <br>
-                <input type="password" name="contrasena" id="contrasena">
-                <br>
-                <label for="contrasena2">Repetir contraseña</label>
-                <br>
-                <input type="password" name="contrasena2" id="contrasena2">
-                <br>
-                <label for="correo">Correo electrónico</label>
-                <br>
-                <input type="email" name="correo" id="correo">
-                <br>
-                <button type="submit">Registrarse</button>
-            </form>
+            <figure id="figure-box">
+                <img src="img/Hatsune_Miku_chibi.webp" alt="chibi">
+            </figure>
         </div>
 
         <!-- aqui va la imagen -->
