@@ -10,32 +10,14 @@ a {
     text-decoration-line: none;
 }
 
+/* TODO La font se ve rara */
 h3 {
     color: white;
     font-family: 'Fredoka One', sans-serif;
     text-align: center;
 }
-/*
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10%;
-    background: linear-gradient(90deg, #4DF6C6 0%, #4254F5 100%);
-}
 
-li {
-    list-style: none;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    font-size: 1.25em;
-}
-*/
-
+/* Flexbox header (figure#logo, nav, a#login) */
 header {
     box-sizing: border-box;
     width: 100%;
@@ -49,24 +31,34 @@ header {
     position: fixed;
 }
 
-nav {
-    display: flex;
-    font-size: 1.15em;
-    gap: 2em;
+/* El figure es más grande que el div */
+figure {
+    margin: 0;
+    padding: 0;
 }
 
+/* TODO Resizear */
 #logo {
     height: 35px;
 }
 
+/*
+    Display flex para estar en el flexbox header
+    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
+*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.15em;
+    gap: 2em;
+}
+
 #login {
-    /* box-sizing: border-box; (?)*/
     padding: 10px 20px;
     background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
     border-radius: 6px;
     border: 1px solid white;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 main {
