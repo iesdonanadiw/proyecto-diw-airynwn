@@ -1,0 +1,77 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+a {
+    color: white;
+    box-sizing: border-box;
+    text-decoration-line: none;
+}
+
+/* TODO La font se ve rara */
+/* ? Se arregla con font weight */
+h3 {
+    color: white;
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Flexbox header (figure#logo, nav, a#login) */
+header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    background: linear-gradient(90deg, #4DF6C6 0%, #4254F5 100%);
+    padding: 1% 10%;
+    position: fixed;
+}
+
+/* El figure es más grande que el div */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* TODO Resizear */
+#logo {
+    height: 35px;
+}
+
+/*
+    Display flex para estar en el flexbox header
+    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
+*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.15em;
+    gap: 2em;
+}
+
+#login {
+    padding: 10px 20px;
+    background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+/********************* CARTAS  *********************/
+
+main {
+    /* background-image: url("img/miku_home.png");
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    background-color: #4254F5;
+    text-align: center;
+    padding: 12%; 
+    /* TODO resizear bien */
+}

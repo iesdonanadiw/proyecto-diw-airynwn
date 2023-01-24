@@ -63,19 +63,26 @@ nav {
     border: 1px solid white;
 }
 
+/********************* INDEX  *********************/
+
 main {
-    /* TODO Imagen de la Miku de fondo blurreada */
-    background-color: plum;
+    /* que */
+    background-image: url("img/miku_home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* filter: blur(2.5px); */
     text-align: center;
     padding: 12%; 
     /* TODO resizear bien */
 }
 
-/********************* INDEX  *********************/
 
 .grid-container {
     display: grid;
     justify-content: space-evenly;
+    gap: 5%;
     /* align-items: center; */
     /* align-content: center; */
     grid-template-columns: repeat(3, 1fr);
@@ -88,6 +95,14 @@ main {
     grid-column: 1/4;
 }
 
+#logo-index {
+    height: 70px;
+}
+
+.logo-asset {
+    height: 200px;
+}
+
 h2 {
     font-family: 'Fredoka One', sans-serif;
     font-style: normal;
@@ -95,8 +110,8 @@ h2 {
     font-size: 2.25em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* TODO Gradient border */
-    border: 2px solid;
-    border-color: linear-gradient(180deg, #3AA89B 0%, #4254F5 100%);
+    /* border: 2px solid; */
+    /* border-color: linear-gradient(180deg, #3AA89B 0%, #4254F5 100%); */
 
 }
 

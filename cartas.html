@@ -5,43 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cartas.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
+    <header>
         <!-- Logo a la izquierda -->
+        <figure>
+            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
+        </figure>
         <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
-        <div id="menuinicio">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/cartas.html">Cartas</a></li>
-                <li><a href="/personajes.html">Personajes</a></li>
-                <li><a href="/comunidad.html">Comunidad</a></li>
-            </ul>
-        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cartas.html">Cartas</a>
+            <a href="personajes.html">Personajes</a> 
+            <a href="comunidad.html">Comunidad</a>
+        </nav>
+        <a href="login.html" id="login">Iniciar sesión</a>
         <!-- Botón Iniciar sesión || Icon + Username -->
-        <button id="login">Iniciar sesión</button>
-    </nav>
+    </header>
     <!--  -->
     <main>
-
         <section>
-            <h2>Opciones de búsqueda</h2>     
-            <div>
+            <form action="">
+                <h2>Opciones de búsqueda</h2>     
                 <div class="caja">
-                    <!-- caja de titulo Grupo ver como hacer -->
-                    <ul>
-                        <li>Leo/need</li>
-                        <li>MORE MORE JUMP!</li>
-                        <li>Vivid BAD SQUAD</li>
-                        <li>Wonderlands x Showtime</li>
-                        <li>25-ji, Nightcord de.</li>
-                    </ul>
+                    <!-- TODO la tarjeta del título de las cajas (Grupo, Rareza...) -->
+                    <select name="grupo" id="grupo">
+                        <option value="vacio" disabled selected hidden>Grupo</option>
+                        <option value="ln">Leo/need</option>
+                        <option value="mmj">MORE MORE JUMP!</option>
+                        <option value="vbs">Vivid BAD SQUAD</option>
+                        <option value="wxs">Wonderlands x Showtime</option>
+                        <option value="25ji">25-ji, Nightcord de.</option>
+                    </select>
                 </div>
                 <div class="caja">
-                    <!-- titulo -->
-                    <ul> <!-- horizontal -->
+                    <!-- Rareza -->
+<!-- TODO: Que las estrellas sean clickeables y se coloree el número de estrellas seleccionadas (BW) -->
+                    <ul>
                         <li>estrella1</li>
                         <li>estrella2</li>
                         <li>estrella3</li>
@@ -49,8 +51,9 @@
                     </ul>
                 </div>
                 <div class="caja">
-                    <!-- titulo -->
-                    <ul> <!-- horizontal-->
+                    <!-- Atributo -->
+<!-- TODO: Que la rareza sea clickeable y se coloree la seleccionada (las demás BW) -->
+                    <ul>
                         <li>ICONcute</li>
                         <li>ICONmysterious</li>
                         <li>ICONcool</li>
@@ -59,15 +62,16 @@
                     </ul>
                 </div>
                 <div class="caja">
-                    <!-- titulo -->
-                    <p>Aquí va el nombre del personaje seleccionado (según imagen -> modal)</p>
+                    <!-- TODO: Botón que abre un modal Personaje -->
+                    <p>Aquí va el nombre del personaje seleccionado</p>
                 </div>
-            </div>
-            <!-- input buscar con lupa -->
+                <!-- TODO Botón de buscar bonito con lupa -->
+                <button type="submit">Buscar</button>
+            </form>
         </section>
-
-        <!-- Lista de cartas -->
-        <div class="card">
+            
+            <!-- Lista de cartas -->
+            <div class="card">
             <!-- img unidlz -->
             <!-- img idlz -->
         </div>
