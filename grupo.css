@@ -1,0 +1,154 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+a {
+    color: white;
+    box-sizing: border-box;
+    text-decoration-line: none;
+}
+
+h2 {
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background: linear-gradient(70deg, #EC64F5 25%, #4DF6C6 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* TODO La font se ve rara */
+/* ? Se arregla con font weight */
+h3 {
+    color: white;
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Flexbox header (figure#logo, nav, a#login) */
+header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    background: linear-gradient(90deg, #4DF6C6 0%, #4254F5 100%);
+    padding: 1% 10%;
+    position: sticky;
+}
+
+/* El figure es más grande que el div */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* TODO Resizear */
+#logo {
+    height: 35px;
+}
+
+/*
+    Display flex para estar en el flexbox header
+    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
+*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.15em;
+    gap: 2em;
+}
+
+#login {
+    padding: 10px 20px;
+    background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+/********************* DROPDOWN MENU  *********************/
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-content {
+    background: linear-gradient(132.76deg, #4DF6C6 0%, #4254F5 81.78%);
+    display: none;
+    position: absolute;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* z-index: 1; */
+  }
+
+.dropdown-content a {
+    /* float: none; */
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/********************* WxS  *********************/
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    /* background-image: url("img/miku_home.png");
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    background-color: #4254F5;
+    text-align: center;
+    padding: 1em;
+    /* TODO resizear bien */
+}
+
+/* TODO Meter los paneles como una tabla */
+
+.panel {
+    box-sizing: border-box;
+    text-align: center;
+    width: fit-content;
+    border-radius: 20px;
+    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.38) 100%);
+    border: 2px solid #F90;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    /* background: linear-gradient(0deg, #e0e0e0 50%, #ccc 50%); */
+}
+
+.titulo {
+    /* La idea es que el tamaño del título cubra el ancho del panel */
+    /* how to stretch div to fit the container */
+    /* background-color: #F90; */
+    background: linear-gradient(180deg, #F90 0%, rgba(255, 159, 15, 0.808) 100%), #2F2957;
+    /* padding: 0 3em 0 3em; */
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    border: 2px solid rgb(216, 130, 0);
+    border-radius: 20px 20px 0 0;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+}
