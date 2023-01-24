@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartas</title>
     <link rel="stylesheet" href="cartas.css">
+    <script src="https://kit.fontawesome.com/5b4a872535.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -18,63 +19,116 @@
         <nav>
             <a href="index.html">Inicio</a>
             <a href="cartas.html">Cartas</a>
-            <a href="personajes.html">Personajes</a> 
-            <a href="comunidad.html">Comunidad</a>
+            <a href="personajes.html">Personajes</a>
+            <div class="dropdown">
+                <a href="comunidad.html">Comunidad</a>
+                <div class="dropdown-content">
+                    <a href="ln.html">Leo/need</a>
+                    <a href="mmj.html">MORE MORE JUMP!</a>
+                    <a href="vbs.html">Vivid BAD SQUAD</a>
+                    <a href="wxs.html">Wonderlands x Showtime</a>
+                    <a href="25ji.html">25-ji, Nightcord de.</a>
+                </div>
+            </div>
         </nav>
         <a href="login.html" id="login">Iniciar sesión</a>
         <!-- Botón Iniciar sesión || Icon + Username -->
     </header>
     <!--  -->
     <main>
-        <section>
+    <div class="row">
+        <section id="filter-nav">
             <form action="">
                 <h2>Opciones de búsqueda</h2>     
                 <div class="caja">
                     <!-- TODO la tarjeta del título de las cajas (Grupo, Rareza...) -->
-                    <select name="grupo" id="grupo">
+                    <!-- <select name="grupo" id="grupo">
                         <option value="vacio" disabled selected hidden>Grupo</option>
                         <option value="ln">Leo/need</option>
                         <option value="mmj">MORE MORE JUMP!</option>
                         <option value="vbs">Vivid BAD SQUAD</option>
                         <option value="wxs">Wonderlands x Showtime</option>
                         <option value="25ji">25-ji, Nightcord de.</option>
-                    </select>
+                    </select> -->
+                    <span class="opcion">Grupo</span>
+                    <ul>
+                        <li>Leo/need</li>
+                        <li>MORE MORE JUMP!</li>
+                        <li>Vivid BAD SQUAD</li>
+                        <li>Wonderlands x Showtime</li>
+                        <li>25-ji, Nightcord de.</li>
+                    </ul>
                 </div>
                 <div class="caja">
                     <!-- Rareza -->
+                    <span class="opcion">Rareza</span>
 <!-- TODO: Que las estrellas sean clickeables y se coloree el número de estrellas seleccionadas (BW) -->
                     <ul>
-                        <li>estrella1</li>
-                        <li>estrella2</li>
-                        <li>estrella3</li>
-                        <li>estrella4</li>
+                        <li><img src="svg/rainbow_star.png" alt="Estrella"></li>
+                        <li><img src="svg/rainbow_star.png" alt="Estrella"></li>
+                        <li><img src="svg/rainbow_star.png" alt="Estrella"></li>
+                        <li><img src="svg/rainbow_star.png" alt="Estrella"></li>
+                        <li><img src="svg/birthday.png" alt="Cumpleaños/Aniversario"></li>
                     </ul>
                 </div>
                 <div class="caja">
                     <!-- Atributo -->
+                    <span class="opcion">Atributo</span>
 <!-- TODO: Que la rareza sea clickeable y se coloree la seleccionada (las demás BW) -->
                     <ul>
-                        <li>ICONcute</li>
-                        <li>ICONmysterious</li>
-                        <li>ICONcool</li>
-                        <li>ICONhappy</li>
-                        <li>ICONpure</li>
+                        <li><img src="svg/cute.png" alt="Cute"></li>
+                        <li><img src="svg/mysterious.png" alt="Mysterious"></li>
+                        <li><img src="svg/cool.png" alt="Cool"></li>
+                        <li><img src="svg/happy.png" alt="Happy"></li>
+                        <li><img src="svg/pure.png" alt="Pure"></li>
                     </ul>
                 </div>
                 <div class="caja">
                     <!-- TODO: Botón que abre un modal Personaje -->
+                    <span class="opcion">Personaje</span>
                     <p>Aquí va el nombre del personaje seleccionado</p>
                 </div>
                 <!-- TODO Botón de buscar bonito con lupa -->
-                <button type="submit">Buscar</button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
             </form>
         </section>
+    <section id="cartas">
+        <div class="card">
+            <div class="card-box">
+                <figure>
+                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
+                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
+                </figure>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box">
+                <figure>
+                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
+                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
+                </figure>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box">
+                <figure>
+                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
+                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
+                </figure>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box">
+                <figure>
+                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
+                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
+                </figure>
+            </div>
+        </div>
             
             <!-- Lista de cartas -->
-            <div class="card">
             <!-- img unidlz -->
             <!-- img idlz -->
-        </div>
         <!-- añadir a la coleccion / añadir a favoritos icons -->
         <!-- (en mini tarjetas (pestañas), texto alt)
         repetir por cada carta -->
@@ -100,6 +154,9 @@
                 (al pasar el ratón por una versión se agranda y ocupa todo el hueco de imagen)
             - Botón de guardar / lista de deseos abajo
     -->
+</section>
+</div>
+
     </main>
 </body>
 </html>

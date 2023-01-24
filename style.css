@@ -67,17 +67,25 @@ nav {
 
 main {
     /* que */
-    background-image: url("img/miku_home.png");
+    /* background-image: url("img/miku_home.png");
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
+    background-size: cover; */
     /* filter: blur(2.5px); */
     text-align: center;
     padding: 12%; 
     /* TODO resizear bien */
 }
 
+#fondo {
+    background-image: url("img/miku_home.png");
+    filter: blur(2.5px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .grid-container {
     display: grid;
