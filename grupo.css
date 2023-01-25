@@ -119,6 +119,8 @@ main {
 
 /* TODO Meter los paneles como una tabla */
 
+/* TODO Posiciones */
+
 .panel {
     box-sizing: border-box;
     text-align: center;
