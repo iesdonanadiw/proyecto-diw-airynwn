@@ -155,12 +155,13 @@ ul {
     padding: 0 1em 0 1em;
 }
 
+/* TODO Espacios / Redimensionar */
 #grupo {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 4px;
     }
     
@@ -169,5 +170,15 @@ ul {
     #img-grupo { grid-area: 1 / 2 / 3 / 3; }
     #logo-grupo { grid-area: 1 / 3 / 2 / 4; }
     #historia { grid-area: 2 / 3 / 3 / 4; }
-    #comentarios { grid-area: 3 / 1 / 4 / 3; }
-    #escribir-post { grid-area: 3 / 3 / 4 / 4; }
+
+#foro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 4px;
+}
+
+#comentarios { grid-area: 1 / 1 / 2 / 3; }
+#escribir-post { grid-area: 1 / 3 / 2 / 4; }
