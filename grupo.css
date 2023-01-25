@@ -107,6 +107,7 @@ nav {
 }
 
 main {
+    /* (Testeando) */
     /* background-image: url("img/miku_home.png");
     background-position: center;
     background-repeat: no-repeat; */
@@ -114,12 +115,12 @@ main {
     background-color: #4254F5;
     text-align: center;
     padding: 1em;
-    /* TODO resizear bien */
+    /* TODO resizear bien, ver si está bien poner una imagen desenfocada de fondo, etc */
 }
 
-/* TODO Meter los paneles como una tabla */
+/* TODO Meter los paneles como una tabla (th = título con fondo clarito, tr = oscuro */
 
-/* TODO Posiciones */
+/* TODO Posicionar los elementos */
 
 .panel {
     box-sizing: border-box;
