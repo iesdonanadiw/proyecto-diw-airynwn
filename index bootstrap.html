@@ -53,18 +53,46 @@
             <!-- col-tamaño-num de columnas para ese tamaño -->
             <!-- Coge 4 columnas -->
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-primary">
-                <form action="">
-                    <input type="text">
-                    <input type="text">
+                <form class="form">
+                    <label for="nombre">Nombre:
+                        <input type="text">
+                    </label>
+                    <label for="apellidos">Apellidos:
+                        <input type="text">
+                    </label>
+                    <!-- esto no va para separarlo de estar pegado de los input -->
+                    <div class="m-9">
+                        <div class="m-9"></div>
+                        <button class="btn btn-success">Enviar</button>
+                        <button class="btn btn-secondary">Limpiar</button>
+                    </div>
                 </form>
             </div>
             <!-- Coge 8 columnas -->
             <!-- Hay que restarle 12 al tamaño de arriba, a menos que sea nueva fila (12) -->
-            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 bg-secondary">
-                <form action="">
-                    <input type="text">
-                    <input type="text">
-                </form>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <table class="table table-striped">
+                    <thead>
+                        <th>Curso</th>
+                        <th>Hola</th>
+                        <th>sdafjk</th>
+                    </thead>
+                    <tr>
+                        <td>Test</td>
+                        <td>aaaa</td>
+                        <td>dsafjkasd</td>
+                    </tr>
+                    <tr>
+                        <td>dsfsda</td>
+                        <td>dsagjksdhfjk</td>
+                        <td>dsfkjldasfjk</td>
+                    </tr>
+                    <tr>
+                        <td>sdfsada</td>
+                        <td>dsfasda</td>
+                        <td>askoapsadml</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
