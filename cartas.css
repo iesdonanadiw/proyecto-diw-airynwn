@@ -101,6 +101,8 @@ nav {
 }
 
 /********************* CARTAS  *********************/
+/*  TODO    Unificar los paneles que son glassmorphism oscuro + degradado de bordes,
+    TODO    mirar los que son iguales. Buscar alguna forma de que funcione el border-radius */
 
 * {
     box-sizing: border-box;
@@ -125,18 +127,28 @@ main {
 }
 
 #filter-nav {
-    /* TODO Esto debería ser más oscuro (glassmorphism oscuro) */
+    margin: 0.5em;
+    padding: 1.5em;
+    /* TODO Poner borde degradado */
     /* background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%); */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    /* ! Prueba 1 */
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     border: solid 2px transparent;
     border-radius: 20px;
     background-image: linear-gradient(#2F2957, #2F2957),
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
-    background-clip: padding-box, border-box;
-    margin: 0.5em;
-    padding: 1.5em;
+    background-clip: padding-box, border-box; */
+    /* ! Prueba 2
+    ! Unfortunately border-image does not work as expected with border-radius yet. :( */
+    /* border-radius: 20px; */
+    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
 }
 
 /* .caja {
@@ -161,29 +173,34 @@ option {
 } */
 /* ? test lista*/
 .opcion {
-    background: #2F2957;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    border-radius: 20px 20px 0px 0px;
+    padding: 0 3em 0 3em;
     color: white;
     text-align: center;
-    border: solid 2px transparent;
+    background: #2F2957;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    /* backdrop-filter: blur(12.5px); ESTO DA UNA SOMBRA RARA pero viene en figma..?*/
+    border-radius: 20px 20px 0px 0px;
+    border: solid 1px transparent;
     background-image: linear-gradient(#2F2957, #2F2957),
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    padding: 0 3em 0 3em;
 }
 
 .caja {
-    background-color: rgba(0, 0, 0, 0.38);
+    /* background-color: rgba(0, 0, 0, 0.38);
     border: solid 2px transparent;
     border-radius: 20px;
     background-image: linear-gradient(#2F2957, #2F2957),
     linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
     background-origin: border-box;
-    background-clip: padding-box, border-box;
-
+    background-clip: padding-box, border-box; */
+    /* ! Fondo y bordes del color correcto, pero no va el border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
 }
 
 ul li {
@@ -192,8 +209,18 @@ ul li {
 }
 
 button {
+    /* !Nuevo (Mejor, creo) */
+    background: #2F2957;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border-radius: 20px;
+    border: solid 1px transparent;
+    background-image: linear-gradient(#2F2957, #2F2957),
+    linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     /* boton bonito SIUUUUUU */
-    background: #2F2957; 
+    /* background: #2F2957; 
     backdrop-filter: blur(12.5px);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border: solid 2px transparent;
@@ -201,9 +228,9 @@ button {
     background-image: linear-gradient(#2F2957, #2F2957),
     linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
     background-origin: border-box;
-    background-clip: padding-box, border-box;
-    color: white;
+    background-clip: padding-box, border-box; */
     padding: 1% 10% 1% 1%;
+    color: white;
     text-align: center;
 }
 
@@ -218,7 +245,7 @@ button {
 }
 
 .card-box {
-    background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
+    /* background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     border: solid 2px transparent;
@@ -226,7 +253,14 @@ button {
     background-image: linear-gradient(#2F2957, #2F2957),
     linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
     background-origin: border-box;
-    background-clip: padding-box, border-box;
+    background-clip: padding-box, border-box; */
+    /* ! Colores correctos pero no hay border radius... */
+    background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
 }
 
 .card-img {

@@ -72,6 +72,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover; */
     /* filter: blur(2.5px); */
+    background-image: url("img/background.png");
     text-align: center;
     padding: 12%; 
     /* TODO resizear bien */
@@ -127,8 +128,14 @@ h2 {
     background: linear-gradient(0deg, rgba(77, 246, 198, 0.2), rgba(77, 246, 198, 0.2)),
         linear-gradient(123.16deg, rgba(255, 255, 255, 0.095) 6.41%, rgba(255, 255, 255, 0.065) 100.1%);
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
     border-radius: 10.8489px;
+}
+
+/* no va */
+.tarjeta:last-of-type() {
+    background: linear-gradient(0deg, rgba(236, 100, 245, 0.2), rgba(236, 100, 245, 0.2)),
+        linear-gradient(123.16deg, rgba(255, 255, 255, 0.095) 6.41%, rgba(255, 255, 255, 0.065) 100.1%);
 }
 
 .calendario {
