@@ -111,7 +111,7 @@ main {
     background-position: center;
     background-repeat: no-repeat; */
     /* background-attachment: fixed; */
-    background-color: #4254F5;
+    background-image: url("img/background.png");
     text-align: center;
     padding: 1em;
     /* TODO resizear bien */

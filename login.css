@@ -67,13 +67,14 @@ nav {
 /* TODO multiple gradients on top of background, opacidad, ajustar main */
 
 main {
-    background:
-    /* linear-gradient(0deg, #2A2348, #2A2348), */
+    background-image: url("img/background.png");
+    /* background:
+    linear-gradient(0deg, #2A2348, #2A2348),
     linear-gradient(180deg, rgba(66, 84, 245, 0.25) 0%, rgba(77, 246, 198, 0.25) 99.99%, rgba(66, 84, 245, 0.25) 100%),
-    /* radial-gradient(102.1% 102.1% at 63.54% -2.1%, rgba(66, 84, 245, 0.124) 0%, rgba(77, 246, 198, 0.114) 100%), */
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    radial-gradient(102.1% 102.1% at 63.54% -2.1%, rgba(66, 84, 245, 0.124) 0%, rgba(77, 246, 198, 0.114) 100%),
+    warning: gradient uses a rotation that is not supported by CSS and may not behave as expected
     linear-gradient(180deg, rgba(160, 34, 168, 0.208) 0%, rgba(236, 100, 245, 0.384) 50.52%, rgba(66, 84, 245, 0.312) 100%);
-    background-blend-mode: color-burn, normal, lighten;
+    background-blend-mode: color-burn, normal, lighten; */
 }
 
 hr {
