@@ -128,8 +128,6 @@ main {
 }
 
 #filter-nav {
-    display: flex;
-    flex-direction: column;
     margin: 0.5em;
     padding: 1.5em;
     /* TODO Poner borde degradado */
@@ -152,6 +150,12 @@ main {
     -webkit-backdrop-filter: blur(12.5px);
     border: 1px solid;
     border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+}
+
+#filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 /* .caja {
