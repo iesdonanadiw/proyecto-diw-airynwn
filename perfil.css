@@ -220,6 +220,11 @@ main {
     gap: 1em;
 }
 
+/* ! no se si puedo colorear unicamente el primero de todo el html o si tiene que ser otra clase */
+article.container:nth-child(1) {
+    border: 1px solid #DDFF00;
+}
+
 #personaje {
     /* margin: 0.5em;
     padding: 1.5em;
