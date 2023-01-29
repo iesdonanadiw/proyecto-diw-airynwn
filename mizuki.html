@@ -9,20 +9,30 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
+    <header>
         <!-- Logo a la izquierda -->
+        <figure>
+            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
+        </figure>
         <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
-        <div id="menuinicio">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/cartas.html">Cartas</a></li>
-                <li><a href="/personajes.html">Personajes</a></li>
-                <li><a href="/comunidad.html">Comunidad</a></li>
-            </ul>
-        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cartas.html">Cartas</a>
+            <a href="personajes.html">Personajes</a>
+            <div class="dropdown">
+                <a href="comunidad.html">Comunidad</a>
+                <div class="dropdown-content">
+                    <a href="ln.html">Leo/need</a>
+                    <a href="mmj.html">MORE MORE JUMP!</a>
+                    <a href="vbs.html">Vivid BAD SQUAD</a>
+                    <a href="wxs.html">Wonderlands x Showtime</a>
+                    <a href="25ji.html">25-ji, Nightcord de.</a>
+                </div>
+            </div>
+        </nav>
+        <a href="login.html" id="login">Iniciar sesión</a>
         <!-- Botón Iniciar sesión || Icon + Username -->
-        <button id="login">Iniciar sesión</button>
-    </nav>
+    </header>
     <!--  -->
     <main>
        <!-- 
