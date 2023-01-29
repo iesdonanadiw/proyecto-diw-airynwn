@@ -200,5 +200,94 @@ ul {
 }
 
 /* ! IDEA: Que los paneles de comentarios impares sean de un color más claro para distinguirlos mejor */
-#comentarios { grid-area: 1 / 1 / 2 / 3; }
+#comentarios { 
+    grid-area: 1 / 1 / 2 / 3;
+    /***PRUEBAS*/
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 #escribir-post { grid-area: 1 / 3 / 2 / 4; }
+
+/* ? PRUEBAAAAAAAAAAAAAAAAS */
+
+#foro {
+    margin: 0.5em;
+    padding: 1.5em;
+    /* TODO Poner borde degradado */
+    /* background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%); */
+    /* ! Prueba 1 */
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border: solid 2px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#2F2957, #2F2957),
+        linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box; */
+    /* ! Prueba 2: Funciona pero es rectangular
+    ! Unfortunately border-image does not work as expected with border-radius yet. :( */
+    /* border-radius: 20px; */
+    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+}
+
+.opcion {
+    padding: 0.25em;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    background: #2F2957;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    /* backdrop-filter: blur(12.5px); ESTO DA UNA SOMBRA RARA pero viene en figma..?*/
+    /* border-radius: 20px 20px 0px 0px; */
+    border: solid 1px transparent;
+    background-image: linear-gradient(#2F2957, #2F2957),
+        linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.caja {
+    /* background-color: rgba(0, 0, 0, 0.38);
+    border: solid 2px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#2F2957, #2F2957),
+    linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box; */
+    /* ! Fondo y bordes del color correcto, pero no va el border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+}
+
+.caja-content {
+    /* margin-top: 0; */
+    margin: 0.5em 0.5em 0em 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+/* ! no va :first-child ni :nth-child ni :first-of-type NI NADA */
+.caja-content span {
+    margin-bottom: 0.5em;
+}
+
+.caja-icons {
+    margin: 0.5em;
+}
