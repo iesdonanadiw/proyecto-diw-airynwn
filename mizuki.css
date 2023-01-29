@@ -165,7 +165,7 @@ nav {
     display: block;
 }
 
-/********************* CARTAS  *********************/
+/********************* PERSONAJE (Mizuki)  *********************/
 /*  TODO    Unificar los paneles que son glassmorphism oscuro + degradado de bordes,
     TODO    mirar los que son iguales. Buscar alguna forma de que funcione el border-radius */
 
@@ -182,4 +182,47 @@ main {
     text-align: center;
     padding: 1em;
     /* TODO resizear bien */
+}
+
+/* ? */
+
+.row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-content: center;
+    gap: 3%;
+}
+
+#trivia-nav {
+    margin: 0.5em;
+    padding: 1.5em;
+    /* TODO Poner borde degradado */
+    /* background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%); */
+    /* ! Prueba 1 */
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border: solid 2px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#2F2957, #2F2957),
+        linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box; */
+    /* ! Prueba 2: Funciona pero es rectangular
+    ! Unfortunately border-image does not work as expected with border-radius yet. :( */
+    /* border-radius: 20px; */
+    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#personaje {
+    display: grid;
+    gap: 1em;
+    text-align: initial;
 }
