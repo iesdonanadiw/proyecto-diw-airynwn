@@ -236,11 +236,6 @@ option {
     flex-direction: column;
 }
 
-ul li {
-    display: inline;
-    list-style: none;
-}
-
 .caja-content {
     /* margin-top: 0; */
     margin: 0.5em 0.5em 0em 0.5em;
@@ -252,6 +247,11 @@ ul li {
 /* ! no va :first-child ni :nth-child ni :first-of-type NI NADA */
 .caja-content span {
     margin-bottom: 0.5em;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
 }
 
 .caja-icons {
