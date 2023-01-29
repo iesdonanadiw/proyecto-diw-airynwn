@@ -128,27 +128,43 @@ main {
     width: fit-content;
     border-radius: 20px;
     background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.38) 100%);
-    border: 2px solid #F90;
+    border: 1px solid #F90;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     /* background: linear-gradient(0deg, #e0e0e0 50%, #ccc 50%); */
 }
 
 .titulo {
-    /* La idea es que el tamaño del título cubra el ancho del panel */
-    /* how to stretch div to fit the container */
     /* background-color: #F90; */
-    background: linear-gradient(180deg, #F90 0%, rgba(255, 159, 15, 0.808) 100%), #2F2957;
     /* padding: 0 3em 0 3em; */
+    /* background: linear-gradient(180deg, #F90 0%, rgba(255, 159, 15, 0.808) 100%), #2F2957;
     width: auto;
     height: auto;
     box-sizing: border-box;
     border: 2px solid rgb(216, 130, 0);
     border-radius: 20px 20px 0 0;
+    text-align: center; */
+    /* ! VV NUEVO VV */
     font-family: 'Fredoka One', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
+    padding: 0.25em;
+    border: solid 1px rgba(238, 161, 17, 0.692);
+    border-radius: 20px 20px 0 0;
+    /* background: linear-gradient(180deg, #F90 0%, rgba(255, 159, 15, 0.808) 100%); */
+    background: linear-gradient(180deg, #F90 0%, rgb(238, 142, 17) 0.01%, rgba(245, 161, 6, 0.692) 100%), #2F2957;
+}
+
+.panel-content {
+    /* margin-top: 0; */
+    margin: 0.5em 0.5em 0em 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+.panel-content span {
+    margin-bottom: 0.5em;
 }
 
 ul {
