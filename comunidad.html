@@ -5,67 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidad</title>
+    <link rel="stylesheet" href="comunidad.css">
+    <script src="https://kit.fontawesome.com/5b4a872535.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
+    <header>
         <!-- Logo a la izquierda -->
+        <figure>
+            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
+        </figure>
         <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
-        <div id="menuinicio">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/cartas.html">Cartas</a></li>
-                <li><a href="/personajes.html">Personajes</a></li>
-                <li><a href="/comunidad.html">Comunidad</a></li>
-            </ul>
-        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cartas.html">Cartas</a>
+                            <!-- ************ MODAL ************ -->
+            <div class="modal">
+                <span>Personajes</span>
+                <div class="modal-content">
+                    <div class="caja">
+                        <span class="opcion">Personaje</span>
+                        <div class="caja-content">
+                            aaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaa
+                            aa
+                            aaaaaaaaaaaa
+                            2433232423
+                            3242323
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            <!-- ************ DROPDOWN MENU ************ -->
+            <div class="dropdown">
+                <a href="comunidad.html">Comunidad</a>
+                <div class="dropdown-content">
+                    <a href="ln.html">Leo/need</a>
+                    <a href="mmj.html">MORE MORE JUMP!</a>
+                    <a href="vbs.html">Vivid BAD SQUAD</a>
+                    <a href="wxs.html">Wonderlands x Showtime</a>
+                    <a href="25ji.html">25-ji, Nightcord de.</a>
+                </div>
+            </div>
+        </nav>
+        <a href="login.html" id="login">Iniciar sesión</a>
         <!-- Botón Iniciar sesión || Icon + Username -->
-        <button id="login">Iniciar sesión</button>
-    </nav>
-    <!--  -->
+    </header>
+                            <!-- ************ COMUNIDAD ************ -->
     <main>
         <!-- Tendencias -->
-        <div class="caja">
+        <article class="container">
             <h2>Tendencias</h2>
-            <ol>
-                <li>Navidad</li>
-                <li>Gacha</li>
-                <li>Tier 1</li>
-                <li>Aniversario</li>
-                <li>Collab</li>
-            </ol>
-        </div>
-
-        <!-- Pestañas -->
+            <div class="caja">
+                <ol>
+                    <li>Navidad</li>
+                    <li>Gacha</li>
+                    <li>Tier 1</li>
+                    <li>Aniversario</li>
+                    <li>Collab</li>
+                </ol>
+            </div>
+            <div class="caja-icons">
+                <button type="submit">
+                    <span class="fa-stack">
+                        <i class="fa-regular fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-magnifying-glass fa-stack-1x"></i>
+                      </span>
+                    Buscar
+                </button>
+            </div>
+        </article>
+        <!-- Pestañas -->        
         <!-- Posts -->
-        <div class="caja">
+        <article class="container">
+            
             <!-- icono volver arriba del todo -->
             <!-- icono volver abajo del todo -->
-            <div class="post">
+            <div class="caja">
                 <!-- foto opcional -->
                 <!-- avatar -->
-                <img src="" alt="Avatar">
-                <p>@Usuario, <span>hace x minutos</span></p>
+                <img src="img/avatar-nino.jpg" alt="Nino Avatar" width="150" height="150">
+                <p><strong>@Usuario</strong>, <span>hace x minutos</span></p>
                 <p>asdsfdfdasfdfs</p>
                 <!-- icon share || icon comment || like count || like icon -->
             </div>
-        </div>
+        </article>
 
-        <aside>
-            <!-- grid? de una casilla por cada boton
-            y que se ajuste segun la cantidad de texto/tamaño de este
-            ocupando las filas y columnas que sean necesarias -->
+        <article>
             <h2>Temas populares</h2>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </aside>
+            <button id="navidad">Navidad en SekaiSchool</button>
+            <button class="tema">Eventos</button>
+            <button class="tema">Gacha</button>
+            <button class="cumple"><i class="fa-regular fa-calendar"></i> Próximos cumpleaños</button>
+            <button class="off-topic">Off-topic</button>
+        </article>
 
-        <div class="caja">
-            <!-- titulo en tarjeta Escribir post -->
-            <p>texto a escribir...</p>
-            <!-- icon poll || icon adjuntar archivo|| --- || icon enviar || icon expandir/reducir -->
-        </div>
+        <article>
+            <div class="caja">
+                <span class="opcion">Escribir post</span>
+                <div class="caja-content">
+                <!-- titulo en tarjeta Escribir post -->
+                    <p>texto a escribir...</p>
+                <!-- icon poll || icon adjuntar archivo|| --- || icon enviar || icon expandir/reducir -->
+                </div>
+            </div>
+        </article>
        <!-- 
         -ARRIBA IZQ - 
         - Caja Tendencias
