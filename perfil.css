@@ -21,6 +21,7 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    /* ! El text shadow es lo que le da el efecto oscuro, se pone por encima del degradado */
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
