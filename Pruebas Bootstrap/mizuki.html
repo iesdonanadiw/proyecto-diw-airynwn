@@ -5,6 +5,9 @@
     Trivia: Crece cuando encoge el dispositivo. Cuando es muy pequeño, va al final del todo (order-last)
     - Mirar cómo hacer para que el order-last sólo se aplique cuando es pequeño
  -->
+ <!-- ! el row gx-5 no da espacio entre elementos, sólo quita márgenes -->
+ <!-- !No va order-md-last -->
+ <!-- ! Falta espacio entre los elementos (sobre todo en la sección de info de personaje) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +20,7 @@
     <style>
         body {
             color: white;
+            -webkit-text-stroke: 0.5px #E4A8CA;
         }
     </style>
 </head>
@@ -69,12 +73,13 @@
     <main>
     <div class="container-fluid">
         <div class="row">
-        <div class="col-md-auto order-last" id="trivia-nav">
+        <div class="col-md-auto order-md-last" id="trivia-nav">
             <h2>Trivia</h2>     
             <div class="caja">
                 <div class="caja-content">
                     <ul>
-                        <li>adas</li>
+                        <li>punto 1</li>
+                        <li>punto 2</li>
                     </ul>
                 </div>
             </div>
@@ -94,12 +99,56 @@
             </div>
         </div>
     <div class="col">
-        <h2>Mizuki Akiyama</h2>
-        <figure class="caja-icons">
-            <img src="img/mizuki.webp" alt="Mizuki Akiyama" class="img-fluid">
-        </figure>
-        <h2>Personalidad</h2>
-        <div class="caja-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <h2>Mizuki Akiyama</h2>
+                    <figure class="caja-icons">
+                        <img src="img/mizuki.webp" alt="Mizuki Akiyama" class="img-fluid" width="318" height="670">
+                    </figure>
+                </div>
+                <!--  -->
+                <div class="col">
+                    <h2>Datos básicos</h2>
+                    <div class="panel">
+                        <div class="caja-content">
+                            <span><strong>Género</strong>: Desconocido</span>
+                            <span><strong>Grupo</strong>: 25-ji, Nightcord de.</span>
+                            <span><strong>Cumpleaños</strong>: 27 de Agosto</span>
+                            <span><strong>Colegio</strong>: Kamiyama High School (1-A)</span>
+                            <span><strong>Hobbies</strong>: Creación de vídeos</span>
+                            <span><strong>Especialidad</strong>: Rediseñar ropa</span>
+                            <span><strong>Comida favorita</strong>: Arroz al curry y patatas fritas</span>
+                            <span><strong>Comida menos favorita</strong>: Setas</span>
+                            <span><strong>No le gusta</strong>: La comida muy caliente</span>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <h2>Historia</h2>
+                    <div class="panel">
+                        <div class="caja-content">
+                            <span>
+                                Mizuki se dedica a la animación y a la creación de vídeos, los cuales sube a Internet. 
+                                Entró en el grupo tras enamorarse de la música de Kanade, quien vio los vídeos de Mizuki.
+                            </span>
+                            <span>
+                                Desde el instituto, los demás marginan a Mizuki por vestir y actuar de forma extraña, 
+                                ante lo cual Mizuki expresa confusión, ya que no le ve nada malo.
+                            </span>
+                            <span>
+                                A causa de la atención negativa que recibe por parte de sus compañeros, 
+                                Mizuki no va al colegio regularmente.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- <div class="col-md-6" id="personaje">
+        </div> -->
+    <div class="row">
+        <div class="col">
+            <h2>Personalidad</h2>
+            <div class="caja-content">
             <span>
                 Mizuki es una persona temperamental que desea expresarse  libremente tal y como es 
                 sin reprimirse ni ser objeto de burla. Tiene una obsesión por las cosas lindas y lo
@@ -114,46 +163,16 @@
                 Aunque mantiene una amistad con su grupo, Mizuki guarda un
                 secreto que no les quiere contar.
             </span>
+            </div>
+        </div>
+        <!--  -->
+        <div class="col-md-auto">
+            <div class="caja">
+                <img src="img/mizuki-1koma.webp" alt="Mizuki 1koma" class="img-fluid" width="404" height="300">
+            </div> 
         </div>
     </div>
-    <div class="col-md-6" id="personaje">
-        <h2>Datos básicos</h2>
-        <div class="panel">
-            <div class="caja-content">
-                <span><strong>Género</strong>: Desconocido</span>
-                <span><strong>Grupo</strong>: 25-ji, Nightcord de.</span>
-                <span><strong>Cumpleaños</strong>: 27 de Agosto</span>
-                <span><strong>Colegio</strong>: Kamiyama High School (1-A)</span>
-                <span><strong>Hobbies</strong>: Creación de vídeos</span>
-                <span><strong>Especialidad</strong>: Rediseñar ropa</span>
-                <span><strong>Comida favorita</strong>: Arroz al curry y patatas fritas</span>
-                <span><strong>Comida menos favorita</strong>: Setas</span>
-                <span><strong>No le gusta</strong>: La comida muy caliente</span>
-            </div>
-        </div>
-        <h2>Historia</h2>
-        <div class="panel">
-            <div class="caja-content">
-                <span>
-                    Mizuki se dedica a la animación y a la creación de vídeos, los cuales sube a Internet. 
-                    Entró en el grupo tras enamorarse de la música de Kanade, quien vio los vídeos de Mizuki.
-                </span>
-                <span>
-                    Desde el instituto, los demás marginan a Mizuki por vestir y actuar de forma extraña, 
-                    ante lo cual Mizuki expresa confusión, ya que no le ve nada malo.
-                </span>
-                <span>
-                    A causa de la atención negativa que recibe por parte de sus compañeros, 
-                    Mizuki no va al colegio regularmente.
-                </span>
-            </div>
-        </div>
-        
-        <div class="caja">
-            <img src="img/mizuki-1koma.webp" alt="Mizuki 1koma" class="img-fluid" width="404" height="300">
-        </div>
-
-        </div>
+</div>
     </div>
     </div>
     </main>
