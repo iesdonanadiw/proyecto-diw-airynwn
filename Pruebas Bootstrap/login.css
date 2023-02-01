@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+a {
+    color: white;
+    box-sizing: border-box;
+    text-decoration-line: none;
+}
+
+/* TODO La font se ve rara */
+h3 {
+    margin: 0;
+    color: white;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Flexbox header (figure#logo, nav, a#login) */
+header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    background: linear-gradient(90deg, #4DF6C6 0%, #4254F5 100%);
+    padding: 1% 10%;
+    position: relative;
+}
+
+/* El figure es más grande que el div */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* TODO Resizear */
+#logo {
+    height: 35px;
+}
+
+/*
+    Display flex para estar en el flexbox header
+    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
+*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.15em;
+    gap: 2em;
+}
+
+#login {
+    padding: 10px 20px;
+    background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+/********************* MODAL  *********************/
+
+.modal {
+    overflow: hidden;
+}
+
+.modal-content {
+    z-index: 1;
+    position: absolute;
+    display: none;
+    /* ! FALTA CENTRARLO */
+    left: 300px;
+    top: 300px;
+    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.38) 100%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border-radius: 20px;
+}
+
+.modal:active .modal-content {
+    display: block;
+}
+
+/* ? **Cosas del modal a cambiar***/
+
+.opcion {
+    padding: 0.25em;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    background: #2F2957;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border: solid 1px transparent;
+    background-image: linear-gradient(#2F2957, #2F2957),
+        linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.caja {
+
+    /* ! Fondo y bordes del color correcto, pero no va el border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-content {
+    /* margin-top: 0; */
+    margin: 0.5em 0.5em 0em 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+/* ! no va :first-child ni :nth-child ni :first-of-type NI NADA */
+.caja-content span {
+    margin-bottom: 0.5em;
+}
+
+/********************* DROPDOWN MENU  *********************/
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-content {
+    z-index: 1;
+    position: fixed; /*!Para que se ponga encima del main en vez de agrandar el header*/
+    background: linear-gradient(132.76deg, #4DF6C6 0%, #4254F5 81.78%);
+    display: none;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+.dropdown-content a {
+    /* float: none; */
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/************************** PARTE DE LOGIN **************************/
+
+/* TODO multiple gradients on top of background, opacidad, ajustar main */
+
+main {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    height: 100vh;
+    /* background:
+    linear-gradient(0deg, #2A2348, #2A2348),
+    linear-gradient(180deg, rgba(66, 84, 245, 0.25) 0%, rgba(77, 246, 198, 0.25) 99.99%, rgba(66, 84, 245, 0.25) 100%),
+    radial-gradient(102.1% 102.1% at 63.54% -2.1%, rgba(66, 84, 245, 0.124) 0%, rgba(77, 246, 198, 0.114) 100%),
+    warning: gradient uses a rotation that is not supported by CSS and may not behave as expected
+    linear-gradient(180deg, rgba(160, 34, 168, 0.208) 0%, rgba(236, 100, 245, 0.384) 50.52%, rgba(66, 84, 245, 0.312) 100%);
+    background-blend-mode: color-burn, normal, lighten; */
+}
+
+hr {
+    border: 1px solid #FFFFFF;
+    opacity: 0.5;
+    margin: 0.5em;
+}
+
+.campo {
+    margin: 0.5em;
+}
+
+/* TODO Centrar las cajas mejor, font fea, cajas demasiado grandes, ajustar imagen */
+/* ? Cuando tenía 5 columnas iba mejor */
+
+#login-box { 
+    background: linear-gradient(125.92deg, rgba(236, 100, 245, 0.5) 0%, rgba(66, 84, 245, 0.23) 34.6%, rgba(77, 246, 198, 0.335) 66.8%),
+        linear-gradient(51.69deg, rgba(66, 84, 245, 0.85) 0%, rgba(236, 100, 245, 0.85) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+#registro-box { 
+    background: linear-gradient(322.33deg, rgba(77, 246, 198, 0.45) 0%, rgba(77, 246, 198, 0) 74.48%),
+        linear-gradient(51.69deg, rgba(236, 100, 245, 0.85) 0%, rgba(66, 84, 245, 0.85) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+/* TODO Ajustar al ancho de la caja */
+.input-form {
+    /* width: 90%; */
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 0.35em;
+    margin: 0.25em 0em 0.25em 0em;
+}
+
+.button-form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-blend-mode: darken;
+    border-radius: 5px;
+    padding: 0.5em 2em 0.5em 2em;
+    width: 75%;
+    border: none;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Login: input azul + botón lila */
+#login-box .input-form {
+    border: 1px solid #4254F5;
+}
+
+#login-box .button-form {
+    background: #A022A8;
+}
+/* Registro: input lila + botón azul */
+#registro-box .input-form {
+    border: 1px solid #A022A8;
+}
+
+#registro-box .button-form {
+    background: #4254F5;
+}
+
+/* Chibi */
+#figure-box { 
+    display: block;
+    margin: 0 auto;
+}
+
+#chibi-login {
+    margin: 2.5em;
+    height: 150px;
+}
