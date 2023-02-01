@@ -22,6 +22,12 @@
       src="https://kit.fontawesome.com/5b4a872535.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      body {
+        color: white;
+        -webkit-text-stroke: 0.5px #F90;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -70,44 +76,42 @@
   </header>
   <!--  -->
     <main>
-      <article id="grupo">
-        <section id="miembros">
-          <div class="panel">
-            <!-- esto era un span -->
-            <!-- Col1 Row1 -->
-            <span class="titulo">Miembros</span>
-            <div class="panel-content">
-              <span>Tsukasa Tenma</span>
-              <span>Emu Otori</span>
-              <span>Nene Kusanagi</span>
-              <span>Rui Kamishiro</span>
+      <div class="container" id="grupo">
+        <div class="row">
+          <div class="col">
+            <div class="panel">
+              <!-- Col1 Row1 -->
+              <span class="titulo">Miembros</span>
+              <div class="panel-content">
+                <span>Tsukasa Tenma</span>
+                <span>Emu Otori</span>
+                <span>Nene Kusanagi</span>
+                <span>Rui Kamishiro</span>
+              </div>
             </div>
-          </div>
-        </section>
-        <section id="vss">
-          <div class="panel">
-            <!-- Col1 Row2 -->
-            <span class="titulo">Virtual Singers</span>
-            <div class="panel-content">
-              <span>Miku Hatsune</span>
-              <span>Rin Kagamine</span>
-              <span>Len Kagamine</span>
-              <span>Luka Megurine</span>
-              <span>MEIKO</span>
-              <span>KAITO</span>
+          <!--  -->
+            <div class="panel">
+              <!-- Col1 Row2 -->
+              <span class="titulo">Virtual Singers</span>
+              <div class="panel-content">
+                <span>Miku Hatsune</span>
+                <span>Rin Kagamine</span>
+                <span>Len Kagamine</span>
+                <span>Luka Megurine</span>
+                <span>MEIKO</span>
+                <span>KAITO</span>
+              </div>
             </div>
-          </div>
-        </section>
-        <section id="img-grupo">
-          <!-- Aquí iría la imagen (Col3) -->
-          <img src="img/wxs.webp" alt="WxS" width="512" />
-        </section>
-        <section id="logo-grupo">
-          <img src="img/wxs-logo.png" alt="Logo WxS" height="100" />
-        </section>
-        <section id="historia">
+        </div>
+        <!--  -->
+        <div class="col" id="img-grupo">
+          <!-- <img src="img/wxs.webp" alt="WxS" width="512" /> -->
+        </div>
+        <!--  -->
+        <div class="col">
+          <!-- <img src="img/wxs-logo.png" alt="Logo WxS" height="100" /> -->
+          <!--  -->
           <div class="panel">
-            <!-- Col3 -->
             <span class="titulo">Historia</span>
             <!-- TODO: Traducir -->
             <div class="panel-content">
@@ -123,13 +127,17 @@
               </span>
             </div>
           </div>
-        </section>
-      </article>
-      <figure>
-        <!-- Montarlo encima del panel de comentarios, sobre el panel de VS -->
+        </div>
+        </div>
+      </div>
+
+      <!-- <figure>
         <img src="img/tsukasa-mini.webp" alt="Tsukasa">
-      </figure>
-      <article id="foro">
+      </figure> -->
+
+      <div class="container" id="foro">
+        <div class="row">
+          <div class="col">
         <section id="comentarios">
           <!-- ! HACER QUE EL ICON TENGA EL USUARIO DEBAJO Y EL COMENTARIO A LA DERECHA -->
           <div class="caja">
@@ -161,22 +169,26 @@
               </div>
             </div>
           </section>
+        </div>
           <!-- Gap entre sections: icon volver arriba del todo/ ir abajo del todo -->
           <i class="fa-regular fa-circle-up"></i>
           <i class="fa-regular fa-circle-down"></i>
           <!-- on top of each other -->
-        <section id="escribir-post">
-            <div class="caja">
-                <span class="opcion">Escribir post</span>
-                blablablalba
-                <!-- Esquina inferior derecha -->
-                <i class="fa-solid fa-pen-to-square"></i>
-                <i class="fa-solid fa-minimize"></i>
-            </div>
-        </section>
+        <div class="col">
+          <div class="caja">
+            <span class="opcion">Escribir post</span>
+            blablablalba
+            <!-- Esquina inferior derecha -->
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-minimize"></i>
+          </div>
+        </div>
         <!-- Esquina superior derecha -->
-        <a href="wxs-foro.html"><i class="fa-solid fa-maximize"></i></a>
-      </article>
+        <a href="wxs-foro.html">
+          <i class="fa-solid fa-maximize"></i>
+        </a>
+      </div>
+    </div>
     </main>
   </body>
 </html>
