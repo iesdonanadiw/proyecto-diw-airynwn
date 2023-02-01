@@ -1,0 +1,193 @@
+<!-- 
+    Container con 2 columas (filtros / cartas)
+    - La columna de cartas es otro container con columnas del mismo tamaño
+            según el viewport, usar row que según el tamaño row meta x imgs por fila
+    (como el perfil)
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="cartas.css">
+    <script src="https://kit.fontawesome.com/5b4a872535.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Logo a la izquierda -->
+        <figure>
+            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
+        </figure>
+        <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cartas.html">Cartas</a>
+                            <!-- ************ MODAL ************ -->
+            <div class="modal">
+                <span>Personajes</span>
+                <div class="modal-content">
+                    <div class="caja">
+                        <span class="opcion">Personaje</span>
+                        <div class="caja-content">
+                            aaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaa
+                            aa
+                            aaaaaaaaaaaa
+                            2433232423
+                            3242323
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            <!-- ************ DROPDOWN MENU ************ -->
+            <div class="dropdown">
+                <a href="comunidad.html">Comunidad</a>
+                <div class="dropdown-content">
+                    <a href="ln.html">Leo/need</a>
+                    <a href="mmj.html">MORE MORE JUMP!</a>
+                    <a href="vbs.html">Vivid BAD SQUAD</a>
+                    <a href="wxs.html">Wonderlands x Showtime</a>
+                    <a href="25ji.html">25-ji, Nightcord de.</a>
+                </div>
+            </div>
+        </nav>
+        <a href="login.html" id="login">Iniciar sesión</a>
+        <!-- Botón Iniciar sesión || Icon + Username -->
+    </header>
+    <!--  -->
+    <main>
+        <div class="row">
+            <section id="filter-nav">
+            <form action="" id="filter-wrapper">
+                <h2>Opciones de búsqueda</h2>  
+                En esta página falta (además de lo de siempre):
+            <span>Avisar de que he añadido el símbolo de rareza de cumpleaños?</span>
+            <span>El círculo que contiene el botón de buscar es demasiado grueso porque el light es de pago</span>
+            <span>Problema: no puedo usar border-radius en bordes degradados</span>
+            <span>Cómo hacer las tabs con iconos para añadir en la colección y en la lista de deseos</span>
+            <span>Cómo hacer que dentro de un contenedor de carta se vean ambas versiones partidas por la mitad y centradas</span>
+            <span>Al hacer lo anterior, añadir un transform al :hover de las cartas para stretchearse a fillear el contenedor</span>
+            <!--  -->   
+                <div class="caja">
+                    <span class="opcion">Grupo</span>
+                    <div class="caja-content">
+                        <span>Leo/need</span>
+                        <span>MORE MORE JUMP!</span>
+                        <span>Vivid BAD SQUAD</span>
+                        <span>Wonderlands x Showtime</span>
+                        <span>25-ji, Nightcord de.</span>
+                    </div>
+                </div>
+                <div class="caja">
+                    <!-- Rareza -->
+                    <span class="opcion">Rareza</span>
+<!-- TODO: Que las estrellas sean clickeables y se coloree el número de estrellas seleccionadas (BW) -->
+                    <div class="caja-icons">
+                        <span><img src="svg/rainbow_star.png" alt="Estrella"></span>
+                        <span><img src="svg/rainbow_star.png" alt="Estrella"></span>
+                        <span><img src="svg/rainbow_star.png" alt="Estrella"></span>
+                        <span><img src="svg/rainbow_star.png" alt="Estrella"></span>
+                        <span><img src="svg/birthday.png" alt="Cumpleaños/Aniversario"></span>
+                    </div>
+                </div>
+                <div class="caja">
+                    <!-- Atributo -->
+                    <span class="opcion">Atributo</span>
+<!-- TODO: Que la rareza sea clickeable y se coloree la seleccionada (las demás BW) -->
+                    <div class="caja-icons">
+                        <span><img src="svg/cute.png" alt="Cute"></span>
+                        <span><img src="svg/mysterious.png" alt="Mysterious"></span>
+                        <span><img src="svg/cool.png" alt="Cool"></span>
+                        <span><img src="svg/happy.png" alt="Happy"></span>
+                        <span><img src="svg/pure.png" alt="Pure"></span>
+                    </div>
+                </div>
+                <div class="caja">
+                    <!-- TODO: Botón que abre un modal Personaje -->
+                    <span class="opcion">Personaje</span>
+                    <p>Aquí va el nombre del personaje seleccionado</p>
+                </div>
+                <div class="caja-icons">
+                    <button type="submit">
+                        <span class="fa-stack">
+                            <i class="fa-regular fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-magnifying-glass fa-stack-1x"></i>
+                          </span>
+                        Buscar
+                    </button>
+                </div>
+            </form>
+        </section>
+    <section id="cartas">
+        <article>
+            <div class="card-box">
+                <figure class="card-fig">
+                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
+                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
+                </figure>
+            </div>
+        </article>
+        <div class="card">
+            <div class="card-box">
+                <figure class="card-fig">
+                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
+                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
+                </figure>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box">
+                <figure class="card-fig">
+                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
+                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
+                </figure>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box">
+                <figure class="card-fig">
+                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
+                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
+                </figure>
+            </div>
+        </div>
+            
+            <!-- Lista de cartas -->
+            <!-- img unidlz -->
+            <!-- img idlz -->
+        <!-- añadir a la coleccion / añadir a favoritos icons -->
+        <!-- (en mini tarjetas (pestañas), texto alt)
+        repetir por cada carta -->
+
+       <!-- 
+    IZQ: Opciones de búsqueda
+        Contiene:
+        - Grupo
+            - leoni / mmj / vbs / wxs / 25ji
+        - Rareza
+            - seleccionar estrellas y se colorean hasta las selecionadas
+        - Atributo
+            - seleccionar atributo, todos en una linea
+        - Personaje
+            - abre ventana modal con todos los personajes, glassmorphinsm
+        Buscador con lupita
+    -->
+    <!-- LISTA DE CARTAS
+        4 a la vista con scroll
+        Tarjeta de carta contiene:
+            - Imagen
+                (unidlz a la izquierda, idlz a la derecha)
+                (al pasar el ratón por una versión se agranda y ocupa todo el hueco de imagen)
+            - Botón de guardar / lista de deseos abajo
+    -->
+</section>
+</div>
+
+    </main>
+</body>
+</html>

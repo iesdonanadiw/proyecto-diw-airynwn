@@ -1,0 +1,184 @@
+<!-- 
+    Container con 3 columnas
+    1. Tendencias
+    2. Publicaciones
+    3. Temas + escribir post
+            Pegar escribir post abajo:
+                1. margin bottom 0, ó:
+                2. Meter un container en la tercera columna con dos rows (temas / escribir post)
+            https://getbootstrap.com/docs/5.0/layout/columns/#vertical-alignment
+            para alinear al final del todo con una única row
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad</title>
+    <link rel="stylesheet" href="comunidad.css">
+    <script src="https://kit.fontawesome.com/5b4a872535.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Logo a la izquierda -->
+        <figure>
+            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
+        </figure>
+        <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cartas.html">Cartas</a>
+                            <!-- ************ MODAL ************ -->
+            <div class="modal">
+                <span>Personajes</span>
+                <div class="modal-content">
+                    <div class="caja">
+                        <span class="opcion">Personaje</span>
+                        <div class="caja-content">
+                            aaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaa
+                            aa
+                            aaaaaaaaaaaa
+                            2433232423
+                            3242323
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            <!-- ************ DROPDOWN MENU ************ -->
+            <div class="dropdown">
+                <a href="comunidad.html">Comunidad</a>
+                <div class="dropdown-content">
+                    <a href="ln.html">Leo/need</a>
+                    <a href="mmj.html">MORE MORE JUMP!</a>
+                    <a href="vbs.html">Vivid BAD SQUAD</a>
+                    <a href="wxs.html">Wonderlands x Showtime</a>
+                    <a href="25ji.html">25-ji, Nightcord de.</a>
+                </div>
+            </div>
+        </nav>
+        <a href="login.html" id="login">Iniciar sesión</a>
+        <!-- Botón Iniciar sesión || Icon + Username -->
+    </header>
+                            <!-- ************ COMUNIDAD ************ -->
+    <main>
+        <!-- Tendencias -->
+        <article class="container">
+            <h2>Tendencias</h2>
+            <div class="caja">
+                En esta página falta:
+                <ol>
+                    <li>Estructura</li>
+                    <li>Tabs de publicaciones recientes/populares</li>
+                    <li>Posicionar los temas populares</li>
+                    <li>Ver cómo se hace la estructura de la caja de publicaciones</li>
+                    <li>Hacer que el botón de Próximos cumpleaños abra un Modal Calendario</li>
+                    <li>Crear también el Modal Personajes (que se mantenga y se pueda cerrar)</li>
+                    <li>Navidad</li>
+                    <li>Gacha</li>
+                    <li>Tier 1</li>
+                    <li>Aniversario</li>
+                    <li>Collab</li>
+                </ol>
+            </div>
+            <div class="caja-icons">
+                <button type="submit">
+                    <span class="fa-stack">
+                        <i class="fa-regular fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-magnifying-glass fa-stack-1x"></i>
+                      </span>
+                    Buscar
+                </button>
+            </div>
+        </article>
+        <!-- Pestañas -->        
+        <!-- Posts -->
+        <article class="container">
+            
+            <!-- icono volver arriba del todo -->
+            <!-- icono volver abajo del todo -->
+            <div class="caja">
+                <!-- foto opcional -->
+                <!-- avatar -->
+                <img src="img/avatar-nino.jpg" alt="Nino Avatar" width="150" height="150">
+                <p><strong>@Usuario</strong>, <span>hace x minutos</span></p>
+                <p>asdsfdfdasfdfs</p>
+                <div class="caja-icons">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <!-- ? Otro share por si me gusta más -->
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <!-- ! CAMBIÉ EL ICONO DE COMENTARIO DEL LÁPIZ A LA NUBE -->
+                    <i class="fa-regular fa-comment"></i>
+                    432543<i class="fa-solid fa-heart"></i>
+                </div>
+                <!-- icon share || icon comment || like count || like icon -->
+            </div>
+        </article>
+
+        <article>
+            <h2>Temas populares</h2>
+            <button id="navidad">Navidad en SekaiSchool</button>
+            <button class="tema">Eventos</button>
+            <button class="tema">Gacha</button>
+            <button class="cumple"><i class="fa-regular fa-calendar"></i> Próximos cumpleaños</button>
+            <button class="off-topic">Off-topic</button>
+        </article>
+
+        <article>
+            <div class="caja">
+                <span class="opcion">Escribir post</span>
+                <div class="caja-content">
+                <!-- titulo en tarjeta Escribir post -->
+                    <p>texto a escribir...</p>
+                    <div class="caja-icons">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        <!-- ? no me termina de gustar el de adjuntar -->
+                        <i class="fa-regular fa-file"></i>
+                        <!-- espacio -->
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <!-- TODO Considerar hacer esto un icono de minimizar ( - ) en el título -->
+                        <i class="fa-solid fa-minimize"></i>
+                    </div>
+                <!-- icon poll || icon adjuntar archivo|| --- || icon enviar || icon expandir/reducir -->
+                </div>
+            </div>
+        </article>
+       <!-- 
+        -ARRIBA IZQ - 
+        - Caja Tendencias
+          - Título Tendencisa
+          - Lista ordenada de texto
+        - Buscador con lupa
+
+        - CENTRO - 
+        caja como twitter con pestañas de "publicaciones recientes" y "publicciones populares"
+        caja de post:
+        - foto del post
+        - foto de usuario @Usuario, hace x teimpo
+        - contenido del post
+        - izq (compartir, comentar) || der (likes)
+
+        - ARRIBA DERECHA -
+        TEMAS POPULARES (texto sin caja)
+        Botones: 
+        - Navidad / Cualquier evento ctual en l tiempo
+        - Eventos // Gacha
+        - Próximos cumpleaños (calendario) abrir modal
+        - Centro: Off-topic
+
+        Al clickear un tema, se cambian los posts mostrados en l centr
+
+        - ABAJO DERECHA -
+        Caja Escribir post
+        Título, contenido
+        Abajo: Hacer encuesta, adjuntar imagen (izq)
+        Enviar, tamaño de l ventana (derecha)
+        (Iconos)
+        -->
+    </main>
+</body>
+</html>

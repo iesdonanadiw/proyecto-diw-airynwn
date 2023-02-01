@@ -1,0 +1,123 @@
+<!-- 
+    Container con 2 rows: perfil e info del juego
+    - Perfil.   Viewports grandes: que la foto ocupe 2 o 1 col (?), img-fluid, hacer marco
+                La foto ocupará más col cuando se haga más pequeño hasta que colapse
+    https://getbootstrap.com/docs/5.0/content/images/
+    - Info del juego. Col 6 en el medio o ir probando
+    - Lista de cartas. Container con columnas del mismo tamaño según viewport,
+                        usar row para que según tamaño meta x imágenes por fila
+    - Tabs. Mirar tabs de bootstrap https://getbootstrap.com/docs/5.0/components/navs-tabs/#tabs
+    - Modal. https://getbootstrap.com/docs/5.0/components/modal/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Logo a la izquierda -->
+        <figure>
+            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
+        </figure>
+        <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cartas.html">Cartas</a>
+                            <!-- ************ MODAL ************ -->
+            <div class="modal">
+                <span>Personajes</span>
+                <div class="modal-content">
+                    <div class="caja">
+                        <span class="opcion">Personaje</span>
+                        <div class="caja-content">
+                            aaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaa
+                            aa
+                            aaaaaaaaaaaa
+                            2433232423
+                            3242323
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            <!-- ************ DROPDOWN MENU ************ -->
+            <div class="dropdown">
+                <a href="comunidad.html">Comunidad</a>
+                <div class="dropdown-content">
+                    <a href="ln.html">Leo/need</a>
+                    <a href="mmj.html">MORE MORE JUMP!</a>
+                    <a href="vbs.html">Vivid BAD SQUAD</a>
+                    <a href="wxs.html">Wonderlands x Showtime</a>
+                    <a href="25ji.html">25-ji, Nightcord de.</a>
+                </div>
+            </div>
+        </nav>
+        <a href="login.html" id="login">Iniciar sesión</a>
+        <!-- Botón Iniciar sesión || Icon + Username -->
+    </header>
+    <!--  -->
+    <main>
+    <div class="row">
+    <section>
+        <article class="container">
+            <h2>Perfil de Laura</h2>     
+            <div class="caja">
+                <figure class="avatar-container">
+                    <img src="img/avatar-nino.jpg" alt="Nino Avatar" height="150" width="150">
+                </figure>
+                <div class="caja-content">
+                    <span>hola esto es una biografia</span>
+                    En esta página falta:
+                    <ul>
+                        <li>Hacer un marco para la foto de perfil (como el de publicaciones pero en horizontal?)</li>
+                        <li>Colocar el chibi dentro de la caja de biografía (aquí)</li>
+                        <li>Avisar del cambio de fuente en "Perfil de xyz"</li>
+                        <li>Grid que contiene las cartas?</li>
+                        <li>Cómo hacer las tabs (lista de cartas, lista de deseos)</li>
+                        <li>Los "botones" de datos del juego (como un input con un icono pero en su lugar es la imagen?)</li>
+                    </ul>
+                    <!-- ! Aquí dentro va el chibi de personaje favorito -->
+                </div>
+            </div>
+            <span>IconBotón Cumpleaños</span>
+            <span>Grupo favorito</span>
+            <span>Twitter</span>
+            <span>Discord</span>
+        </article>
+    </section>
+    <section>
+        <article class="container">
+            <span class="tab">Publicaciones</span>
+            <div class="caja">
+                <span class="titulo">Feliz Navidad</span>
+                <div class="caja-content">
+                    adsfsfafda
+                </div>
+                <span class="titulo">No sé qué poner</span>
+                <div class="caja-content">
+                    Post 2 (esto necesita gap)
+                </div>
+            </div>
+        </article>
+        <article class="container">
+            <span class="tab">Datos del juego</span>
+            <span>Rank</span>
+            <span>Cristales</span>
+            <span>Títulos (a ver cómo hago esto)</span>
+        </article>
+        <article class="container">
+            <span>Aquí hay un grid (supongo?) de cartas (faltan las tabs de lista de deseos/cartas)</span>
+        </article>
+    </section>
+    </div>
+    </main>
+</body>
+</html>
