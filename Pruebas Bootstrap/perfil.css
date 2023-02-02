@@ -188,12 +188,12 @@ main {
 
 /* ? */
 
-.row {
+/* .row {
     display: grid;
     grid-template-columns: 25% 75%;
     justify-content: center;
     gap: 3%;
-}
+} */
 
 .contenedor {
     margin: 0.5em;
