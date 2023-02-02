@@ -22,6 +22,7 @@
       src="https://kit.fontawesome.com/5b4a872535.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
       body {
         color: white;
@@ -76,103 +77,101 @@
   </header>
   <!--  -->
     <main>
-      <div class="container" id="grupo">
+      <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-md-4">
             <div class="panel">
-              <!-- Col1 Row1 -->
-              <span class="titulo">Miembros</span>
+              <span class="titulo">Historia</span>
+              <!-- TODO: Traducir -->
               <div class="panel-content">
-                <span>Tsukasa Tenma</span>
-                <span>Emu Otori</span>
-                <span>Nene Kusanagi</span>
-                <span>Rui Kamishiro</span>
+                <p>
+                  Tras fracasar en su audición, Tsukasa es contratado por Emu para devolver al
+                  Phoenix Wonderland Stage a su antigua gloria con increíbles actuaciones.
+                  Ambos actores reclutan al director de escena y experto en robótica Rui
+                  y a la tímida cantante Nene, junto con su robot réplica, Nene-Robo.
+                  </p>
+                  <p>
+                  Mientras Emu intenta convencer a Tsukasa de unirse a la compañía
+                  Phoenix Wonderland, Tsukasa descubre una canción llamada "Untitled" en su teléfono.
+                  Al reproducirla, ambos son transportados al SEKAI, donde conocerán a Miku, KAITO
+                  y los peluches con los que actúan.
+                </p>
               </div>
             </div>
-          <!--  -->
-            <div class="panel">
-              <!-- Col1 Row2 -->
-              <span class="titulo">Virtual Singers</span>
-              <div class="panel-content">
-                <span>Miku Hatsune</span>
-                <span>Rin Kagamine</span>
-                <span>Len Kagamine</span>
-                <span>Luka Megurine</span>
-                <span>MEIKO</span>
-                <span>KAITO</span>
-              </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="col" id="img-grupo">
-          <!-- <img src="img/wxs.webp" alt="WxS" width="512" /> -->
         </div>
         <!--  -->
         <div class="col">
-          <!-- <img src="img/wxs-logo.png" alt="Logo WxS" height="100" /> -->
+          <img src="img/wxs-logo.webp" alt="Logo WxS" height="100" />
+          <img src="img/wxs.webp" alt="WxS" width="500" height="385" />
+        </div>
+        <!--  -->
+        <div class="col">
           <!--  -->
           <div class="panel">
-            <span class="titulo">Historia</span>
-            <!-- TODO: Traducir -->
+            <span class="titulo">Miembros</span>
             <div class="panel-content">
-              <span>
-                Tras fracasar en su audición, Tsukasa es contratado por Emu para devolver al
-                Phoenix Wonderland Stage a su antigua gloria con increíbles actuaciones.
-                Ambos actores reclutan al director de escena y experto en robótica Rui
-                y a la tímida cantante Nene, junto con su robot réplica, Nene-Robo.
-                Mientras Emu intenta convencer a Tsukasa de unirse a la compañía
-                Phoenix Wonderland, Tsukasa descubre una canción llamada "Untitled" en su teléfono.
-                Al reproducirla, ambos son transportados al SEKAI, donde conocerán a Miku, KAITO
-                y los peluches con los que actúan.
-              </span>
+              <span>Tsukasa Tenma</span>
+              <span>Emu Otori</span>
+              <span>Nene Kusanagi</span>
+              <span>Rui Kamishiro</span>
             </div>
           </div>
+        <!--  -->
+          <div class="panel">
+            <span class="titulo">Virtual Singers</span>
+            <div class="panel-content">
+              <span>Miku Hatsune</span>
+              <span>Rin Kagamine</span>
+              <span>Len Kagamine</span>
+              <span>Luka Megurine</span>
+              <span>MEIKO</span>
+              <span>KAITO</span>
+            </div>
+          </div>
+          
         </div>
         </div>
       </div>
 
-      <!-- <figure>
+      <figure>
         <img src="img/tsukasa-mini.webp" alt="Tsukasa">
-      </figure> -->
+      </figure>
 
       <div class="container" id="foro">
         <div class="row">
           <div class="col">
-        <section id="comentarios">
           <!-- ! HACER QUE EL ICON TENGA EL USUARIO DEBAJO Y EL COMENTARIO A LA DERECHA -->
-          <div class="caja">
-            <figure class="caja-content">
-              <span class="opcion">Nino123</span>
-              <img src="img/avatar-nino.jpg" alt="Avatar Nino" height="150" width="150">
-            </figure>
-            <p>texto esto es un comentario (deberira ir en fila con el avatar)</p>
-            <div class="likes">
-              <!-- Esto iría en la esquina inferior derecha -->
-              432543<i class="fa-solid fa-heart"></i>
-            </div>
-          </div>
-          <div class="caja">
-                En esta página falta:
-                  <span>Colocar el sticker encima de la caja de comentarios y por encima de todo</span>
-                  <span>Cómo hacer el marco con el nombre de usuario para la foto de perfil</span>
-                  <span>Darle color a los nombres de cada personaje y el borde del color del grupo (recordar variable para el color)</span>
-                  <span>Estructura (ver cómo/dónde colocar los iconos de "volver arriba/abajo" y maximize)</span>
+            <div class="caja">
+              <figure class="caja-content">
+                <span class="opcion">Nino123</span>
+                <img src="img/avatar-nino.jpg" alt="Avatar Nino" height="150" width="150">
+              </figure>
+              <p>texto esto es un comentario (deberira ir en fila con el avatar)</p>
               <div class="likes">
                 <!-- Esto iría en la esquina inferior derecha -->
+                432543<i class="fa-solid fa-heart"></i>
+              </div>
+            </div>
+            <div class="caja">
+              En esta página falta:
+                <span>Colocar el sticker encima de la caja de comentarios y por encima de todo</span>
+                <span>Cómo hacer el marco con el nombre de usuario para la foto de perfil</span>
+                <span>Darle color a los nombres de cada personaje y el borde del color del grupo (recordar variable para el color)</span>
+              <div class="likes">
                 432543<i class="fa-solid fa-heart"></i>
               </div>
             </div>
             <div class="caja">test test test
               <div class="likes">
-                <!-- Esto iría en la esquina inferior derecha -->
                 432543<i class="fa-solid fa-heart"></i>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+          <div class="col-auto">
+            <i class="fa-regular fa-circle-up"></i>
+            <!-- <i class="fa-regular fa-circle-down"></i> -->
+          </div>
           <!-- Gap entre sections: icon volver arriba del todo/ ir abajo del todo -->
-          <i class="fa-regular fa-circle-up"></i>
-          <i class="fa-regular fa-circle-down"></i>
           <!-- on top of each other -->
         <div class="col">
           <div class="caja">
@@ -184,11 +183,14 @@
           </div>
         </div>
         <!-- Esquina superior derecha -->
-        <a href="wxs-foro.html">
-          <i class="fa-solid fa-maximize"></i>
-        </a>
+        <div class="col-auto">
+          <a href="wxs-foro.html">
+            <i class="fa-solid fa-maximize"></i>
+          </a>
+        </div>
       </div>
     </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

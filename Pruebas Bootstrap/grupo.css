@@ -151,7 +151,7 @@ main {
 .panel {
     box-sizing: border-box;
     text-align: center;
-    width: fit-content;
+    /* width: fit-content; */
     border-radius: 20px;
     background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.38) 100%);
     border: 1px solid #F90;
@@ -205,43 +205,6 @@ ul {
     /* margin: 0; */
     padding: 0 1em 0 1em;
 }
-
-/* TODO Espacios / Redimensionar */
-#grupo {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 4px;
-    }
-    
-    #miembros { grid-area: 1 / 1 / 2 / 2; }
-    #vss { grid-area: 2 / 1 / 3 / 2; }
-    #img-grupo { grid-area: 1 / 2 / 3 / 3; }
-    #logo-grupo { grid-area: 1 / 3 / 2 / 4; }
-    #historia { grid-area: 2 / 3 / 3 / 4; }
-
-#foro {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    gap: 4px;
-}
-
-/* ! IDEA: Que los paneles de comentarios impares sean de un color más claro para distinguirlos mejor */
-#comentarios { 
-    grid-area: 1 / 1 / 2 / 3;
-    /***PRUEBAS*/
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-#escribir-post { grid-area: 1 / 3 / 2 / 4; }
-
-/* ? PRUEBAAAAAAAAAAAAAAAAS */
 
 #foro {
     margin: 0.5em;

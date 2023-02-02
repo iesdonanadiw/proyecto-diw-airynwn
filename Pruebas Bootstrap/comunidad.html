@@ -18,6 +18,12 @@
     <title>Comunidad</title>
     <link rel="stylesheet" href="comunidad.css">
     <script src="https://kit.fontawesome.com/5b4a872535.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -67,17 +73,17 @@
                             <!-- ************ COMUNIDAD ************ -->
     <main>
         <!-- Tendencias -->
-        <article class="container">
+        <div class="container">
+            <div class="row">
+        <div class="col">
             <h2>Tendencias</h2>
             <div class="caja">
                 En esta página falta:
                 <ol>
-                    <li>Estructura</li>
                     <li>Tabs de publicaciones recientes/populares</li>
                     <li>Posicionar los temas populares</li>
                     <li>Ver cómo se hace la estructura de la caja de publicaciones</li>
                     <li>Hacer que el botón de Próximos cumpleaños abra un Modal Calendario</li>
-                    <li>Crear también el Modal Personajes (que se mantenga y se pueda cerrar)</li>
                     <li>Navidad</li>
                     <li>Gacha</li>
                     <li>Tier 1</li>
@@ -94,10 +100,10 @@
                     Buscar
                 </button>
             </div>
-        </article>
+        </div>
         <!-- Pestañas -->        
         <!-- Posts -->
-        <article class="container">
+        <div class="col-6">
             
             <!-- icono volver arriba del todo -->
             <!-- icono volver abajo del todo -->
@@ -117,18 +123,19 @@
                 </div>
                 <!-- icon share || icon comment || like count || like icon -->
             </div>
-        </article>
+        </div>
 
-        <article>
+        <div class="col">
             <h2>Temas populares</h2>
             <button id="navidad">Navidad en SekaiSchool</button>
+            <br>
             <button class="tema">Eventos</button>
             <button class="tema">Gacha</button>
+            <br>
             <button class="cumple"><i class="fa-regular fa-calendar"></i> Próximos cumpleaños</button>
+            <br>
             <button class="off-topic">Off-topic</button>
-        </article>
-
-        <article>
+            <!--  -->
             <div class="caja">
                 <span class="opcion">Escribir post</span>
                 <div class="caja-content">
@@ -146,7 +153,9 @@
                 <!-- icon poll || icon adjuntar archivo|| --- || icon enviar || icon expandir/reducir -->
                 </div>
             </div>
-        </article>
+        </div>
+    </div>
+</div>
        <!-- 
         -ARRIBA IZQ - 
         - Caja Tendencias
@@ -180,5 +189,6 @@
         (Iconos)
         -->
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
