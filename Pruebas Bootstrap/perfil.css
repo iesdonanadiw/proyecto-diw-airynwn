@@ -285,3 +285,31 @@ div.caja:nth-child(1) {
     background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
     border-radius: 20px;
 }
+
+button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border: none;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+#cumple {
+    background: linear-gradient(93.58deg, #A022A8 0%, #4254F5 100%); 
+    border-radius: 30px;
+}
+
+#grupo {
+    background: #EE1166;
+    border-radius: 30px;
+}
+
+.fa-circle {
+    color: #3AA89B;
+}
+
+span a {
+    color: #4DF6C6;
+    text-decoration: none;
+    font-weight: bold;
+}

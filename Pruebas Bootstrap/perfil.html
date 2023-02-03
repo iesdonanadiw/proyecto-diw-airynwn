@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="perfil.css">
+    <script src="https://kit.fontawesome.com/5b4a872535.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         body {
@@ -80,23 +81,37 @@
             </div>
                 <!--  -->
             <div class="col">
-                <h2>Perfil de Laura</h2>     
-                <div class="caja">
-                    <div class="caja-content">
-                        <span>hola esto es una biografia</span>
+                <h2>Perfil de Laura</h2>
+                <!-- flex de media object bootstrap -->
+                <div class="caja d-flex">
+                    <div class="caja-content flex-grow-1 ms-3">
+                        <span>
+                            hola esto es una biografia
+                        </span>
                         <ul>
-                            <li>Colocar el chibi dentro de la caja de biografía (aquí)</li>
+                            <li>Colocar el chibi a la derecha</li>
                             <li>Avisar del cambio de fuente en "Perfil de xyz"</li>
                             <li>Los "botones" de datos del juego (como un input con un icono pero en su lugar es la imagen?)</li>
                             <li>Hacer que la lista de cartas sea order-last en móvil + tabs</li>
                         </ul>
+                        <div class="flex-shrink-0 align-self-end">
+                            <img src="img/akito_chibi.png" alt="Akito Chibi">
+                        </div>
                     </div>
                     <!-- ! Aquí dentro va el chibi de personaje favorito -->
                 </div>
-                <span>IconBotón Cumpleaños</span>
-                <span>Grupo favorito</span>
-                <span>Twitter</span>
-                <span>Discord</span>
+                <button id="cumple"><i class="fa-solid fa-cake-candles"></i>14/09/2001</button>
+                <button id="grupo">Vivid BAD SQUAD</button>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                </span> 
+                <span><a href="https://twitter.com/airynwn" target="_blank">@airynwn</a></span>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-brands fa-discord fa-stack-1x fa-inverse"></i>
+                </span>
+                <span><a href="https://discord.com" target="_blank">Laura#7953</a></span>
             </div>
         </div>
         </div>
