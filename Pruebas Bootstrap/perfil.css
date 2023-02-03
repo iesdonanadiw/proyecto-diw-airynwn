@@ -135,6 +135,7 @@ nav {
     background-clip: padding-box, border-box; */
     /* ! Problema: Con el background-image hay que darle un color de fondo
     ! y la idea de la caja es que sea transparente */
+    /* ? Solución: crearle el degradado a mano y ya */
 }
 
 .caja-content {
