@@ -122,17 +122,17 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
-    border: 1px solid;
-    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+    /* border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
     display: flex;
     flex-direction: column;
     /* ! Probar con background-image en vez de border-image */
-    /* border-radius: 20px;
+    border-radius: 20px;
     border: solid 1px transparent;
     background-image: linear-gradient(#2F2957, #2F2957),
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
-    background-clip: padding-box, border-box; */
+    background-clip: padding-box, border-box;
     /* ! Problema: Con el background-image hay que darle un color de fondo
     ! y la idea de la caja es que sea transparente */
     /* ? Solución: crearle el degradado a mano y ya */
@@ -220,7 +220,7 @@ main {
     background-clip: padding-box, border-box; */
     /* ! Prueba 2: Funciona pero es rectangular
     ! Unfortunately border-image does not work as expected with border-radius yet. :( */
-    /* border-radius: 20px; */
+    border-radius: 20px;
     background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
