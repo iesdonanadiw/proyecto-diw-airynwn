@@ -26,108 +26,111 @@
     <style>
       body {
         color: white;
-        -webkit-text-stroke: 0.5px #F90;
+        -webkit-text-stroke: 0.25px #F90;
       }
     </style>
   </head>
   <body>
-    <!-- Navbar -->
-    <header>
-      <!-- Logo a la izquierda -->
-      <figure>
-          <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
-      </figure>
-      <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
-      <nav>
-          <a href="index.html">Inicio</a>
-          <a href="cartas.html">Cartas</a>
-                          <!-- ************ MODAL ************ -->
-          <div class="modal">
-              <span>Personajes</span>
-              <div class="modal-content">
-                  <div class="caja">
-                      <span class="opcion">Personaje</span>
-                      <div class="caja-content">
-                          aaaaaaa
-                          aaaaaaaaaaaaaaaaaaaaaaaa
-                          aaaaaaaaaaaaaaaaa
-                          aaaaaaaaaaaa
-                          aa
-                          aaaaaaaaaaaa
-                          2433232423
-                          3242323
-                      </div>
-                  </div>
-              </div>
-          </div>
-                          <!-- ************ DROPDOWN MENU ************ -->
-          <div class="dropdown">
-              <a href="comunidad.html">Comunidad</a>
-              <div class="dropdown-content">
-                  <a href="ln.html">Leo/need</a>
-                  <a href="mmj.html">MORE MORE JUMP!</a>
-                  <a href="vbs.html">Vivid BAD SQUAD</a>
-                  <a href="wxs.html">Wonderlands x Showtime</a>
-                  <a href="25ji.html">25-ji, Nightcord de.</a>
-              </div>
-          </div>
-      </nav>
-      <a href="login.html" id="login">Iniciar sesión</a>
-      <!-- Botón Iniciar sesión || Icon + Username -->
-  </header>
+    <nav class="navbar navbar-expand-lg navbar-dark header">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img id="logo" src="img/logo.png" alt="Logo SekaiSchool"></img>
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="cartas.html">Cartas</a>
+                </li>
+                <!-- ! ABRIR MODAL PERSONAJES (BOTÓN :CHECKED -> VENTANA MODAL) -->
+                <li class="nav-item">
+                  <a class="nav-link active" href="mizuki.html">Personajes</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="comunidad.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Comunidad
+                  </a>
+                  <!-- !Ver de cambiar el fondo este. Me gustaría que se "clipeara" el degradado del header para estar al mismo nivel -->
+                  <ul class="dropdown-menu header" style="border: none;">
+                    <li><a class="dropdown-item text-white" href="ln.html">Leo/need</a></li>
+                    <li><a class="dropdown-item text-white" href="mmj.html">MORE MORE JUMP!</a></li>
+                    <li><a class="dropdown-item text-white" href="vbs.html">Vivid BAD SQUAD</a></li>
+                    <li><a class="dropdown-item text-white" href="wxs.html">Wonderlands x Showtime</a></li>
+                    <li><a class="dropdown-item text-white" href="25ji.html">25-ji, Nightcord de.</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <span class="navbar-text">
+              <a href="login.html" id="test">Iniciar sesión</a>
+          </span>
+        </div>
+      </div>
+    </nav>
   <!--  -->
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="panel">
-              <span class="titulo">Historia</span>
+          <div class="col">
+            <img src="img/wxs-logo.webp" alt="Logo WxS" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row">
+        <!--  -->
+          <div class="col-12 col-md-6">
+            <img src="img/wxs.webp" alt="WxS" class="img-fluid" />
+          </div>
+        <!--  -->
+          <div class="col order-last order-md-first order-lg-first align-self-center">
+          <!--  -->
+            <div class="panel espacio">
+              <span class="titulo">Miembros</span>
               <div class="panel-content">
-                <p>
+                <span>Tsukasa Tenma</span>
+                <span>Emu Otori</span>
+                <span>Nene Kusanagi</span>
+                <span>Rui Kamishiro</span>
+              </div>
+            </div>
+          </div>
+        <!--  -->
+          <div class="col align-self-center">
+            <div class="panel espacio">
+              <span class="titulo">Virtual Singers</span>
+              <div class="panel-content">
+                <span>Miku Hatsune</span>
+                <span>Rin Kagamine</span>
+                <span>Len Kagamine</span>
+                <span>Luka Megurine</span>
+                <span>MEIKO</span>
+                <span>KAITO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="espacio">
+              <h2>Historia</h2>
+              <div class="caja-content">
+                <span>
                   Tras fracasar en su audición, Tsukasa es contratado por Emu para devolver al
                   Phoenix Wonderland Stage a su antigua gloria con increíbles actuaciones.
                   Ambos actores reclutan al director de escena y experto en robótica Rui
                   y a la tímida cantante Nene, junto con su robot réplica, Nene-Robo.
-                  </p>
-                  <p>
-                  Mientras Emu intenta convencer a Tsukasa de unirse a la compañía
-                  Phoenix Wonderland, Tsukasa descubre una canción llamada "Untitled" en su teléfono.
-                  Al reproducirla, ambos son transportados al SEKAI, donde conocerán a Miku, KAITO
-                  y los peluches con los que actúan.
-                </p>
-              </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="col">
-          <img src="img/wxs-logo.webp" alt="Logo WxS" height="100" />
-          <img src="img/wxs.webp" alt="WxS" width="500" height="385" />
-        </div>
-        <!--  -->
-        <div class="col">
-          <!--  -->
-          <div class="panel">
-            <span class="titulo">Miembros</span>
-            <div class="panel-content">
-              <span>Tsukasa Tenma</span>
-              <span>Emu Otori</span>
-              <span>Nene Kusanagi</span>
-              <span>Rui Kamishiro</span>
+              </span>
+              <span>
+                Mientras Emu intenta convencer a Tsukasa de unirse a la compañía
+                Phoenix Wonderland, Tsukasa descubre una canción llamada "Untitled" en su teléfono.
+                Al reproducirla, ambos son transportados al SEKAI, donde conocerán a Miku, KAITO
+                y los peluches con los que actúan.
+              </span>
             </div>
           </div>
-        <!--  -->
-          <div class="panel">
-            <span class="titulo">Virtual Singers</span>
-            <div class="panel-content">
-              <span>Miku Hatsune</span>
-              <span>Rin Kagamine</span>
-              <span>Len Kagamine</span>
-              <span>Luka Megurine</span>
-              <span>MEIKO</span>
-              <span>KAITO</span>
-            </div>
-          </div>
-          
         </div>
         </div>
       </div>

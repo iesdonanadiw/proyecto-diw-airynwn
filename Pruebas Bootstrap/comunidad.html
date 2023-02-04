@@ -26,50 +26,46 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <!-- Logo a la izquierda -->
-        <figure>
-            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
-        </figure>
-        <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="cartas.html">Cartas</a>
-                            <!-- ************ MODAL ************ -->
-            <div class="modal">
-                <span>Personajes</span>
-                <div class="modal-content">
-                    <div class="caja">
-                        <span class="opcion">Personaje</span>
-                        <div class="caja-content">
-                            aaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaa
-                            aa
-                            aaaaaaaaaaaa
-                            2433232423
-                            3242323
-                        </div>
-                    </div>
-                </div>
-            </div>
-                            <!-- ************ DROPDOWN MENU ************ -->
-            <div class="dropdown">
-                <a href="comunidad.html">Comunidad</a>
-                <div class="dropdown-content">
-                    <a href="ln.html">Leo/need</a>
-                    <a href="mmj.html">MORE MORE JUMP!</a>
-                    <a href="vbs.html">Vivid BAD SQUAD</a>
-                    <a href="wxs.html">Wonderlands x Showtime</a>
-                    <a href="25ji.html">25-ji, Nightcord de.</a>
-                </div>
-            </div>
-        </nav>
-        <a href="login.html" id="login">Iniciar sesión</a>
-        <!-- Botón Iniciar sesión || Icon + Username -->
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.png" alt="Logo SekaiSchool"></img>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="cartas.html">Cartas</a>
+                  </li>
+                  <!-- ! ABRIR MODAL PERSONAJES (BOTÓN :CHECKED -> VENTANA MODAL) -->
+                  <li class="nav-item">
+                    <a class="nav-link active" href="mizuki.html">Personajes</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="comunidad.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Comunidad
+                    </a>
+                    <!-- !Ver de cambiar el fondo este. Me gustaría que se "clipeara" el degradado del header para estar al mismo nivel -->
+                    <ul class="dropdown-menu header" style="border: none;">
+                      <li><a class="dropdown-item text-white" href="ln.html">Leo/need</a></li>
+                      <li><a class="dropdown-item text-white" href="mmj.html">MORE MORE JUMP!</a></li>
+                      <li><a class="dropdown-item text-white" href="vbs.html">Vivid BAD SQUAD</a></li>
+                      <li><a class="dropdown-item text-white" href="wxs.html">Wonderlands x Showtime</a></li>
+                      <li><a class="dropdown-item text-white" href="25ji.html">25-ji, Nightcord de.</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <a href="login.html" id="test">Iniciar sesión</a>
+            </span>
+          </div>
+        </div>
+      </nav>
                             <!-- ************ COMUNIDAD ************ -->
     <main>
         <!-- Tendencias -->
