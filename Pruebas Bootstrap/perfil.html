@@ -26,96 +26,122 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <!-- Logo a la izquierda -->
-        <figure>
-            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
-        </figure>
-        <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="cartas.html">Cartas</a>
-                            <!-- ************ MODAL ************ -->
-            <div class="modal">
-                <span>Personajes</span>
-                <div class="modal-content">
-                    <div class="caja">
-                        <span class="opcion">Personaje</span>
-                        <div class="caja-content">
-                            aaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaa
-                            aa
-                            aaaaaaaaaaaa
-                            2433232423
-                            3242323
-                        </div>
-                    </div>
-                </div>
-            </div>
-                            <!-- ************ DROPDOWN MENU ************ -->
-            <div class="dropdown">
-                <a href="comunidad.html">Comunidad</a>
-                <div class="dropdown-content">
-                    <a href="ln.html">Leo/need</a>
-                    <a href="mmj.html">MORE MORE JUMP!</a>
-                    <a href="vbs.html">Vivid BAD SQUAD</a>
-                    <a href="wxs.html">Wonderlands x Showtime</a>
-                    <a href="25ji.html">25-ji, Nightcord de.</a>
-                </div>
-            </div>
-        </nav>
-        <a href="login.html" id="login">Iniciar sesión</a>
-        <!-- Botón Iniciar sesión || Icon + Username -->
-    </header>
-    <!--  -->
+    <nav class="navbar navbar-expand-lg navbar-dark header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.png" alt="Logo SekaiSchool"></img>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="cartas.html">Cartas</a>
+                  </li>
+                  <!-- ! ABRIR MODAL PERSONAJES (BOTÓN :CHECKED -> VENTANA MODAL) -->
+                  <li class="nav-item">
+                    <a class="nav-link active" href="mizuki.html">Personajes</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="comunidad.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Comunidad
+                    </a>
+                    <!-- !Ver de cambiar el fondo este. Me gustaría que se "clipeara" el degradado del header para estar al mismo nivel -->
+                    <ul class="dropdown-menu header" style="border: none;">
+                      <li><a class="dropdown-item text-white" href="ln.html">Leo/need</a></li>
+                      <li><a class="dropdown-item text-white" href="mmj.html">MORE MORE JUMP!</a></li>
+                      <li><a class="dropdown-item text-white" href="vbs.html">Vivid BAD SQUAD</a></li>
+                      <li><a class="dropdown-item text-white" href="wxs.html">Wonderlands x Showtime</a></li>
+                      <li><a class="dropdown-item text-white" href="25ji.html">25-ji, Nightcord de.</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <a href="login.html" id="test">Iniciar sesión</a>
+            </span>
+          </div>
+        </div>
+      </nav>
     <main>
     <div class="container contenedor">
         <div class="row">
             <!-- ! Hacer que el avatar vaya por separado en otra caja y que la caja de biografía tenga tamaño fijo -->
-            <div class="col-2">
+            <div class="col-lg-3 col-md-6">
                 <div class="caja">
-                        <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="img-fluid">
+                        <img src="img/avatar-nino.jpg" alt="Nino Avatar">
                     </div>
             </div>
                 <!--  -->
             <div class="col">
                 <h2>Perfil de Laura</h2>
                 <!-- flex de media object bootstrap -->
-                <div class="caja d-flex " style="flex-direction: initial;">
+                <div class="caja d-flex" style="flex-direction: initial;">
                     <div class="caja-content flex-grow-1 ms-3">
                         <span>
                             hola esto es una biografia
+                            apapapapapapa
+                            papapapapapa
+                            papapapa
+                            apaapaapapap
+                            wewewewewewew
+                            wewewewew
+                            ewwewewwewew
                         </span>
-                        <ul>
-                            <li>Colocar el chibi a la derecha</li>
+                        <!-- <ul>
                             <li>Avisar del cambio de fuente en "Perfil de xyz"</li>
                             <li>Los "botones" de datos del juego (como un input con un icono pero en su lugar es la imagen?)</li>
                             <li>Hacer que la lista de cartas sea order-last en móvil + tabs</li>
-                        </ul>
+                        </ul> -->
                        
                     </div>
                     <!-- ! Aquí dentro va el chibi de personaje favorito -->
-                    <div class="flex-shrink-0 align-self-end">
+                    <div class="flex-shrink-0 align-self-end align-self-center">
                         <img src="img/akito_chibi.png" alt="Akito Chibi">
                     </div>
                 </div>
 
-                <div>
-                    <button id="cumple"><i class="fa-solid fa-cake-candles"></i>14/09/2001</button>
-                    <button id="grupo">Vivid BAD SQUAD</button>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span> 
-                    <span><a href="https://twitter.com/airynwn" target="_blank">@airynwn</a></span>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-brands fa-discord fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span><a href="https://discord.com" target="_blank">Laura#7953</a></span>
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <button id="cumple"><i class="fa-solid fa-cake-candles"></i>14/09/2001</button>
+                            <button id="grupo">Vivid BAD SQUAD</button>
+                        </div>
+                        <div class="col">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            <span><a href="https://twitter.com/airynwn" target="_blank">@airynwn</a></span>
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-brands fa-discord fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span><a href="https://discord.com" target="_blank">Laura#7953</a></span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="botones">
+                    <div class="espacio">
+                        <button id="cumple"><i class="fa-solid fa-cake-candles"></i>14/09/2001</button>
+                        <button id="grupo">Vivid BAD SQUAD</button>
+                    </div>
+                    <div class="espacio">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span> 
+                        <span><a href="https://twitter.com/airynwn" target="_blank">@airynwn</a></span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-brands fa-discord fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span><a href="https://discord.com" target="_blank">Laura#7953</a></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,7 +166,7 @@
             <div class="col-md-6 contenedor">
                 <div class="container-fluid">
                     <!-- g-3 (gutter-3) da separación horizontal y vertical entre columnas según pantalla -->
-                    <div class="row row-cols-3 row-cols-md-5 g-3">
+                    <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 g-3">
                         <div class="col">
                             <img src="img/card1.webp" alt=" " class="img-fluid">
                         </div>
