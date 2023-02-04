@@ -67,16 +67,16 @@
         </div>
       </nav>
     <main>
-    <div class="container contenedor">
-        <div class="row">
+    <div class="container px-0 contenedor">
+        <div class="row gx-0">
             <!-- ! Hacer que el avatar vaya por separado en otra caja y que la caja de biografía tenga tamaño fijo -->
             <div class="col-lg-3 col-md-6">
-                <div class="caja">
-                        <img src="img/avatar-nino.jpg" alt="Nino Avatar">
+                <div class="avatar-bg">
+                        <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="avatar">
                     </div>
             </div>
                 <!--  -->
-            <div class="col">
+            <div class="col px-3">
                 <h2>Perfil de Laura</h2>
                 <!-- flex de media object bootstrap -->
                 <div class="caja d-flex" style="flex-direction: initial;">
@@ -147,7 +147,7 @@
         </div>
         </div>
         <div class="row">
-            <div class="col contenedor">
+            <div class="col contenedor contenedor-padding">
                 <span class="tab">Publicaciones</span>
                 <div class="caja">
                     <span class="titulo">Feliz Navidad</span>
@@ -163,7 +163,9 @@
                 </div>
             </div>
             <!--  -->
-            <div class="col-md-6 contenedor">
+            <!-- <span class="tab">Lista de cartas</span>
+            <span class="tab">Lista de deseos</span> -->
+            <div class="col-md-6 contenedor contenedor-padding">
                 <div class="container-fluid">
                     <!-- g-3 (gutter-3) da separación horizontal y vertical entre columnas según pantalla -->
                     <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 g-3">
@@ -191,7 +193,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col contenedor">
+            <div class="col contenedor contenedor-padding">
                 <!-- ! Hacer los botones con imágenes -->
                 <span class="tab">Datos del juego</span>
                 <span>Rank</span>
