@@ -231,3 +231,7 @@ main {
 strong {
     color: #E4A8CA;
 }
+
+.espacio {
+    margin: 10px 0 10px 0;
+}
