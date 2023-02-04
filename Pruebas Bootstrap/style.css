@@ -129,35 +129,9 @@ nav {
     margin-bottom: 0.5em;
 }
 
-/********************* DROPDOWN MENU  *********************/
-
-.dropdown {
-    overflow: hidden;
-}
-
-.dropdown-content {
-    z-index: 1;
-    position: fixed; /*!Para que se ponga encima del main en vez de agrandar el header*/
-    background: linear-gradient(132.76deg, #4DF6C6 0%, #4254F5 81.78%);
-    display: none;
-    /* min-width: 160px; */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-
-.dropdown-content a {
-    /* float: none; */
-    display: block;
-    padding: 12px 16px;
-    text-decoration: none;
-    text-align: center;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 /********************* INDEX  *********************/
 
-main {
+body {
     /* que */
     /* background-image: url("img/miku_home.png");
     background-position: center;
@@ -166,7 +140,7 @@ main {
     /* filter: blur(2.5px); */
     background-image: url("img/background.png");
     text-align: center;
-    padding: 12%; 
+    /* padding: 12%;  */
     /* TODO resizear bien */
 }
 
@@ -253,7 +227,7 @@ h1 {
     border-radius: 10.8489px;
 }
 
-footer {
+.footer {
     box-sizing: border-box;
     width: 100%;
     display: flex;

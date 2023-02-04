@@ -49,53 +49,10 @@
             </span>
           </div>
         </div>
-      </nav>
+    </nav>
     <main>
-        <div id="fondo"></div>
-        <div class="grid-container">
-            <!-- row 1 (hay que centrar el logo y quitar los div placeholders)-->
-            <div class="vacio">
-                En esta página falta:
-                <ul>
-                    <li>Ajustar el tamaño de los banners</li>
-                    <li>Crear el calendario (API?)</li>
-                    <li>Colocar el fondo centrado y que todo el contenido se pueda ver de una vez en PC. De hecho, estoy pensando en cambiar esta página</li>
-                    <li>Estructurar todo, que todo (incluyendo header y footer) sea un grid ?</li>
-                </ul>
-            </div>
-            <figure>
-                <img src="img/logo.png" alt="Logo SekaiSchool" id="logo-index">
-            </figure>
-            <div class="vacio"></div>
-            <!-- row 2 -->
-            <div id="gacha-actual">
-                <h1>Gacha actual</h1>
-                <!-- tarjeta -->
-                <div class="tarjeta">
-                    <figure>
-                        <img src="img/gacha_actual.webp" alt="Gacha actual" class="logo-asset">
-                    </figure>
-                </div>
-            </div>
-            <div class="calendario">
-                Calendario
-            </div>
-            <div id="evento-actual">
-                <h1>Evento actual</h1>
-                <!-- tarjeta -->
-                <div class="tarjeta">
-                    <figure>
-                        <img src="img/evento_actual.webp" alt="Evento actual" class="logo-asset">
-                    </figure>
-                </div>
-            </div>
-            <!-- row 3 (oocupa 3 columnas) -->
-            <div class="texto">
-                <h1>
-                    ¡Únete a nuestra comunidad dedicada a Project Sekai!
-                </h1>
-            </div>
-        </div>
+        <!-- <div id="fondo"></div> -->
+        aaaaaaaa
         <!-- centro arriba: logo grande -->
         <!-- izq: tarjeta gacha actual -->
         <!-- centro centro: calendario mes actual -->
@@ -104,7 +61,33 @@
         <!-- der: tarjeta evento actual -->
         <!-- centro abajo: texto de promocion -->
     </main>
-    <footer>
+    <div class="container-fluid fixed-bottom" style="background-color: #3AA89B;">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <p class="col-md-4 mb-0 text-white">&copy; 2023 airynwn</p>
+            <a href="" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <h3>SekaiSchool</h3>
+            </a>
+            <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-brands fa-discord fa-stack-1x fa-inverse"></i>
+                </span> 
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <a href="https://twitter.com/airynwn" target="_blank">
+                        <i class="fa fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                    </a>
+                </span> 
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <a href="https://www.youtube.com/@airynwn" target="_blank">
+                        <i class="fa fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                    </a>
+                </span>
+            </div>
+        </footer>
+      </div>
+    <!-- <footer>
         <span>© 2023 airynwn</span>
         <h3>SekaiSchool</h3>
         <div id="icons">
@@ -125,7 +108,7 @@
                 </a>
             </span>
         </div>
-    </footer>
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
