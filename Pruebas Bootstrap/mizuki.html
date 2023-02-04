@@ -5,8 +5,6 @@
     Trivia: Crece cuando encoge el dispositivo. Cuando es muy pequeño, va al final del todo (order-last)
     - Mirar cómo hacer para que el order-last sólo se aplique cuando es pequeño
  -->
- <!-- ! el row gx-5 no da espacio entre elementos, sólo quita márgenes -->
- <!-- !No va order-md-last -->
  <!-- ! Falta espacio entre los elementos (sobre todo en la sección de info de personaje) -->
 <!DOCTYPE html>
 <html lang="en">
@@ -20,95 +18,161 @@
     <style>
         p,
         span,
-        li {
+        li,
+        a {
             color: white;
+        }
+
+        main p,
+        main span,
+        main li{
             -webkit-text-stroke: 0.5px #E4A8CA;
+        }
+
+        /* (login) */
+        #test {
+            /* background: -webkit-linear-gradient(180deg, #EC64F5 0%, #A022A8 100%); */
+            /* -webkit-background-clip: text;
+            background-clip: text; */
+            /* -webkit-text-stroke: 2px transparent; */
+            text-decoration: none;
+            /* padding: 0px 10px; */
+            /* background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%); */
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <!-- Logo a la izquierda -->
-        <figure>
-            <img src="img/logo.png" alt="Logo SekaiSchool" id="logo">
-        </figure>
-        <!-- Menú: Inicio/Cartas/Personajes/Comunidad -->
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="cartas.html">Cartas</a>
-                            <!-- ************ MODAL ************ -->
-            <div class="modal">
-                <!-- ! MODAL: QUE SEA UN BOTÓN CHECKED CON APARIENCIA DE SPAN -->
-                <span>Personajes</span>
-                <div class="modal-content">
-                    <div class="caja">
-                        <span class="opcion">Personaje</span>
-                        <div class="caja-content">
-                            aaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaa
-                            aa
-                            aaaaaaaaaaaa
-                            2433232423
-                            3242323
+    <nav class="navbar navbar-expand-lg navbar-dark header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.png" alt="Logo SekaiSchool"></img>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="cartas.html">Cartas</a>
+                  </li>
+                  <!-- ! ABRIR MODAL PERSONAJES (BOTÓN :CHECKED -> VENTANA MODAL) -->
+                  <li class="nav-item">
+                    <a class="nav-link active" href="mizuki.html">Personajes</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="comunidad.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Comunidad
+                    </a>
+                    <!-- !Ver de cambiar el fondo este. Me gustaría que se "clipeara" el degradado del header para estar al mismo nivel -->
+                    <ul class="dropdown-menu header" style="border: none;">
+                      <li><a class="dropdown-item text-white" href="ln.html">Leo/need</a></li>
+                      <li><a class="dropdown-item text-white" href="mmj.html">MORE MORE JUMP!</a></li>
+                      <li><a class="dropdown-item text-white" href="vbs.html">Vivid BAD SQUAD</a></li>
+                      <li><a class="dropdown-item text-white" href="wxs.html">Wonderlands x Showtime</a></li>
+                      <li><a class="dropdown-item text-white" href="25ji.html">25-ji, Nightcord de.</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <a href="login.html" id="test">Iniciar sesión</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+            <!-- ! Por defecto último (para que salga en móvil), en el resto primero -->
+            <div class="col-lg-3 col-md-auto order-last order-lg-first order-md-first" id="trivia-nav">
+                <h2>Trivia</h2>     
+                <div class="caja">
+                    <div class="caja-content">
+                        <ul>
+                            <li>Mizuki confeccionó los trajes de Rui y Nene tras encontrarse con Rui trabajando con NeneRobo, lo cual vio como muy cutre.</li>
+                            <li>Las flores de la primera carta de cumpleaños de Mizuki son hierba de San Juan, botijas de calabaza y balsaminas.</li>
+                            <li>Su nombre online es Amia.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <!-- ! Arreglar la caja que contiene la imagen para que se ajuste -->
+                    <img src="img/mizuki-stamp.webp" alt="Mizuki Stamp" width="148" height="128">
+                </div>
+                <h2>Relaciones</h2>
+                <!-- ! Poner el contenido de verdad -->
+                <div class="caja">
+                    <div class="caja-content">
+                        <ul>
+                            <li>
+                                <img src="img/ena-circle.png" alt=" " class="img-fluid">
+                                Ena: A Mizuki le gusta molestar a Ena
+                                y la sigue en redes sociales. La mayoría
+                                de las conversaciones de Nightcord son
+                                bromas entre Mizuki y Ena.
+                            </li>
+                        </ul>
+                        <div class="container-fluid">
+                            <!-- g-3 (gutter-3) da separación horizontal y vertical entre columnas según pantalla -->
+                            <div class="row row-cols-4 row-cols-sm-6 row-cols-md-4 g-1">
+                                <div class="col">
+                                    <img src="img/kanade-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/mafuyu-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/miku-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/an-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/tsukasa-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/akito-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/toya-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/kohane-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/nene-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/rui-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/airi-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/shizuku-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/minori-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/haruka-circle.png" alt=" " class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="img/emu-circle.png" alt=" " class="img-fluid">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-                            <!-- ************ DROPDOWN MENU ************ -->
-            <div class="dropdown">
-                <a href="comunidad.html">Comunidad</a>
-                <div class="dropdown-content">
-                    <a href="ln.html">Leo/need</a>
-                    <a href="mmj.html">MORE MORE JUMP!</a>
-                    <a href="vbs.html">Vivid BAD SQUAD</a>
-                    <a href="wxs.html">Wonderlands x Showtime</a>
-                    <a href="25ji.html">25-ji, Nightcord de.</a>
-                </div>
-            </div>
-        </nav>
-        <a href="login.html" id="login">Iniciar sesión</a>
-        <!-- Botón Iniciar sesión || Icon + Username -->
-    </header>
-    <!--  -->
-    <main>
-    <div class="container-fluid">
-        <div class="row">
-        <!-- ! Por defecto último (para que salga en móvil), en el resto primero -->
-        <div class="col-md-auto order-last order-lg-first order-md-first" id="trivia-nav">
-            <h2>Trivia</h2>     
-            <div class="caja">
-                <div class="caja-content">
-                    <ul>
-                        <li>punto 1</li>
-                        <li>punto 2</li>
-                    </ul>
-                </div>
-            </div>
-            <figure class="caja-content">
-                <!-- ! Arreglar la caja que contiene la imagen para que se ajuste -->
-                <img src="img/mizuki-stamp.webp" alt="Mizuki Stamp" width="148" height="128">
-            </figure>
-            <h2>Relaciones</h2>
-            <!-- ! Poner el contenido de verdad -->
-            <div class="caja">
-                <div class="caja-content">
-                    <p>Aquí iría el seleccionado</p>
-                    <span><img src="svg/rainbow_star.png" alt="Estrella"></span>
-                    <span><img src="svg/rainbow_star.png" alt="Estrella"></span>
-                    <span><img src="svg/rainbow_star.png" alt="Estrella"></span>
-                    <span><img src="svg/rainbow_star.png" alt="Estrella"></span>
-                    <span><img src="svg/birthday.png" alt="Cumpleaños/Aniversario"></span>
-                </div>
-            </div>
-        </div>
-        <!-- ! Meterle clase info-pj a cada sección con márgenes para espaciar -->
+            <!-- ! Meterle clase info-pj a cada sección con márgenes para espaciar -->
     <div class="col">
         <div class="container">
             <div class="row">
-                <div class="col-auto">
+                <div class="col-md-12 col-lg-4">
                     <h2>Mizuki Akiyama</h2>
                     <figure class="caja-icons">
                         <img src="img/mizuki.webp" alt="Mizuki Akiyama" class="img-fluid" width="318" height="670">
@@ -173,9 +237,11 @@
             </div>
         </div>
         <!--  -->
-        <div class="col-md-auto">
+        <div class="col-auto">
             <div class="caja">
-                <img src="img/mizuki-1koma.webp" alt="Mizuki 1koma" class="img-fluid" width="404" height="300">
+                <!-- !PONER WIDTH Y HEIGHT ACHICA LA IMAGEN EN PANTALLAS GRANDES PERO DEJA RELLENO EN PEQUEÑAS -->
+                <img src="img/mizuki-1koma.webp" alt="Mizuki 1koma" class="img-fluid">
+                <!-- TODO Achicar la imagen en pantallas grandes (en medianas y pequeñas está perfecto) -->
             </div> 
         </div>
     </div>
