@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+a {
+    color: white;
+    box-sizing: border-box;
+    text-decoration-line: none;
+}
+
+/* TODO La font se ve rara */
+/* ? Se arregla con font weight */
+h3 {
+    color: white;
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.header {
+    background: linear-gradient(90deg, #3AA89B 0%, #9D44FF 100%);
+    /* ? Más bonito el de abajo IMO */
+    /* background: linear-gradient(90deg, #249ABB 0%, #9D44FF 100%); */
+}
+
+/* El figure es más grande que el div */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* TODO Resizear */
+#logo {
+    height: 35px;
+}
+
+/*
+    Display flex para estar en el flexbox header
+    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
+*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+#login {
+    padding: 10px 20px;
+    background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+    border-radius: 6px;
+    border: 1px solid white;
+    /* !!!!!!!!!!!!!!! RECORDAR PONER ESTO EN TODOS LOS CSS !!!!!!!!!!!!!!!!!! vvvvvv */
+    transition: background 1s ease-in;
+}
+
+#login:hover {
+    /* No van las transiciones con los degradados
+    background: linear-gradient(266.29deg, #4254F5 0%, #EC64F5 100%); */
+    /* background-color: #af64f5; lila */
+    background-color: #EC64F5;
+}
+
+/********************* MODAL  *********************/
+
+.modal {
+    overflow: hidden;
+}
+
+.modal-content {
+    z-index: 1;
+    position: absolute;
+    display: none;
+    /* ! FALTA CENTRARLO */
+    left: 300px;
+    top: 300px;
+    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.38) 100%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border-radius: 20px;
+}
+
+.modal:active .modal-content {
+    display: block;
+}
+
+/* ? **Cosas del modal a cambiar***/
+
+.opcion {
+    padding: 0.25em;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    background: #2F2957;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border: solid 1px transparent;
+    background-image: linear-gradient(#2F2957, #2F2957),
+        linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.caja {
+
+    /* ! Fondo y bordes del color correcto, pero no va el border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-content {
+    /* margin-top: 0; */
+    margin: 0.5em 0.5em 0em 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+/* ! no va :first-child ni :nth-child ni :first-of-type NI NADA */
+.caja-content span {
+    margin-bottom: 0.5em;
+}
+
+/********************* DROPDOWN MENU  *********************/
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-content {
+    z-index: 1;
+    position: fixed; /*!Para que se ponga encima del main en vez de agrandar el header*/
+    background: linear-gradient(132.76deg, #4DF6C6 0%, #4254F5 81.78%);
+    display: none;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+.dropdown-content a {
+    /* float: none; */
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/********************* INDEX  *********************/
+
+main {
+    /* que */
+    /* background-image: url("img/miku_home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* filter: blur(2.5px); */
+    background-image: url("img/background.png");
+    text-align: center;
+    padding: 12%; 
+    /* TODO resizear bien */
+}
+
+#fondo {
+    background-image: url("img/miku_home.png");
+    filter: blur(2.5px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    gap: 5%;
+    /* align-items: center; */
+    /* align-content: center; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+}
+
+.texto {
+    grid-column: 1/4;
+}
+
+#logo-index {
+    height: 70px;
+}
+
+.logo-asset {
+    height: 200px;
+}
+
+h1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* ! Probar con mix-blend-mode cuando esté listo el fondo de Miku */
+    background-blend-mode: multiply;
+    -webkit-text-stroke: 3px transparent;
+    /* color: #232d2d; */
+    /* border: 2px solid; */
+    /* border-color: linear-gradient(180deg, #3AA89B 0%, #4254F5 100%); */
+}
+
+#gacha-actual h1,
+.texto h1 {
+    background: -webkit-linear-gradient(180deg, #3AA89B 0%, #4254F5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#evento-actual h1 {
+    background: -webkit-linear-gradient(180deg, #EC64F5 0%, #A022A8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+.tarjeta {
+    background: linear-gradient(0deg, rgba(77, 246, 198, 0.2), rgba(77, 246, 198, 0.2)),
+        linear-gradient(123.16deg, rgba(255, 255, 255, 0.095) 6.41%, rgba(255, 255, 255, 0.065) 100.1%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* backdrop-filter: blur(20px); */
+    border-radius: 10.8489px;
+}
+
+#evento-actual .tarjeta {
+    background: linear-gradient(0deg, rgba(236, 100, 245, 0.2), rgba(236, 100, 245, 0.2)),
+        linear-gradient(123.16deg, rgba(255, 255, 255, 0.095) 6.41%, rgba(255, 255, 255, 0.065) 100.1%);
+}
+
+/* TODO WIP */
+.calendario {
+    background: linear-gradient(0deg, rgba(236, 100, 245, 0.2), rgba(236, 100, 245, 0.2)),
+    linear-gradient(123.16deg, rgba(255, 255, 255, 0.095) 6.41%, rgba(255, 255, 255, 0.065) 100.1%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 10.8489px;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    background-color: #3AA89B;
+    bottom: 0;
+    padding: 0 10%;
+    position: fixed;
+}
+
+/* Fondo para iconos */
+.fa-circle {
+    opacity: 0.1;
+}
