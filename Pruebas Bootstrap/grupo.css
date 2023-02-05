@@ -288,3 +288,15 @@ ul li {
 .caja-relleno .columna {
     width: 100%;
 }
+
+.avatar-foro {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 576px) {
+    .avatar-foro {
+        width: 150px;
+        height: auto;
+    }
+}
