@@ -259,21 +259,20 @@ ul li {
     margin-bottom: 0.5em;
 }
 
-.caja-icons {
-    margin: 0.5em;
-}
-
 .espacio {
     margin-top: 10px;
 }
 
 .caja-icons {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     text-align: justify;
     height: 100%;
+}
+
+.center {
+    justify-content: center;
 }
 
 .icons {
