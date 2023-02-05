@@ -223,6 +223,9 @@ ul {
     -webkit-backdrop-filter: blur(12.5px);
     border: 1px solid;
     border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+}
+
+.columna {
     display: flex;
     flex-direction: column;
 }
@@ -251,4 +254,18 @@ ul li {
 
 .espacio {
     margin-top: 10px;
+}
+
+.avatar-bg {
+    display: flex;
+    flex-direction: column;
+    background-color: #DDFF00;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.avatar {
+    border-radius: 20px;
+    padding: 5px;
+    background: #2F2957;
 }
