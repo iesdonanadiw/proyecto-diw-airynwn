@@ -267,7 +267,7 @@ ul li {
     margin-top: 10px;
 }
 
-.caja-likes {
+.caja-icons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -276,7 +276,15 @@ ul li {
     height: 100%;
 }
 
-.likes {
+.icons {
     align-self: flex-end;
-    margin-bottom: 0.5em;
+    margin: 0.5em;
+}
+
+.caja-relleno {
+    display: flex;
+}
+
+.caja-relleno .columna {
+    width: 100%;
 }

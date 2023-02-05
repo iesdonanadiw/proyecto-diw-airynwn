@@ -143,27 +143,28 @@
         
         <div class="row gx-2" id="foro">
           <!-- ******* PRIMERA COLUMNA: COMENTARIOS -->
-          <div class="col-8 ps-0"> <!-- COLUMNA DE COMENTARIOS -->
+          <div class="col-md-8 ps-0"> <!-- COLUMNA DE COMENTARIOS -->
               <!-- El container está dentro de la caja -->
               <div class="container-fluid">
                 <!-- INTERIOR DE LA CAJA -->
                 <!-- FILA 1: PRIMER COMENTARIO (COPIAR PARA MAS COMENTARIO)-->
                 <div class="row caja">
-                  <div class="col-auto ps-0"> <!-- ps-0 quita padding-left -->
+                  <div class="col-auto ps-0 pe-0"> <!-- ps-0 quita padding-left -->
                     <div class="caja"> <!-- fondo del avatar -->
-                    <!-- ! HACER QUE EL ICON TENGA EL USUARIO DEBAJO Y EL COMENTARIO A LA DERECHA -->
                       <div class="columna avatar"> <!-- contenedor de avatar-->
                         <div class="caja-content">
-                          <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="img-fluid" width="150" height="150">
+                          <!-- ! Hacer que >450: width=150 || <450: class="img-fluid" -->
+                          <!-- <img src="img/avatar-nino.jpg" alt="Nino Avatar" width="150"> -->
+                          <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="img-fluid">
                         </div>
                         <span class="opcion">hola</span> <!-- nombre de usuario -->
                       </div>
                     </div>
                   </div>
                   <div class="col">
-                    <div class="caja-likes">
+                    <div class="caja-icons">
                       <p>texto esto es un comentario (deberira ir en fila con el avatar)</p>
-                      <div class="likes">
+                      <div class="icons">
                         432543<i class="fa-solid fa-heart"></i>
                       </div>
                     </div>
@@ -173,27 +174,28 @@
                 <div class="espacio"></div> <!-- SEPARACIÓN ENTRE COMENTARIOS -->
                 <!-- FILA 1: PRIMER COMENTARIO (COPIAR PARA MáS COMENTARIO)-->
                 <div class="row caja">
-                  <div class="col-auto ps-0"> <!-- ps-0 quita padding-left -->
+                  <div class="col-auto ps-0 pe-0"> <!-- ps-0 quita padding-left, pe-0 right -->
                     <div class="caja"> <!-- fondo del avatar -->
-                    <!-- ! HACER QUE EL ICON TENGA EL USUARIO DEBAJO Y EL COMENTARIO A LA DERECHA -->
                       <div class="columna avatar"> <!-- contenedor de avatar-->
                         <div class="caja-content">
-                          <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="img-fluid" width="150" height="150">
+                          <!-- <img src="img/avatar-nino.jpg" alt="Nino Avatar" width="150"> -->
+                          <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="img-fluid">
                         </div>
                         <span class="opcion">hola</span> <!-- nombre de usuario -->
                       </div>
                     </div>
                   </div>
                   <div class="col">
-                    <div class="caja-likes">
-                      <p>texto esto es un comentario (deberira ir en fila con el avatar)</p>
-                      <div class="likes">
+                    <div class="caja-icons">
+                    <p>texto esto es un comentario (deberira ir en fila con el avatar)</p>
+                      <div class="icons">
                         432543<i class="fa-solid fa-heart"></i>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- fin comentario -->
+                <div class="espacio"></div> <!-- SEPARACIÓN ENTRE COMENTARIOS -->
               </div>
           </div>
           <!-- ******* SEGUNDA COLUMNA: ICONOS VOLVER ARRIBA/ABAJO -->
@@ -204,14 +206,16 @@
             </div>
           </div>
           <!-- ******* TERCERA COLUMNA: ESCRIBIR POST -->
-          <div class="col">
+          <div class="col caja-relleno">
             <div class="caja columna">
               <span class="opcion">Escribir post</span>
               <p>blablablabla</p>
               <!-- Esquina inferior derecha -->
-              <div class="caja-icons" style="text-align: end;">
-                <i class="fa-solid fa-pen-to-square"></i>
-                <i class="fa-solid fa-minimize"></i>
+              <div class="caja-icons">
+                <div class="icons">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <i class="fa-solid fa-minimize"></i>
+                </div>
               </div>
             </div>
           </div>
