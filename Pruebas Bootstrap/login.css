@@ -126,8 +126,10 @@ nav {
 
 main {
     background-image: url("../img/background.png");
-    background-size: cover;
-    height: 100vh;
+    /* background-size: cover;
+    height: 100vh; */
+    text-align: center;
+    padding: 1em;
     /* background:
     linear-gradient(0deg, #2A2348, #2A2348),
     linear-gradient(180deg, rgba(66, 84, 245, 0.25) 0%, rgba(77, 246, 198, 0.25) 99.99%, rgba(66, 84, 245, 0.25) 100%),
@@ -135,6 +137,10 @@ main {
     warning: gradient uses a rotation that is not supported by CSS and may not behave as expected
     linear-gradient(180deg, rgba(160, 34, 168, 0.208) 0%, rgba(236, 100, 245, 0.384) 50.52%, rgba(66, 84, 245, 0.312) 100%);
     background-blend-mode: color-burn, normal, lighten; */
+}
+
+.row > * {
+    width: auto !important;
 }
 
 hr {
