@@ -140,42 +140,26 @@
         </div>
         <!-- --------------------------- -->
         <!-- --------------------------- -->
-        <div class="row g-0" id="foro">
-          <div class="col">
-            <div class="container-fluid"> <!-- ?COTENEDOR DE COMENTARIOS -->
-              <div class="row"> <!-- ?PRIMER COMENTARIO -->
-                <div class="col-auto ps-0">
-                  <div class="caja"> <!-- fondo del comentario para avatar+post -->
-                  <!-- ! HACER QUE EL ICON TENGA EL USUARIO DEBAJO Y EL COMENTARIO A LA DERECHA -->
-                    <div class="caja columna avatar"> <!-- fondo para avatar-->
-                      <span class="opcion">hola</span> <!-- nombre de usuario -->
-                      <div class="caja-content">
-                        <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="img-fluid" width="150" height="150">
+        
+        <div class="row">
+          <div class="col"> <!-- COLUMNA DE COMENTARIOS -->
+            <div class="caja"> <!-- Esta caja contiene todo el foro -->
+              <!-- El container está dentro de la caja -->
+              <div class="container-fluid">
+                <!-- INTERIOR DE LA CAJA -->
+                <div class="row caja"> <!-- FILA 1: PRIMER COMENTARIO -->
+                  <div class="col-auto ps-0">
+                    <div class="caja"> <!-- fondo del comentario para avatar+post -->
+                    <!-- ! HACER QUE EL ICON TENGA EL USUARIO DEBAJO Y EL COMENTARIO A LA DERECHA -->
+                      <div class="columna avatar"> <!-- contenedor de avatar-->
+                        <span class="opcion">hola</span> <!-- nombre de usuario -->
+                        <div class="caja-content">
+                          <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="img-fluid" width="150" height="150">
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col"> <!-- segunda columna, para comentario -->
-                    <div class="caja-content">
-                      <p>texto esto es un comentario (deberira ir en fila con el avatar)</p>
-                      <div class="likes">
-                        432543<i class="fa-solid fa-heart"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row"> <!-- ?SEGUNDO COMENTARIO -->
-                <div class="col-auto ps-0">
-                  <div class="caja">
-                  <!-- ! HACER QUE EL ICON TENGA EL USUARIO DEBAJO Y EL COMENTARIO A LA DERECHA -->
-                    <div class="caja columna avatar">
-                      <span class="opcion">hola</span>
-                      <div class="caja-content">
-                        <img src="img/card3.webp" alt="Nino Avatar" class="img-fluid" width="150" height="150">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
+                  <div class="col-auto">
                     <div class="caja-content">
                       <p>texto esto es un comentario (deberira ir en fila con el avatar)</p>
                       <div class="likes">
@@ -187,30 +171,9 @@
               </div>
             </div>
           </div>
-          <div class="col-auto">
-            <i class="fa-regular fa-circle-up"></i>
-                <!-- <i class="fa-regular fa-circle-down"></i> -->
-          </div>
-          <!-- Gap entre sections: icon volver arriba del todo/ ir abajo del todo -->
-          <!-- on top of each other -->
-          <div class="col-md-3 col-12">
-            <div class="caja columna">
-              <span class="opcion">Escribir post</span>
-              <p>blablablabla</p>
-              <!-- Esquina inferior derecha -->
-              <div class="caja-icons" style="text-align: end;">
-                <i class="fa-solid fa-pen-to-square"></i>
-                <i class="fa-solid fa-minimize"></i>
-              </div>
-            </div>
-          </div>
-        <!-- Esquina superior derecha -->
-          <div class="col-auto">
-            <a href="wxs-foro.html">
-              <i class="fa-solid fa-maximize"></i>
-            </a>
-          </div>
-        </div> <!-- cierre de row -->
+        </div>
+      </div>
+
       </div> <!-- cierre de container -->
     </main>
 
