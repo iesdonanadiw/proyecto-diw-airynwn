@@ -228,6 +228,11 @@ ul {
     flex-direction: column;
 }
 
+.abajo {
+    position: absolute;
+    bottom: 0;
+}
+
 ul li {
     display: inline;
     list-style: none;
@@ -262,6 +267,16 @@ ul li {
     margin-top: 10px;
 }
 
+.caja-likes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: justify;
+    height: 100%;
+}
+
 .likes {
-    text-align: end;
+    align-self: flex-end;
+    margin-bottom: 0.5em;
 }
