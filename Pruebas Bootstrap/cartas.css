@@ -13,7 +13,6 @@ a {
 }
 
 h2 {
-    /* ! Se ve demasiado oscuro?????????? Y tiene un efecto de bisel y relieve extraño */
     font-family: 'Fredoka One', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -21,11 +20,9 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); */
 }
 
-/* TODO La font se ve rara */
-/* ? Se arregla con font weight */
 h3 {
     color: white;
     font-family: 'Fredoka One', sans-serif;
@@ -100,10 +97,6 @@ nav {
 }
 
 main {
-    /* background-image: url("img/miku_home.png");
-    background-position: center;
-    background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
     background-image: url("img/background.png");
     text-align: center;
     padding: 1em;
@@ -148,19 +141,6 @@ main {
     border-radius: 20px;
 } */
 
-/* ? test select */
-/* select {
-    background: #2F2957;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    border-radius: 20px 20px 0px 0px;
-    color: white;
-    text-align: center;
-}
-
-option {
-    background-color: rgba(0, 0, 0, 0.38);
-} */
 /* ? test lista*/
 .opcion {
     padding: 0.25em;
@@ -229,7 +209,6 @@ button {
     linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    /* boton bonito SIUUUUUU */
     /* background: #2F2957; 
     backdrop-filter: blur(12.5px);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -252,7 +231,7 @@ i {
 }
 
 #cartas {
-    /* TODO grid */
+    /* TODO 2 en 1 caja con transform || 1 en 1 caja con transition hover */
     display: grid;
     /* ! Que las cartas se vean con un hueco tiene que ver con esto: */
     grid-template-columns: repeat(2, 1fr);
