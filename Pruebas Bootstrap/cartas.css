@@ -104,11 +104,8 @@ main {
 }
 
 #filter-nav {
-    margin: 0.5em;
-    padding: 1.5em;
-    /* TODO Poner borde degradado */
-    /* background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%); */
-    /* ! Prueba 1 */
+    padding: 1em;
+
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
@@ -118,13 +115,6 @@ main {
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    /* ! Prueba 2: Funciona pero es rectangular
-    ! Unfortunately border-image does not work as expected with border-radius yet. :( */
-    /* border-radius: 20px; */
-    /* background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid;
-    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
 }
 
 #filter-wrapper {
@@ -133,14 +123,6 @@ main {
     gap: 1em;
 }
 
-/* .caja {
-    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.38) 100%);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    border-radius: 20px;
-} */
-
-/* ? test lista*/
 .opcion {
     padding: 0.25em;
     color: white;
@@ -165,25 +147,20 @@ main {
     linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    /* ! Fondo y bordes del color correcto, pero no va el border radius */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
-    /* border: 1px solid;
-    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
     display: flex;
     flex-direction: column;
 }
 
 .caja-content {
-    /* margin-top: 0; */
     margin: 0.5em 0.5em 0em 0.5em;
     display: flex;
     flex-direction: column;
     text-align: initial;
 }
 
-/* ! no va :first-child ni :nth-child ni :first-of-type NI NADA */
 .caja-content span {
     margin-bottom: 0.5em;
 }
@@ -198,26 +175,15 @@ ul li {
 }
 
 button.buscar {
-    /* !Nuevo (Mejor, creo) */
     background: #2F2957;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     border-radius: 20px;
-    border: solid 1px transparent;
+    border: solid 2px transparent;
     background-image: linear-gradient(#2F2957, #2F2957),
     linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    /* background: #2F2957; 
-    backdrop-filter: blur(12.5px);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border: solid 2px transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(#2F2957, #2F2957),
-    linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box; */
-    /* padding: 1% 10% 1% 1%; */
     padding: 0.5em;
     width: 100%;
     color: white;
@@ -287,10 +253,17 @@ i {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     border: solid 1px transparent;
-    border-radius: 0 0 20px 20px;
     background-image: linear-gradient(#2F2957, #2F2957),
     linear-gradient(180deg, #4DF6C6 0%, #EC64F5 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    padding: 0 10px 5px 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+.tab:nth-child(odd) {
+    border-radius: 0 0 0 20px;
+}
+
+.tab:nth-child(even) {
+    border-radius: 0 0 20px 0;
 }
