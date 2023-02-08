@@ -250,9 +250,16 @@ div.caja:nth-child(1) {
     background-clip: padding-box, border-box;
 }
 
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
 .tab {
     background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
+    padding: 0 20px 0 20px;
+    margin-bottom: 0;
 }
 
 button {
