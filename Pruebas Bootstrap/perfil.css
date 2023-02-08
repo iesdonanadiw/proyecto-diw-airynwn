@@ -257,6 +257,11 @@ div.caja:nth-child(1) {
 
 .tab {
     background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
+    border-radius: 20px;
+}
+
+.tab-fuera {
+    background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
     border-radius: 20px 20px 0 0;
     padding: 0 20px 0 20px;
     margin-bottom: 0;
