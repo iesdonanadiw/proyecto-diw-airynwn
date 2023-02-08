@@ -38,7 +38,7 @@ h3 {
 
 /* El figure es más grande que el div */
 figure {
-    margin: 0 !important;
+    margin: 1rem 0 0 0 !important;
     padding: 0;
 }
 
