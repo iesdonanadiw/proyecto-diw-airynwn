@@ -111,6 +111,7 @@ main {
     /* ! Prueba 1 */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
     border: solid 2px transparent;
     border-radius: 20px;
     background-image: linear-gradient(#2F2957, #2F2957),
@@ -124,8 +125,6 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid;
     border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
-    backdrop-filter: blur(12.5px);
-    -webkit-backdrop-filter: blur(12.5px);
 }
 
 #filter-wrapper {
@@ -162,8 +161,8 @@ main {
     background-color: rgba(0, 0, 0, 0.38);
     border: solid 2px transparent;
     border-radius: 20px;
-    background-image: linear-gradient(#2F2957, #2F2957),
-    linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
+    background-image: linear-gradient(#0d071d, #09021b),
+    linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     /* ! Fondo y bordes del color correcto, pero no va el border radius */
@@ -276,4 +275,22 @@ i {
 
 .card-idolized:hover {
     opacity: 1;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    background: #2F2957;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border: solid 1px transparent;
+    border-radius: 20px 20px 0 0;
+    background-image: linear-gradient(#2F2957, #2F2957),
+    linear-gradient(180deg, #4DF6C6 0%, #EC64F5 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: 5px 10px 0 10px;
 }
