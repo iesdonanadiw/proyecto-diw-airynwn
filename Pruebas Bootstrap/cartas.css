@@ -198,7 +198,7 @@ ul li {
     margin: 0.5em;
 }
 
-button {
+button.buscar {
     /* !Nuevo (Mejor, creo) */
     background: #2F2957;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -230,49 +230,50 @@ i {
     color: white;
 }
 
-#cartas {
-    /* TODO 2 en 1 caja con transform || 1 en 1 caja con transition hover */
+/* #cartas {
     display: grid;
-    /* ! Que las cartas se vean con un hueco tiene que ver con esto: */
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
-}
+} */
 
 .card-box {
-    /* background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
+    background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     border: solid 2px transparent;
+    background-image: linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     border-radius: 20px;
+}
+
+.card-box img {
+    background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
+    backdrop-filter: blur(12.5px);
+    border: solid 2px transparent;
     background-image: linear-gradient(#2F2957, #2F2957),
     linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
     background-origin: border-box;
-    background-clip: padding-box, border-box; */
-    /* ! Colores correctos pero no hay border radius... */
-    background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    -webkit-backdrop-filter: blur(12.5px);
-    border: 1px solid;
-    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1;
+    background-clip: padding-box, border-box;
+    border-radius: 20px;
 }
 
-.card-fig {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+.card {
+    position: relative;
+    max-width: 100%;
 }
 
-.card-img {
-    max-width: 50%;
-    max-height: 50%;
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: center;
-    order: 0;
+.card-idolized {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card-idolized:hover {
+    opacity: 1;
 }

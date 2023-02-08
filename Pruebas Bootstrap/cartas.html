@@ -65,12 +65,10 @@
     <main>
         <div class="container-fluid">
         <div class="row">
-            <div class="col-3" id="filter-nav">
+            <div class="col-lg-3 col-12" id="filter-nav">
             <form action="" id="filter-wrapper">
                 <h2>Opciones de búsqueda</h2>  
             <span>Cómo hacer las tabs con iconos para añadir en la colección y en la lista de deseos</span>
-            <span>Cómo hacer que dentro de un contenedor de carta se vean ambas versiones partidas por la mitad y centradas</span>
-            <span>Al hacer lo anterior, añadir un transform al :hover de las cartas para stretchearse a fillear el contenedor</span>
             <!--  -->   
                 <div class="caja">
                     <span class="opcion">Grupo</span>
@@ -112,7 +110,7 @@
                     <p>Aquí va el nombre del personaje seleccionado</p>
                 </div>
                 <div class="caja-icons">
-                    <button type="submit">
+                    <button type="submit" class="buscar">
                         <span class="fa-stack">
                             <i class="fa-regular fa-circle fa-stack-2x"></i>
                             <i class="fa fa-magnifying-glass fa-stack-1x"></i>
@@ -122,47 +120,51 @@
                 </div>
             </form>
         </div>
-    <div class="col" id="cartas">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="img-fluid">
-                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="img-fluid">
+        <div class="col" id="cartas">
+            <div class="container">
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="img-fluid card">
+                            <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <figure class="card-box">
+                            <img src="img/mizuki_card_unidolized.png" alt="Mizuki Unidolized" class="img-fluid card">
+                            <img src="img/mizuki_card_idolized.png" alt="Mizuki Idolized" class="img-fluid card-idolized">
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/saki_card_unidolized.png" alt="Saki Unidolized" class="img-fluid card">
+                            <img src="img/saki_card_idolized.png" alt="Saki Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <figure class="card-box">
+                            <img src="img/akito_card_unidolized.png" alt="Akito Unidolized" class="img-fluid card">
+                            <img src="img/akito_card_idolized.png" alt="Akito Idolized" class="img-fluid card-idolized">
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/nene_card_unidolized.png" alt="Nene Unidolized" class="img-fluid card">
+                            <img src="img/nene_card_idolized.png" alt="Nene Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <figure class="card-box">
+                            <img src="img/rui_card_unidolized.png" alt="Rui Unidolized" class="img-fluid card">
+                            <img src="img/rui_card_idolized.png" alt="Rui Idolized" class="img-fluid card-idolized">
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/toya_card_unidolized.png" alt="Toya Unidolized" class="img-fluid card">
+                            <img src="img/toya_card_idolized.png" alt="Toya Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <figure class="card-box">
+                            <img src="img/shiho_card_unidolized.png" alt="Shiho Unidolized" class="img-fluid card">
+                            <img src="img/shiho_card_idolized.png" alt="Shiho Idolized" class="img-fluid card-idolized">
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </div>
-        <article>
-            <div class="card-box">
-                <figure class="card-fig">
-                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
-                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
-                </figure>
-            </div>
-        </article>
-        <div class="card">
-            <div class="card-box">
-                <figure class="card-fig">
-                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
-                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
-                </figure>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-box">
-                <figure class="card-fig">
-                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
-                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
-                </figure>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-box">
-                <figure class="card-fig">
-                    <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="card-img">
-                    <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="card-img">
-                </figure>
-            </div>
-        </div>
 
        <!-- 
         - Personaje
@@ -176,8 +178,8 @@
                 (al pasar el ratón por una versión se agranda y ocupa todo el hueco de imagen)
             - Botón de guardar / lista de deseos abajo
     -->
-</div>
-</div>
+        </div>
+    </div>
 </div>
 
     </main>
