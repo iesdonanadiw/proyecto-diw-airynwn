@@ -267,3 +267,7 @@ i {
 .tab:nth-child(even) {
     border-radius: 0 0 20px 0;
 }
+
+.row {
+    align-items: flex-start;
+}
