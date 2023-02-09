@@ -97,10 +97,10 @@ nav {
 }
 
 main {
-    background-image: url("img/background.png");
-    text-align: center;
+    background: url("img/background.png") round fixed;
+    background-size: contain;
     padding: 1em;
-    /* TODO resizear bien */
+    text-align: center;
 }
 
 #filter-nav {

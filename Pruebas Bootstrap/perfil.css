@@ -109,24 +109,17 @@ nav {
 }
 
 .caja {
-    /* ! Fondo y bordes del color correcto, pero no va el border radius */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
-    /* border: 1px solid;
-    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
     display: flex;
     flex-direction: column;
-    /* ! Probar con background-image en vez de border-image */
     border-radius: 20px;
     border: solid 1px transparent;
     background-image: linear-gradient(#0d071d, #09021b),
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    /* ! Problema: Con el background-image hay que darle un color de fondo
-    ! y la idea de la caja es que sea transparente */
-    /* ? Solución: crearle el degradado a mano y ya */
 }
 
 .caja-content {
@@ -151,14 +144,10 @@ nav {
 }
 
 main {
-    /* background-image: url("img/miku_home.png");
-    background-position: center;
-    background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    background-image: url("img/background.png");
+    background: url("img/background.png") round fixed;
+    background-size: contain;
     text-align: center;
     padding: 1em;
-    /* TODO resizear bien */
 }
 
 /* ? */
@@ -172,6 +161,7 @@ main {
 
 .contenedor {
     margin: 0.5em;
+    padding-bottom: 0.5em;
     /* background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%); */
     /* ! Prueba 1 */
     /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -252,6 +242,7 @@ div.caja:nth-child(1) {
 
 .tabs {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -260,12 +251,12 @@ div.caja:nth-child(1) {
     border-radius: 20px;
 }
 
-.tab-fuera {
+/* .tab-fuera {
     background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
     border-radius: 20px 20px 0 0;
     padding: 0 20px 0 20px;
     margin-bottom: 0;
-}
+} */
 
 button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -319,4 +310,9 @@ span a {
     border-radius: 20px;
     padding: 5px;
     background: #2F2957;
+}
+
+.row>* {
+    /* Sobreescribir bootstrap */
+    flex-shrink: initial !important;
 }

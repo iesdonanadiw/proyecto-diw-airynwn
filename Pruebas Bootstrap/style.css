@@ -131,17 +131,11 @@ nav {
 
 /********************* INDEX  *********************/
 
-body {
-    /* que */
-    /* background-image: url("img/miku_home.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* filter: blur(2.5px); */
-    background-image: url("img/background.png");
+main {
+    background: url("img/background.png") round fixed;
+    background-size: contain;
+    padding: 1em;
     text-align: center;
-    /* padding: 12%;  */
-    /* TODO resizear bien */
 }
 
 #fondo {

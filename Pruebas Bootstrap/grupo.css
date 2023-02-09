@@ -95,15 +95,10 @@ nav {
 }
 
 main {
-    /* (Testeando) */
-    /* background-image: url("img/miku_home.png");
-    background-position: center;
-    background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    background-image: url("img/background.png");
-    text-align: center;
+    background: url("img/background.png") round fixed;
+    background-size: contain;
     padding: 1em;
-    /* TODO resizear bien, ver si está bien poner una imagen desenfocada de fondo, etc */
+    text-align: center;
 }
 
 /* TODO Meter los paneles como una tabla (th = título con fondo clarito, tr = oscuro */

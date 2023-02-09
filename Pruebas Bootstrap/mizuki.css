@@ -130,9 +130,12 @@ nav {
 }
 
 
-/* ! no va :first-child ni :nth-child ni :first-of-type NI NADA */
 .caja-content span {
     margin-bottom: 0.5em;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #ffffff30 !important; /*Sobreescribe bootstrap*/
 }
 
 /********************* PERSONAJE (Mizuki)  *********************/
@@ -145,14 +148,10 @@ nav {
 }
 
 main {
-    /* background-image: url("img/miku_home.png");
-    background-position: center;
-    background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    background-image: url("img/background.png");
+    background: url("img/background.png") round fixed;
+    background-size: contain;
     text-align: center;
     padding: 1em;
-    /* TODO resizear bien */
 }
 
 /* ? */
