@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5b4a872535.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark header">
@@ -50,19 +55,49 @@
           </div>
         </div>
     </nav>
+    <!--  -->
+    <section class="home">
     <main>
-        <!-- <div id="fondo"></div> -->
-        aaaaaaaa
-        <!-- centro arriba: logo grande -->
-        <!-- izq: tarjeta gacha actual -->
-        <!-- centro centro: calendario mes actual -->
-        <!-- CALENDARIO -->
-        
-        <!-- der: tarjeta evento actual -->
-        <!-- centro abajo: texto de promocion -->
+        <div class="container">
+            <div class="row">
+                <div class="col centro">
+                    <img src="img/logo.png" alt="Logo SekaiSchool" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="gacha-actual">
+                    <h1>Gacha actual</h1>
+                    <img src="img/gacha-banner.png" alt="Gacha actual" class="img-fluid" width="400">
+                    <!-- <div class="tarjeta">
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="evento-actual">
+                    <h1>Evento actual</h1>
+                    <img src="img/event-banner.png" alt="Evento actual" class="img-fluid" width="400">
+                    <!-- <div class="tarjeta">
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col order-last order-lg-0">
+                    <img src="img/calendario.png" alt="Calendario" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col texto centro">
+                    <h1>
+                        ¡Únete a nuestra comunidad dedicada a Project Sekai!
+                    </h1>
+                </div>
+            </div>
+        </div>
     </main>
-    <div class="container-fluid fixed-bottom" style="background-color: #3AA89B;">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+</section>
+    <!-- Footer -->
+    <div class="container-fluid bottom-0" style="background-color: #3AA89B;"> <!-- fixed-bottom -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
             <p class="col-md-4 mb-0 text-white">&copy; 2023 airynwn</p>
             <a href="" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
             <h3>SekaiSchool</h3>
