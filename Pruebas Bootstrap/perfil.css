@@ -13,7 +13,6 @@ a {
 }
 
 h2 {
-    /* ! Se ve demasiado oscuro?????????? Y tiene un efecto de bisel y relieve extraño */
     font-family: 'Fredoka One', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -21,12 +20,8 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* ! El text shadow es lo que le da el efecto oscuro, se pone por encima del degradado */
-    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); */
 }
 
-/* TODO La font se ve rara */
-/* ? Se arregla con font weight */
 h3 {
     color: white;
     font-family: 'Fredoka One', sans-serif;
@@ -150,15 +145,6 @@ main {
     padding: 1em;
 }
 
-/* ? */
-
-/* .row {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    justify-content: center;
-    gap: 3%;
-} */
-
 .contenedor {
     margin: 0.5em;
     padding-bottom: 0.5em;
@@ -251,12 +237,15 @@ div.caja:nth-child(1) {
     border-radius: 20px;
 }
 
-/* .tab-fuera {
-    background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
-    border-radius: 20px 20px 0 0;
-    padding: 0 20px 0 20px;
-    margin-bottom: 0;
-} */
+/* ? Esto es para que sea como la original, pero IMO queda mejor dejarlo de 3 colores */
+
+.tabs:nth-child(1) .tab {
+    background: linear-gradient(90.86deg, #4254F5 0%, #EC64F5 100%);
+}
+
+.tabs:nth-child(2) .tab {
+    background: linear-gradient(89.14deg, #EC64F5 0%, #4254F5 100%);
+}
 
 button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -293,7 +282,7 @@ span a {
 
 .botones {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -316,3 +305,26 @@ span a {
     /* Sobreescribir bootstrap */
     flex-shrink: initial !important;
 }
+
+.titulos {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-titulo {
+    background: #2F2957;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border-radius: 0 20px 20px 0;
+    border: solid 2px white;
+    padding: 0 0.5em 0 0.5em;
+    color: white;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* @media only screen and (min-width: 576px) {
+    .event-title {
+        width: 75%;
+        height: auto;
+    }
+} */

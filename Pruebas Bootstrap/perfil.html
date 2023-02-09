@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark header">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img id="logo" src="img/logo.png" alt="Logo SekaiSchool"></img>
+                <img id="logo" src="img/logo.png" alt="Logo SekaiSchool">
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -137,7 +137,7 @@
             <!--  -->
             <!-- <span class="tab">Lista de cartas</span>
             <span class="tab">Lista de deseos</span> -->
-            <div class="col-md-6 contenedor contenedor-padding">
+            <div class="col-md-6 order-1 order-sm-last order-md-last contenedor contenedor-padding">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col tabs">
@@ -174,15 +174,22 @@
                     </div>
                 </div>
             </div>
-            <div class="col contenedor contenedor-padding">
+            <div class="col order-md-last contenedor contenedor-padding">
                 <!-- ! Hacer los botones con imágenes -->
                 <span class="tab">Datos del juego</span>
-                <span>Rank</span>
-                <span>Cristales</span>
-                <span>Títulos</span>
+                <div class="titulos">
+                    <img src="img/jewel.png" alt="Rank" width="50">
+                    <button class="boton-titulo">Rank 200</button>
+                </div>
+                <div class="titulos">
+                    <img src="img/crystal.png" alt="Crystal" width="50">
+                    <button class="boton-titulo">175000</button>
+                </div>
+                <div class="titulos">
+                    <img src="img/top-title.png" alt="Event Top Title" class="img-fluid">
+                </div>
             </div>
         </div>
-    </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
