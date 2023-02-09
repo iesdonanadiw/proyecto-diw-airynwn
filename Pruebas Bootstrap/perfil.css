@@ -20,6 +20,8 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    /* ? Para que el degradado se vea bien */
+    display: inline;
 }
 
 h3 {
@@ -62,6 +64,10 @@ nav {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
     border-radius: 6px;
     border: 1px solid white;
+}
+
+.header-avatar {
+    border-radius: 20px;
 }
 
 /********************* MODAL  *********************/
