@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro&display=swap');
+/*** Variables ***/
+
 :root {
     --mizuki: #E4A8CA;
 }
+
+/**************************/
 
 body {
     font-family: 'Source Sans Pro', sans-serif;

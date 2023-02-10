@@ -162,13 +162,13 @@ main {
     margin-bottom: 0.5em;
 }
 
+.caja-icons {
+    margin: 0.5em;
+}
+
 ul li {
     display: inline;
     list-style: none;
-}
-
-.caja-icons {
-    margin: 0.5em;
 }
 
 button.buscar {
@@ -236,6 +236,7 @@ mentiraaaaaaaa si funciona */
     opacity: 1;
 }
 
+/** Tab de añadir a colección/wishlist */
 .tabs {
     display: flex;
     justify-content: center;

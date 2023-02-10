@@ -177,6 +177,8 @@ ul {
     padding: 0 1em 0 1em;
 }
 
+/****** Sección de foro ******/
+
 #foro {
     margin: 0.5em;
     padding: 1.5em;
@@ -316,6 +318,8 @@ ul li {
     color: white;
     -webkit-text-stroke: 0.25px var(--wxs);
 }
+
+/****** Colores con variables ******/
 
 /** MIEMBROS DEL GRUPO  */
 
