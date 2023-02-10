@@ -1,22 +1,37 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9712658&assignment_repo_type=AssignmentRepo)
+
 # Proyecto DIW - DWECL
 
-## ÍNDICE   
+## ÍNDICE
+
 1. [DESCRIPCIÓN](#id1)
 2. [PROTOTIPO](#id2)
 3. [MODIFICACIONES A LA GUÍA DE ESTILOS](#id3)
 4. [RECURSOS](#id4)
 
-## DESCRIPCIÓN<a name="id1"></a>
+## DESCRIPCIÓN`<a name="id1"></a>`
+
 [Incluye la descripción de tu proyecto.]
 
-## PROTOTIPO<a name="id2"></a>
+## PROTOTIPO`<a name="id2"></a>`
+
 [Incluye el enlace a tu prototipo realizado en Figma.]
 
-## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
+## MODIFICACIONES A LA GUÍA DE ESTILOS`<a name="id3"></a>`
+
 [Listado de modificaciones realizadas debidadmente justificadas. ]
 
-## RECURSOS<a name="id4"></a>
+* Inicio
+
+1. La imagen de fondo se ha cambiado a una más acorde a la temática y paleta de colores de la página, incluyendo a las dos protagonistas del videojuego y tonalidades azules, verdes y rosas como predominantes.
+2. Inspirada en páginas similares para otros juegos, la estructura en pantallas grandes se encuentra en la parte derecha para dejar a la vista la imagen de fondo. Además, se le ha añadido un degradado blanco para una mejor visibilidad del contenido de la página.
+3. El color del texto ahora es sólido para destacar más sobre el fondo.
+4. Las tarjetas de evento y gacha se han cambiado por las tarjetas oficiales del juego. Anteriormente estaban los logos, pero podían dar problemas al ser cada uno de distinto tamaño.
+
+
+
+## RECURSOS`<a name="id4"></a>`
+
 [Listado de recursos usados]
 
 - Can I use?: https://caniuse.com/
