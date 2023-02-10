@@ -12,8 +12,6 @@ a {
     text-decoration-line: none;
 }
 
-/* TODO La font se ve rara */
-/* ? Se arregla con font weight */
 h3 {
     color: white;
     font-family: 'Fredoka One', sans-serif;
@@ -54,7 +52,7 @@ nav {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
     border-radius: 6px;
     border: 1px solid white;
-    /* !!!!!!!!!!!!!!! RECORDAR PONER ESTO EN TODOS LOS CSS !!!!!!!!!!!!!!!!!! vvvvvv */
+    /* !!!!!!!!!!!!!!! RECORDAR PONER ESTO EN TODOS LOS CSS (o no) !!!!!!!!!!!!!!! vvvvvv */
     transition: background 1s ease-in;
 }
 
@@ -105,8 +103,6 @@ nav {
 }
 
 .caja {
-
-    /* ! Fondo y bordes del color correcto, pero no va el border radius */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
@@ -124,7 +120,6 @@ nav {
     text-align: initial;
 }
 
-/* ! no va :first-child ni :nth-child ni :first-of-type NI NADA */
 .caja-content span {
     margin-bottom: 0.5em;
 }
