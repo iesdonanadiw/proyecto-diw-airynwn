@@ -14,7 +14,6 @@ a {
     text-decoration-line: none;
 }
 
-/* TODO La font se ve rara */
 h3 {
     margin: 0;
     color: white;
@@ -130,6 +129,7 @@ main {
     padding: 1em;
 }
 
+/* ?no recuerdo */
 .row > * {
     width: auto !important;
 }
@@ -143,9 +143,6 @@ hr {
 .campo {
     margin: 0.5em;
 }
-
-/* TODO Centrar las cajas mejor, font fea, cajas demasiado grandes, ajustar imagen */
-/* ? Cuando tenía 5 columnas iba mejor */
 
 #login-box { 
     background: linear-gradient(125.92deg, rgba(236, 100, 245, 0.5) 0%, rgba(66, 84, 245, 0.23) 34.6%, rgba(77, 246, 198, 0.335) 66.8%),
@@ -163,9 +160,7 @@ hr {
     padding: 1em;
 }
 
-/* TODO Ajustar al ancho de la caja */
 .input-form {
-    /* width: 90%; */
     background: #F5F5F5;
     border-radius: 10px;
     padding: 0.35em;
@@ -193,6 +188,7 @@ hr {
 #login-box .button-form {
     background: #A022A8;
 }
+
 /* Registro: input lila + botón azul */
 #registro-box .input-form {
     border: 1px solid #A022A8;

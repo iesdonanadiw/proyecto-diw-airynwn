@@ -22,12 +22,8 @@ h2 {
     color: var(--mizuki);
     /* ? Para que el degradado se vea bien */
     display: inline;
-    /* ! bisel y relieve feo */
-    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); */
 }
 
-/* TODO La font se ve rara */
-/* ? Se arregla con font weight */
 h3 {
     color: white;
     font-family: 'Fredoka One', sans-serif;
@@ -152,9 +148,7 @@ nav {
 
 /********************* PERSONAJE (Mizuki)  *********************/
 /*  TODO    Unificar los paneles que son glassmorphism oscuro + degradado de bordes,
-    TODO    mirar los que son iguales. Buscar alguna forma de que funcione el border-radius */
-
-/* TODO PERSONAJE: TODOS LOS TEXTOS (no títulos) DE ESTA PÁGINA TIENEN SOMBREADO DEL COLOR DEL PJ */
+    TODO    mirar los que son iguales. */
 * {
     box-sizing: border-box;
 }
