@@ -21,17 +21,20 @@
 
 [Listado de modificaciones realizadas debidadmente justificadas. ]
 
-* Inicio
+* **Inicio**
 
 1. La imagen de fondo se ha cambiado a una más acorde a la temática y paleta de colores de la página, incluyendo a las dos protagonistas del videojuego y tonalidades azules, verdes y rosas como predominantes.
 2. Inspirada en páginas similares para otros juegos, la estructura en pantallas grandes se encuentra en la parte derecha para dejar a la vista la imagen de fondo. Además, se le ha añadido un degradado blanco para una mejor visibilidad del contenido de la página.
 3. El color del texto ahora es sólido para destacar más sobre el fondo.
 4. Las tarjetas de evento y gacha se han cambiado por las tarjetas oficiales del juego. Anteriormente estaban los logos, pero podían dar problemas al ser cada uno de distinto tamaño.
 
-* Cartas
+* **Cartas**
 
 1. En cada contenedor de carta sólo hay una versión de la misma en vez de las dos. La versión se cambia al pasar el ratón por encima (hover).
 
+* **Personaje (Mizuki)**
+
+1. La estructura de la parte derecha ha cambiado para ordenar las cajas de información (historia y datos básicos) en una sola columna y tener la sección de personalidad separada. El cómic también está separado.
 
 
 ## RECURSOS`<a name="id4"></a>`
