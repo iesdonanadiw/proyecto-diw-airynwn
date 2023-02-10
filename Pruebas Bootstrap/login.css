@@ -4,6 +4,8 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     color: white;
+    background: url("img/background.png");
+    background-size: cover;
 }
 
 a {
@@ -125,10 +127,7 @@ nav {
 /* TODO multiple gradients on top of background, opacidad, ajustar main */
 
 main {
-    background: url("img/background.png") round fixed;
-    background-size: contain;
     padding: 1em;
-    text-align: center;
 }
 
 .row > * {

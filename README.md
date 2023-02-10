@@ -9,15 +9,15 @@
 3. [MODIFICACIONES A LA GUÍA DE ESTILOS](#id3)
 4. [RECURSOS](#id4)
 
-## DESCRIPCIÓN`<a name="id1"></a>`
+## DESCRIPCIÓN `<a name="id1"></a>`
 
 [Incluye la descripción de tu proyecto.]
 
-## PROTOTIPO`<a name="id2"></a>`
+## PROTOTIPO `<a name="id2"></a>`
 
 [Incluye el enlace a tu prototipo realizado en Figma.]
 
-## MODIFICACIONES A LA GUÍA DE ESTILOS`<a name="id3"></a>`
+## MODIFICACIONES A LA GUÍA DE ESTILOS `<a name="id3"></a>`
 
 [Listado de modificaciones realizadas debidadmente justificadas. ]
 
@@ -36,8 +36,14 @@
 
 1. La estructura de la parte derecha ha cambiado para ordenar las cajas de información (historia y datos básicos) en una sola columna y tener la sección de personalidad separada. El cómic también está separado.
 
+* **Perfil personal**
 
-## RECURSOS`<a name="id4"></a>`
+1. Los botones de cumpleaños, grupo favorito y redes sociales se han separado para distinguir mejor la información del usuario además de añadir margen inferior.
+2. Las tabs de "Lista de cartas" y "Lista de deseos" ahora están dentro de la caja de cartas para alinearlo con las demás tabs ("Publicaciones" y "Datos del juego"). También se ha ajustado el tamaño de las cartas.
+
+
+
+## RECURSOS `<a name="id4"></a> `
 
 [Listado de recursos usados]
 
