@@ -110,7 +110,6 @@ nav {
 }
 
 .caja {
-    /* ! Fondo y bordes del color correcto, pero no va el border radius */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
