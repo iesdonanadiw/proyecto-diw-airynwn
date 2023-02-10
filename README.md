@@ -34,13 +34,18 @@
 
 * **Personaje (Mizuki)**
 
-1. La estructura de la parte derecha ha cambiado para ordenar las cajas de información (historia y datos básicos) en una sola columna y tener la sección de personalidad separada. El cómic también está separado.
+1. La estructura de la parte derecha ha cambiado para ordenar las cajas de información ("Historia" y "Datos básicos") en una sola columna y tener la sección "Personalidad" separada. El cómic también está separado.
 
 * **Perfil personal**
 
 1. Los botones de cumpleaños, grupo favorito y redes sociales se han separado para distinguir mejor la información del usuario además de añadir margen inferior.
 2. Las tabs de "Lista de cartas" y "Lista de deseos" ahora están dentro de la caja de cartas para alinearlo con las demás tabs ("Publicaciones" y "Datos del juego"). También se ha ajustado el tamaño de las cartas.
 
+* **Grupo (WxS)**
+
+1. La estructura de la página ha cambiado de forma que los elementos se sitúan alrededor de la imagen de los miembros del grupo, la cual está ubicada en el centro para llamar la atención del usuario. El logo está encima de la imagen y las cajas de miembros están a cada lado de la imagen.
+2. La sección de "Historia" ya no es una caja, sino un texto, similar a la sección de "Personalidad" en la página de personaje.
+3. Debido al cambio en la estructura de la página, ya no tenía sentido colocar el sticker en el mismo lugar, por lo que se ha convertido en una nueva sección con un sticker de cada miembro por parejas.
 
 
 ## RECURSOS `<a name="id4"></a> `
