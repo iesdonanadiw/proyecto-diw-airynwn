@@ -268,7 +268,8 @@ i {
 .tab:nth-child(even) {
     border-radius: 0 0 20px 0;
 }
-
+/* ? Pa
+ra que el espacio que sobra de columna en las cajas de una fila no se rellene */
 .row {
     align-items: flex-start;
 }

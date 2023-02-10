@@ -286,7 +286,7 @@ ul li {
 }
 
 .comment {
-    /* text-align: justify; */
+    text-align: justify;
 }
 
 @media only screen and (min-width: 576px) {

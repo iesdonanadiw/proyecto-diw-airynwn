@@ -213,3 +213,8 @@ hr {
     margin: 2.5em;
     height: 150px;
 }
+
+/* ? Para que el espacio que sobra de columna en las cajas de una fila no se rellene */
+.row {
+    align-items: flex-start;
+}
