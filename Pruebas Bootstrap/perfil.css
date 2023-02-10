@@ -68,6 +68,7 @@ nav {
 
 .header-avatar {
     border-radius: 20px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
 }
 
 /********************* MODAL  *********************/
@@ -278,7 +279,6 @@ button {
 span a {
     color: #4DF6C6;
     text-decoration: none;
-    font-weight: bold;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
