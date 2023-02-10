@@ -178,6 +178,10 @@ main {
     background-clip: padding-box, border-box;
 }
 
+li {
+    text-align: initial;
+}
+
 .caja-icons {
     margin: 0.5em;
 }
