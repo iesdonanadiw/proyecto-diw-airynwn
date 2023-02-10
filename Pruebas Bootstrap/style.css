@@ -153,8 +153,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* ! Experimental */
-    background-attachment: fixed;
+    /* ! Experimental (mejor no, imo) */
+    /* background-attachment: fixed; */
 }
 
 #fondo {
