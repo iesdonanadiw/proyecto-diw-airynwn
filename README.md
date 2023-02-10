@@ -28,6 +28,10 @@
 3. El color del texto ahora es sólido para destacar más sobre el fondo.
 4. Las tarjetas de evento y gacha se han cambiado por las tarjetas oficiales del juego. Anteriormente estaban los logos, pero podían dar problemas al ser cada uno de distinto tamaño.
 
+* Cartas
+
+1. En cada contenedor de carta sólo hay una versión de la misma en vez de las dos. La versión se cambia al pasar el ratón por encima (hover).
+
 
 
 ## RECURSOS`<a name="id4"></a>`
