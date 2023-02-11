@@ -93,10 +93,9 @@ nav {
 .opcion {
     padding: 0.25em;
     color: white;
-    text-align: center;
-    font-size: medium;
     background: #2F2957;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0px 0px;
     border: solid 1px transparent;
     background-image: linear-gradient(#2F2957, #2F2957),
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
@@ -109,14 +108,14 @@ nav {
     border: solid 1px transparent;
     border-radius: 20px;
     background-image: linear-gradient(#0d071d, #09021b),
-    linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    linear-gradient(180deg, #4254F5 0%, #EC64F5 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 .caja-content {
@@ -171,7 +170,7 @@ main {
     -webkit-backdrop-filter: blur(12.5px);
     border: solid 2px transparent;
     border-radius: 20px;
-    background-image: linear-gradient(#2F2957, #2F2957),
+    background-image: linear-gradient(#27165D, #2f1b58),
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -213,24 +212,25 @@ button[type=submit] {
 
 i {
     color: white;
+    -webkit-text-stroke: 0.75px #A022A8;
 }
 
 /****** CENTRO ******/
 
 .tabs {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .tab {
     background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
     border-radius: 20px 20px 0 0;
+    padding: 0 0.5em 0 0.5em;
 }
 
 .foro-avatar {
     border-radius: 25px;
-    border: solid 2px rgba(255, 255, 255, 0.5);
+    border: solid 2px rgba(213, 107, 255, 0.5);
     width: 50px;
     height: 50px;
 }
@@ -262,7 +262,7 @@ i {
 }
 
 .post-info {
-    color: rgb(136 163 232);
+    color: #c07bc4;
 }
 
 /****** DERECHA ******/
