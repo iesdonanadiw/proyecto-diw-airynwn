@@ -152,6 +152,17 @@ main {
     /* background-attachment: fixed; */
 }
 
+@media only screen and (max-width:991px) {
+    .home {
+        background-image: url("imgtest/card_after_training\ \(21\).png");
+        background-position: right;
+    }
+
+    main {
+        background-image: none;
+    }
+ }
+
 #fondo {
     background-image: url("img/miku_home.png");
     filter: blur(2.5px);
