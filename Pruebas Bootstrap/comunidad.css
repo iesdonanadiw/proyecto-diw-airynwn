@@ -228,6 +228,13 @@ i {
     padding: 0 0.5em 0 0.5em;
 }
 
+/****** Columna de iconos de flechas (volver arriba / abajo) ******/
+/* Ajusta la altura de la columna de iconos y permite colocarlos en los extremos de la fila */
+.alinear-altura {
+    display: flex !important;
+    align-items: inherit !important;
+}
+
 .columna {
     display: flex;
     flex-direction: column;
@@ -237,6 +244,8 @@ i {
     position: absolute;
     bottom: 0;
 }
+
+/****** Foro ******/
 
 .foro-avatar {
     border-radius: 25px;
