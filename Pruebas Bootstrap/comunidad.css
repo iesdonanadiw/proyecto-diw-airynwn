@@ -240,12 +240,17 @@ i {
     margin-top: 0.5em;
 }
 
+.post-content {
+    display: flex;
+    gap: 0.25em;
+}
+
 .post {
-    text-align: justify;
+    text-align: left;
 }
 
 .post-info {
-    color: rgb(170, 170, 170);
+    color: rgb(136 163 232);
 }
 
 /****** DERECHA ******/
