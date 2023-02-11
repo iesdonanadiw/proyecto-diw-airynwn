@@ -120,6 +120,7 @@ main {
     text-align: center;
     padding: 1em;
     color: white;
+    transition: background 0.2s linear;
 }
 
 @media only screen and (max-width:576px) {
@@ -346,6 +347,16 @@ i:hover {
 .container:first-of-type {
     color: white;
     -webkit-text-stroke: 0.25px var(--wxs);
+}
+
+/****** Light mode ******/
+
+.modo {
+    opacity: 0;
+}
+
+main.light {
+    background: url("img/wxs-sekai.png") round fixed;
 }
 
 /****** Colores con variables ******/
