@@ -63,6 +63,10 @@ nav {
     gap: 2em;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #ffffff30 !important; /*Sobreescribe bootstrap*/
+}
+
 .header-avatar {
     border-radius: 20px;
     border: solid 2px rgba(255, 255, 255, 0.5);
