@@ -140,7 +140,7 @@ main {
         transparent
     );
     padding: 1em;
-    text-align: right;
+    /* text-align: right; */
 }
 
 .home {

@@ -286,7 +286,7 @@ ul li {
 }
 
 .icons {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     margin: 0.5em;
 }
 
