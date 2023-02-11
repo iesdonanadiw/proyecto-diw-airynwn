@@ -240,8 +240,20 @@ i {
     margin-top: 0.5em;
 }
 
-.post-content {
+.post-contenedor {
     display: flex;
+}
+
+@media only screen and (max-width:576px) {
+    .post-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.post-box {
+    display: flex;
+    flex-direction: column;
     gap: 0.25em;
 }
 
