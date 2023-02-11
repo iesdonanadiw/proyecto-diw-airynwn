@@ -160,7 +160,7 @@ main {
     flex-direction: column;
     gap: 1em;
     width: fit-content; */
-    margin: 0.5em;
+    margin: 0 0.5em 0.5em 0.5em;
     padding: 1.5em;
     display: flex;
     flex-direction: column;
@@ -226,6 +226,16 @@ i {
     background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
     border-radius: 20px 20px 0 0;
     padding: 0 0.5em 0 0.5em;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.abajo {
+    position: absolute;
+    bottom: 0;
 }
 
 .foro-avatar {
