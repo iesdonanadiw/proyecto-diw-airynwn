@@ -117,9 +117,16 @@ nav {
 main {
     background: url("img/background.png") round fixed;
     background-size: contain;
-    padding: 1em;
     text-align: center;
+    padding: 1em;
+    color: white;
 }
+
+@media only screen and (max-width:576px) {
+    main {
+        background-size: cover;
+    }
+ }
 
 .panel {
     box-sizing: border-box;
@@ -283,6 +290,9 @@ ul li {
     flex-wrap: wrap;
     justify-content: flex-end;
     text-align: justify;
+}
+
+.icon-bajo {
     height: 100%;
 }
 
@@ -291,7 +301,7 @@ ul li {
 }
 
 .icons {
-    /* align-self: flex-end; */
+    align-self: flex-end;
     margin: 0.5em;
 }
 
@@ -312,8 +322,9 @@ ul li {
     text-align: justify;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 450px) {
     .avatar-foro {
+        /* max-width: initial; */
         width: 150px;
         height: auto;
     }
