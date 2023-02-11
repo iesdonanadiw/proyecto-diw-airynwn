@@ -68,10 +68,10 @@
       </nav>
                             <!-- ************ COMUNIDAD ************ -->
     <main>
-        <!-- Tendencias -->
-    <div class="container">
+        <!-- *** TENDENCIAS *** -->
+    <div class="container-fluid">
         <div class="row">
-        <div class="col contenedor">
+        <div class="col-lg-3 col-sm-5 order-0 contenedor">
             <h2>Tendencias</h2>
             <div class="caja">
                 En esta página falta:
@@ -87,7 +87,7 @@
                     <li>Collab</li>
                 </ol>
             </div>
-            <div class="caja-icons">
+            <div>
                 <button type="submit">
                     <span class="fa-stack">
                         <i class="fa-regular fa-circle fa-stack-2x"></i>
@@ -97,41 +97,127 @@
                 </button>
             </div>
         </div>
-        <!-- Pestañas -->        
-        <!-- Posts -->
+            <!-- *** COMUNIDAD *** -->
         <!-- ! poner como schoolidolu o bandoriparty ? -->
-        <div class="col-6">
-            
-            <!-- icono volver arriba del todo -->
-            <!-- icono volver abajo del todo -->
-            <div class="caja">
-                <!-- foto opcional -->
-                <!-- avatar -->
-                <img src="img/avatar-nino.jpg" alt="Nino Avatar" width="150" height="150">
-                <p><strong>@Usuario</strong>, <span>hace x minutos</span></p>
-                <p>asdsfdfdasfdfs</p>
-                <div class="caja-icons">
-                    <i class="fa-solid fa-share-nodes"></i>
-                    <!-- ? Otro share por si me gusta más -->
-                    <i class="fa-solid fa-share-from-square"></i>
-                    <!-- ! CAMBIÉ EL ICONO DE COMENTARIO DEL LÁPIZ A LA NUBE -->
-                    <i class="fa-regular fa-comment"></i>
-                    432543<i class="fa-solid fa-heart"></i>
+        <div class="col-lg-6 col-12 order-1">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col tabs">
+                        <span class="tab">Publicaciones recientes</span>
+                    </div>
+                    <div class="col tabs">
+                        <span class="tab">Publicaciones populares</span>
+                    </div>
                 </div>
-                <!-- icon share || icon comment || like count || like icon -->
+                <div class="row contenedor">
+                    <!-- icono volver arriba del todo -->
+                    <!-- icono volver abajo del todo -->
+                    <!-- ? Comentario 1 -->
+                    <div class="caja">
+                        <!-- Foto opcional -->
+                        <div class="col-12">
+                            <img src="img/post1.jpg" alt="Post 1 Imagen" class="img-fluid foro-foto">
+                        </div>
+                        <div class="espacio"></div>
+                        <!-- Avatar -->
+                        <div class="col-3">
+                            <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="foro-avatar">
+                        </div>
+                        <!-- @user, fecha -->
+                        <div class="col-3">
+                            <p class="post"><strong>@Nino123</strong>, <span>hace 5 minutos</span></p>
+                        </div>
+                        <!-- Contenido del post -->
+                        <div class="col-12">
+                            <p class="post">¿Habéis visto la nueva temporada de Love Live?</p>
+                        </div>
+                        <!-- Iconos de interacción -->
+                        <div class="col-12">
+                            <div class="caja-icons">
+                                <!-- Compartir y comentar -->
+                                <div>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                </div>
+                                <!-- Likes -->
+                                <div>
+                                    3<i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ? Comentario 1 -->
+                    <div class="caja">
+                        <!-- Foto opcional -->
+                        <div class="col-12">
+                            <img src="img/post1.jpg" alt="Post 1 Imagen" class="img-fluid foro-foto">
+                        </div>
+                        <div class="espacio"></div>
+                        <!-- Avatar -->
+                        <div class="col-auto">
+                            <img src="img/avatar-nino.jpg" alt="Nino Avatar" class="foro-avatar">
+                        </div>
+                        <!-- @user, fecha -->
+                        <div class="col">
+                            <p class="post"><strong>@Nino123</strong>, <span>hace 5 minutos</span></p>
+                        </div>
+                        <!-- Contenido del post -->
+                        <div class="col-12">
+                            <p class="post">¿Habéis visto la nueva temporada de Love Live?</p>
+                        </div>
+                        <!-- Iconos de interacción -->
+                        <div class="col-12">
+                            <div class="caja-icons">
+                                <!-- Compartir y comentar -->
+                                <div>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                </div>
+                                <!-- Likes -->
+                                <div>
+                                    3<i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="col-auto">
-            <h2>Temas populares</h2>
-            <button id="navidad">Navidad en SekaiSchool</button>
-            <br>
-            <button class="tema">Eventos</button>
-            <button class="tema">Gacha</button>
-            <br>
-            <button class="cumple"><i class="fa-regular fa-calendar"></i> Próximos cumpleaños</button>
-            <br>
-            <button class="off-topic">Off-topic</button>
+        <!-- *** TEMAS Y ESCRIBIR POST *** -->
+        <div class="col order-0 order-lg-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Temas populares</h2>
+                    </div>
+                </div>
+                <div class="espacio"></div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <button id="navidad">Navidad en SekaiSchool</button>
+                    </div>
+                    <div class="espacio"></div>
+                    <div class="col-auto">
+                        <button class="cumple"><i class="fa-regular fa-calendar"></i> Próximos cumpleaños</button>
+                    </div>
+                </div>
+                <div class="espacio"></div>
+                <div class="row justify-content-center justify-content-lg-evenly">
+                    <div class="col-auto">
+                        <button class="tema">Eventos</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="tema">Gacha</button>
+                    </div>
+                    <div class="espacio"></div>
+                    <div class="col-12 align-self-center">
+                        <button class="off-topic">Off-topic</button>
+                    </div>
+                </div>
+                <!-- <div class="row justify-content-center">
+                </div> -->
+            </div>
+            <div class="espacio"></div>
             <!--  -->
             <div class="caja">
                 <span class="opcion">Escribir post</span>
@@ -139,13 +225,17 @@
                 <!-- titulo en tarjeta Escribir post -->
                     <p>texto a escribir...</p>
                     <div class="caja-icons">
-                        <i class="fa-solid fa-square-poll-vertical"></i>
-                        <!-- ? no me termina de gustar el de adjuntar -->
-                        <i class="fa-regular fa-file"></i>
+                        <div>
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                            <!-- ? no me termina de gustar el de adjuntar -->
+                            <i class="fa-regular fa-file"></i>
+                        </div>
                         <!-- espacio -->
-                        <i class="fa-solid fa-pen-to-square"></i>
-                        <!-- TODO Considerar hacer esto un icono de minimizar ( - ) en el título -->
-                        <i class="fa-solid fa-minimize"></i>
+                        <div>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <!-- TODO Considerar hacer esto un icono de minimizar ( - ) en el título -->
+                            <i class="fa-solid fa-minimize"></i>
+                        </div>
                     </div>
                 <!-- icon poll || icon adjuntar archivo|| --- || icon enviar || icon expandir/reducir -->
                 </div>
@@ -153,6 +243,7 @@
         </div>
     </div>
 </div>
+
        <!-- 
         -ARRIBA IZQ - 
         - Caja Tendencias
