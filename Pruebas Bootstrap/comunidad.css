@@ -225,7 +225,7 @@ i {
 .tab {
     background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
     border-radius: 20px 20px 0 0;
-    padding: 0 0.5em 0 0.5em;
+    padding: 0 1em 0 1em;
 }
 
 /****** Columna de iconos de flechas (volver arriba / abajo) ******/
