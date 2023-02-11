@@ -273,6 +273,7 @@ i {
 .post-box {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     gap: 0.25em;
 }
 
@@ -285,6 +286,10 @@ i {
 }
 
 /****** DERECHA ******/
+
+button[type=button] {
+    border-radius: 10px;
+}
 
 #navidad {
     background: linear-gradient(90deg, #C41414 0%, #22B831 100%);

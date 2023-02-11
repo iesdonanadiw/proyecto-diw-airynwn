@@ -98,8 +98,8 @@
         <!-- ! poner como schoolidolu o bandoriparty ? -->
         <div class="col-lg-6 col-12 order-1">
             <div class="tabs">
-                <span class="tab">Publicaciones recientes</span>
-                <span class="tab">Publicaciones populares</span>
+                <span class="tab">Reciente</span>
+                <span class="tab">Popular</span>
             </div>
             <div class="container-fluid contenedor">
                 <div class="row alinear-altura">
@@ -135,16 +135,17 @@
                                             <!-- Compartir y comentar -->
                                             <div>
                                                 <i class="fa-solid fa-share-nodes"></i>
-                                                <i class="fa-regular fa-comment"></i>
+                                                <i class="fa-regular fa-comment"></i> 1
                                             </div>
                                             <!-- Likes -->
                                             <div>
-                                                1 <i class="fa-solid fa-heart"></i>
+                                                <i class="fa-solid fa-heart"></i> 1
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="espacio"></div>
                             <!-- ? Comentario 1 -->
                             <div class="row caja">
                                 <!-- Foto opcional -->
@@ -175,11 +176,15 @@
                                             <!-- Compartir y comentar -->
                                             <div>
                                                 <i class="fa-solid fa-share-nodes"></i>
-                                                <i class="fa-regular fa-comment"></i> 3
+                                                <span>
+                                                    <i class="fa-regular fa-comment"></i> 3
+                                                </span>
                                             </div>
                                             <!-- Likes -->
                                             <div>
-                                                3 <i class="fa-solid fa-heart"></i>
+                                                <span>
+                                                    <i class="fa-solid fa-heart"></i> 3
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -187,7 +192,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto columna position-relative">
+                    <div class="col-auto g-1 columna position-relative">
                         <i class="fa-regular fa-circle-up"></i>
                         <div class="abajo">
                           <i class="fa-regular fa-circle-down"></i>
@@ -206,25 +211,23 @@
                 </div>
                 <div class="espacio"></div>
                 <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <button id="navidad">Navidad en SekaiSchool</button>
+                    <div class="col espacio">
+                        <button type="button" id="navidad">Navidad en SekaiSchool</button>
                     </div>
-                    <div class="espacio"></div>
-                    <div class="col-auto">
-                        <button class="cumple"><i class="fa-regular fa-calendar"></i> Próximos cumpleaños</button>
+                    <div class="col espacio">
+                        <button type="button" class="cumple"><i class="fa-regular fa-calendar"></i> Próximos cumpleaños</button>
                     </div>
                 </div>
                 <div class="espacio"></div>
-                <div class="row justify-content-center justify-content-lg-evenly">
-                    <div class="col-auto">
-                        <button class="tema">Eventos</button>
+                <div class="row justify-content-center">
+                    <div class="col-auto espacio">
+                        <button type="button" class="tema">Eventos</button>
                     </div>
-                    <div class="col-auto">
-                        <button class="tema">Gacha</button>
+                    <div class="col-auto espacio order-0 order-lg-last">
+                        <button type="button" class="off-topic">Off-topic</button>
                     </div>
-                    <div class="espacio"></div>
-                    <div class="col-12 align-self-center">
-                        <button class="off-topic">Off-topic</button>
+                    <div class="col-auto espacio">
+                        <button type="button" class="tema">Gacha</button>
                     </div>
                 </div>
                 <!-- <div class="row justify-content-center">
