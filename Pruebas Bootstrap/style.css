@@ -46,21 +46,9 @@ nav {
     gap: 2em;
 }
 
-#login {
-    padding: 10px 20px;
-    background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
-    border-radius: 6px;
-    border: 1px solid white;
-    /* !!!!!!!!!!!!!!! RECORDAR PONER ESTO EN TODOS LOS CSS (o no) !!!!!!!!!!!!!!! vvvvvv */
-    transition: background 1s ease-in;
-}
-
-#login:hover {
-    /* No van las transiciones con los degradados
-    background: linear-gradient(266.29deg, #4254F5 0%, #EC64F5 100%); */
-    /* background-color: #af64f5; lila */
-    background-color: #EC64F5;
+.login {
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
 
 /********************* MODAL  *********************/

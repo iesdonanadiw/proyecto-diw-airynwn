@@ -58,12 +58,13 @@ nav {
     gap: 2em;
 }
 
-#login {
-    padding: 10px 20px;
-    background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
-    border-radius: 6px;
-    border: 1px solid white;
+.header-avatar {
+    border-radius: 20px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-text a {
+    text-decoration: none;
 }
 
 /********************* MODAL  *********************/

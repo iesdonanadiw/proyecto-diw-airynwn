@@ -3,6 +3,7 @@
 
 :root {
     --mizuki: #E4A8CA;
+    --ena: #CCAA87;
 }
 
 /**************************/
@@ -60,14 +61,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
-}
-
-#login {
-    padding: 10px 20px;
-    background: linear-gradient(93.71deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.23) 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
-    border-radius: 6px;
-    border: 1px solid white;
 }
 
 /********************* MODAL  *********************/
@@ -150,6 +143,15 @@ nav {
     background-color: #ffffff30 !important; /*Sobreescribe bootstrap*/
 }
 
+.header-avatar {
+    border-radius: 20px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-text a {
+    text-decoration: none;
+}
+
 /********************* PERSONAJE (Mizuki)  *********************/
 /*  TODO    Unificar los paneles que son glassmorphism oscuro + degradado de bordes,
     TODO    mirar los que son iguales. */
@@ -162,6 +164,19 @@ main {
     background-size: contain;
     text-align: center;
     padding: 1em;
+    color: white;
+}
+
+@media only screen and (max-width:576px) {
+    main {
+        background-size: cover;
+    }
+ }
+
+main p,
+main span,
+main li {
+    -webkit-text-stroke: 0.5px #E4A8CA;
 }
 
 /* ? */
@@ -182,13 +197,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    /* background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
-    border: 1px solid;
-    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
-    /* cuadrado ^ redondeado v */
     border: solid 2px transparent;
     border-radius: 20px;
-    background-image: linear-gradient(#2F2957, #2F2957),
+    background-image: linear-gradient(#27165D, #2F1B58),
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -269,4 +280,8 @@ i {
 
 .cuadrado {
     border-radius: 0px;
+}
+
+.ena {
+    color: var(--ena);
 }
