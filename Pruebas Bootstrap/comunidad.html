@@ -214,7 +214,10 @@
                         <button type="button" id="navidad">Navidad en SekaiSchool</button>
                     </div>
                     <div class="col espacio">
-                        <button type="button" class="cumple"><i class="fa-regular fa-calendar"></i> Próximos cumpleaños</button>
+                        <input type="checkbox" id="modal-personaje-toggle">
+                        <button type="button" class="cumple">
+                            <i class="fa-regular fa-calendar"></i> Próximos cumpleaños
+                        </button>
                     </div>
                 </div>
                 <div class="espacio"></div>
@@ -229,26 +232,21 @@
                         <button type="button" class="tema">Gacha</button>
                     </div>
                 </div>
-                <!-- <div class="row justify-content-center">
-                </div> -->
             </div>
             <div class="espacio"></div>
             <!--  -->
             <div class="caja order-last espacio">
                 <span class="opcion">Escribir post</span>
                 <div class="caja-content">
-                <!-- titulo en tarjeta Escribir post -->
                     <p>texto a escribir...</p>
                     <div class="caja-icons">
                         <div>
                             <i class="fa-solid fa-square-poll-vertical"></i>
-                            <!-- ? no me termina de gustar el de adjuntar -->
                             <i class="fa-regular fa-file"></i>
                         </div>
                         <!-- espacio -->
                         <div>
                             <i class="fa-solid fa-pen-to-square"></i>
-                            <!-- TODO Considerar hacer esto un icono de minimizar ( - ) en el título -->
                             <i class="fa-solid fa-minimize"></i>
                         </div>
                     </div>
@@ -259,39 +257,98 @@
     </div>
 </div>
 
-       <!-- 
-        -ARRIBA IZQ - 
-        - Caja Tendencias
-          - Título Tendencisa
-          - Lista ordenada de texto
-        - Buscador con lupa
+<!-- Modal test -->
+<div class="container justify-content-center position-absolute top-0 d-flex modal-personaje-content">
+    <div class="row">
+        <div class="col caja">
+            <span class="opcion">Personajes <input type="checkbox" class="cerrar"></span>
+            <div class="container caja-content">
+                <div class="row row-cols-3 row-cols-md-5 row-cols-lg-6 g-3">
+                    <div class="col">
+                        <img src="chibis/1.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/2.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/3.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/4.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/5.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/6.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/7.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/8.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/9.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/10.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/11.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/12.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/13.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/14.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/15.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/16.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/17.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/18.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/19.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/20.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/21.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/22.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/23.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/24.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/25.png" alt=" " class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="chibis/26.png" alt=" " class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-        - CENTRO - 
-        caja como twitter con pestañas de "publicaciones recientes" y "publicciones populares"
-        caja de post:
-        - foto del post
-        - foto de usuario @Usuario, hace x teimpo
-        - contenido del post
-        - izq (compartir, comentar) || der (likes)
-
-        - ARRIBA DERECHA -
-        TEMAS POPULARES (texto sin caja)
-        Botones: 
-        - Navidad / Cualquier evento ctual en l tiempo
-        - Eventos // Gacha
-        - Próximos cumpleaños (calendario) abrir modal
-        - Centro: Off-topic
-
-        Al clickear un tema, se cambian los posts mostrados en l centr
-
-        - ABAJO DERECHA -
-        Caja Escribir post
-        Título, contenido
-        Abajo: Hacer encuesta, adjuntar imagen (izq)
-        Enviar, tamaño de l ventana (derecha)
-        (Iconos)
-        -->
-    </main>
+</main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -307,6 +307,35 @@ button[type=button] {
     background: linear-gradient(90deg, #EC64F5 0%, #4254F5 100%);
 }
 
+/****** Modal ******/
+
+.modal-personaje-content {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(30px);
+}
+
+/* Abre el modal cuando se pulsa el botón */
+#modal-personaje-toggle:checked ~ * .modal-personaje-content {
+    display: block;
+}
+
+#modal-personaje-toggle:not(:checked) ~ * .modal-personaje-content {
+    display: none;
+}
+
+.cerrar:checked ~ * .modal-personaje-content {
+    display: none;
+}
+
+/*******************/
 .off-topic {
     background: linear-gradient(81.48deg, #4DF6C6 0%, #4254F5 48.24%, #EC64F5 100%);
 }
