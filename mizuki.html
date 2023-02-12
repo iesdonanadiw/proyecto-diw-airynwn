@@ -1,11 +1,3 @@
-<!-- 
-    Container, columna trivia y dos opciones para el resto:
-        1. Dos columnas (foto+historia+personalidad / datos+1koma)
-        2. Una columna con un container dentro con dos filas (historia+foto+datos / personalidad+1koma)
-    Trivia: Crece cuando encoge el dispositivo. Cuando es muy pequeño, va al final del todo (order-last)
-    - Mirar cómo hacer para que el order-last sólo se aplique cuando es pequeño
- -->
- <!-- ! Falta espacio entre los elementos (sobre todo en la sección de info de personaje) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +58,6 @@
         <div class="container-fluid">
             <div class="row">
             <!-- ! Por defecto último (para que salga en móvil), en el resto primero -->
-            <!-- ? he quitado order-md-first porque imo queda mejor que la trivia siempre este ultima si es pequeña -->
             <div class="col-lg-4 col-md-auto order-last order-lg-first">
                 <div id="trivia-nav">
                 <h2>Trivia</h2>     
@@ -80,11 +71,9 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <!-- ! Arreglar la caja que contiene la imagen para que se ajuste -->
                     <img src="img/mizuki-stamp.webp" alt="Mizuki Stamp" width="148" height="128">
                 </div>
                 <h2>Relaciones</h2>
-                <!-- ! Poner el contenido de verdad -->
                 <div class="caja">
                     <div class="caja-content">
                     <div class="container-fluid">
@@ -156,11 +145,9 @@
             </div>
         </div>
             </div>
-            <!-- ! Meterle clase info-pj a cada sección con márgenes para espaciar -->
             <div class="col">
                 <div class="container">
                     <div class="row">
-                        <!-- ? col-md-6: en tablet se ve foto+datos+historia; col-md-12: solo foto -->
                         <div class="col-md-6 col-lg-4">
                             <h2>Mizuki Akiyama</h2>
                             <figure class="caja-icons">
@@ -207,8 +194,6 @@
                             </div>
                         </div>
                     </div>
-        <!-- <div class="col-md-6" id="personaje">
-        </div> -->
                     <div class="row centrar-fila">
                         <div class="col-auto">
                             <div class="espacio">
@@ -231,7 +216,6 @@
                                 </div>
                             </div>
                         </div>
-        <!--  -->
                         <div class="col-auto">
                             <div class="caja cuadrado">
                                 <!-- !PONER WIDTH Y HEIGHT ACHICA LA IMAGEN EN PANTALLAS GRANDES PERO DEJA RELLENO EN PEQUEÑAS -->
@@ -252,6 +236,7 @@
             </div>
         </div>
 </div>
+</main>
 <!-- ****** MODAL PERSONAJES ****** -->
 <div class="container justify-content-center d-flex modal-personajes-content" id="modal-personajes">
     <div class="row">
@@ -349,8 +334,6 @@
         </div>
     </div>
 </div>
-
-    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
