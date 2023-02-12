@@ -18,12 +18,12 @@ SekaiSchool es una página web dedicada al videojuego de ritmo Project Sekai. Co
 * **Personajes**. Abre un modal que contiene todos los personajes del juego y abre la página del seleccionado, la cual muestra información como sus datos básicos, historia, personalidad, trivia, relaciones y cómics en los que aparece.
   * El personaje usado para mostrar el diseño en este proyecto es, al igual que en el prototipo, Mizuki:
 
-    ![1676212567972](image/README/1676212567972.png)
+    ![Mizuki](img/readme-1.png "Mizuki")
 * **Comunidad**. Permite la interacción entre usuarios mostrando una lista de publicaciones ordenadas según el tema escogido, además de elegir si se quieren ver las más recientes o las populares. Muestra una lista de tendencias, que son los temas de los que más hablan los usuarios actualmente, así como un buscador. Permite redactar publicaciones y comentar y marcar como favorito otras publicaciones.
 * **Grupos**. Muestra imágenes información del grupo escogido incluyendo los integrantes y la historia de este. Contiene un foro dedicado a hablar sobre el grupo, el cual se puede expandir pulsando sobre el icono de maximizar.
   * El grupo usado para mostrar el diseño en este proyecto es, a diferencia del prototipo, Wonderlands x Showtime:
 
-    ![1676212832330](image/README/1676212832330.png)
+    ![WxS](img/readme-2.png "WxS")
 
 Las decisiones de diseño como la temática y los colores de SekaiSchool están basadas en Project Sekai para mejorar la ambientación y la experiencia de la audiencia a la que está dirigido. Los colores principales son similares y en las páginas de personajes y grupos se usan sus respectivos colores (por ejemplo, la página de Mizuki usa su color rosa característico).
 
