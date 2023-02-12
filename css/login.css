@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro&display=swap');
 
-/* body {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    color: white;
-    background: url("../img/background.png");
-    background-size: cover;
-} */
-
-a {
-    color: white;
-    box-sizing: border-box;
-    text-decoration-line: none;
-}
-
 h3 {
     margin: 0;
     color: white;
@@ -24,29 +10,10 @@ h3 {
 
 .header {
     background: linear-gradient(90deg, #3AA89B 0%, #9D44FF 100%);
-    /* ? Más bonito el de abajo IMO */
-    /* background: linear-gradient(90deg, #249ABB 0%, #9D44FF 100%); */
 }
 
-/* El figure es más grande que el div */
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-/* TODO Resizear */
 #logo {
     height: 35px;
-}
-
-/*
-    Display flex para estar en el flexbox header
-    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
-*/
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -124,10 +91,15 @@ nav {
 /************************** PARTE DE LOGIN **************************/
 
 main {
+    font-family: 'Source Sans Pro', sans-serif;
     background: url("../img/background.png") round fixed;
     background-size: contain;
     padding: 1em;
     color: white;
+}
+
+nav {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media only screen and (max-width:576px) {
@@ -173,7 +145,6 @@ hr {
     display: block;
     margin: 0 auto;
     text-align: center;
-    background-blend-mode: darken;
     border-radius: 5px;
     padding: 0.5em 2em 0.5em 2em;
     width: 75%;
