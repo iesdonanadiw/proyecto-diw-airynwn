@@ -118,7 +118,6 @@ nav {
 .caja {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
-    -webkit-backdrop-filter: blur(12.5px);
     background-color: rgba(0, 0, 0, 0.38);
     border: solid 1px transparent;
     border-radius: 20px;
@@ -203,7 +202,6 @@ main li {
     padding: 1.5em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
-    -webkit-backdrop-filter: blur(12.5px);
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -219,7 +217,6 @@ main li {
     background-image: linear-gradient(70deg, #EC64F5 25%, #4DF6C6 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 #personaje {
@@ -228,7 +225,6 @@ main li {
     background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
-    -webkit-backdrop-filter: blur(12.5px);
     border: 1px solid;
     border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
     display: flex;
