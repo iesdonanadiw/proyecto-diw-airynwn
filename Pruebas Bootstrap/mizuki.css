@@ -80,6 +80,10 @@ nav {
 
         /****** Contenido Modal ******/
 
+#modal-personajes .caja {
+    background-image: none;
+}
+
 .modal-personajes-content {
     visibility: hidden;
     opacity: 0;
@@ -180,7 +184,7 @@ main {
     main {
         background-size: cover;
     }
- }
+}
 
 main p,
 main span,
@@ -188,11 +192,8 @@ main li {
     -webkit-text-stroke: 0.5px #E4A8CA;
 }
 
-/* ? */
 
-.row {
-    display: grid;
-    grid-template-columns: 25% 75%;
+.centrar-fila {
     justify-content: center;
     gap: 3%;
 }

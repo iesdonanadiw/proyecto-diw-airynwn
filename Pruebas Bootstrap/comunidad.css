@@ -94,6 +94,12 @@ nav {
 
         /****** Contenido Modal ******/
 
+
+#modal-personajes .caja,
+#modal-calendario .caja {
+    background-image: none;
+}
+
 .modal-personajes-content,
 .modal-calendario-content {
     visibility: hidden;
@@ -168,8 +174,15 @@ nav {
 main {
     background: url("img/background.png") round fixed;
     background-size: contain;
-    padding: 1em;
     text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+@media only screen and (max-width:576px) {
+    main {
+        background-size: cover;
+    }
 }
 
 .contenedor {

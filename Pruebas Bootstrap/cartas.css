@@ -88,6 +88,11 @@ nav {
 
         /****** Contenido Modal ******/
 
+
+#modal-personajes .caja {
+    background-image: none;
+}
+
 .modal-personajes-content {
     visibility: hidden;
     opacity: 0;
@@ -116,8 +121,15 @@ nav {
 main {
     background: url("img/background.png") round fixed;
     background-size: contain;
-    padding: 1em;
     text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+@media only screen and (max-width:576px) {
+    main {
+        background-size: cover;
+    }
 }
 
 #filter-nav {
@@ -127,7 +139,7 @@ main {
     -webkit-backdrop-filter: blur(12.5px);
     border: solid 2px transparent;
     border-radius: 20px;
-    background-image: linear-gradient(#2F2957, #2F2957),
+    background-image: linear-gradient(#27165D, #2F1B58),
         linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -203,7 +215,6 @@ button.buscar {
     text-align: initial;
 }
 
-/* ! El círculo es gordo porque es de pago y no sé cómo conseguir el light */
 i {
     color: white;
 }
@@ -246,8 +257,6 @@ i {
     transition: opacity .5s;
 }
 
-/* !en mozilla se rompe?????????????????????????
-mentiraaaaaaaa si funciona */
 .card-idolized:hover {
     opacity: 1;
 }
@@ -276,6 +285,10 @@ mentiraaaaaaaa si funciona */
 
 .tab:nth-child(even) {
     border-radius: 0 0 20px 0;
+}
+
+.fa-bookmark {
+    padding: 0 3px 0 3px;
 }
 
 /* ? Para que el espacio que sobra de columna en las cajas de una fila no se rellene */

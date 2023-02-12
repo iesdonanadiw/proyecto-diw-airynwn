@@ -4,11 +4,6 @@ let icon = document.getElementById('icon-modo');
 
 modo.addEventListener('change', () => {
   main.classList.toggle('light');
-  if (icon.classList.contains("fa-moon")) {
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-  } else {
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-  }
+  icon.classList.toggle('fa-moon');
+  icon.classList.toggle('fa-sun');
 });
