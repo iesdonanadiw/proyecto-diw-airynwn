@@ -90,13 +90,16 @@ figure {
     box-sizing: border-box;
 }
 
-main {
+body {
     background: url("../img/background.png") round fixed;
     background-size: contain;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
     text-align: center;
     padding: 1em;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 nav {
@@ -105,7 +108,7 @@ nav {
 
 
 @media only screen and (max-width:576px) {
-    main {
+    body {
         background-size: cover;
     }
 }

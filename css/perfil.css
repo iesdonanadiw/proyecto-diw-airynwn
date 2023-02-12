@@ -119,10 +119,13 @@ h2 {
     box-sizing: border-box;
 }
 
-main {
-    font-family: 'Source Sans Pro', sans-serif;
+body {
     background: url("../img/background.png") round fixed;
     background-size: contain;
+}
+
+main {
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     padding: 1em;
     color: white;
@@ -133,7 +136,7 @@ nav {
 }
 
 @media only screen and (max-width:576px) {
-    main {
+    body {
         background-size: cover;
     }
 }

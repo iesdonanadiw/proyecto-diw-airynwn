@@ -18,9 +18,6 @@
 }
 
 /**************************/
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 a {
     color: white;
@@ -105,9 +102,13 @@ h2 {
     box-sizing: border-box;
 }
 
-main {
+body {
+    font-family: 'Source Sans Pro', sans-serif;
     background: url("../img/background.png") round fixed;
     background-size: contain;
+}
+
+main {
     text-align: center;
     padding: 1em;
     color: white;
@@ -118,7 +119,7 @@ nav {
 }
 
 @media only screen and (max-width:576px) {
-    main {
+    body {
         background-size: cover;
     }
 }

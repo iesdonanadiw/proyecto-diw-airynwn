@@ -96,10 +96,13 @@ h3 {
 
 main {
     font-family: 'Source Sans Pro', sans-serif;
-    background: url("../img/background.png") round fixed;
-    background-size: contain;
     padding: 1em;
     color: white;
+}
+
+body {
+    background: url("../img/background.png") round fixed;
+    background-size: contain;
 }
 
 nav {
@@ -107,7 +110,7 @@ nav {
 }
 
 @media only screen and (max-width:576px) {
-    main {
+    body {
         background-size: cover;
     }
 }

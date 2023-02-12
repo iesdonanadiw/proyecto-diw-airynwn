@@ -18,9 +18,6 @@
 }
 
 /**************************/
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 .header {
     background: linear-gradient(90deg, #3AA89B 0%, #9D44FF 100%);
@@ -95,16 +92,20 @@ a,
 }
 
 main {
-    background: url("../img/background.png") round fixed;
-    background-size: contain;
     text-align: center;
     padding: 1em;
     color: white;
     transition: background 0.2s linear;
 }
 
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: url("../img/background.png") round fixed;
+    background-size: contain;
+}
+
 @media only screen and (max-width:576px) {
-    main {
+    body {
         background-size: cover;
     }
  }
