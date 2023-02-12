@@ -147,7 +147,7 @@ main {
 }
 
 .home {
-    background-image: url("img/bg-pc.png");
+    background-image: url("../img/bg-pc.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,7 +155,7 @@ main {
 
 @media only screen and (max-width:991px) {
     .home {
-        background-image: url("img/bg-movil.png");
+        background-image: url("../img/bg-movil.png");
         background-position: right;
     }
 
@@ -165,7 +165,7 @@ main {
  }
 
 #fondo {
-    background-image: url("img/miku_home.png");
+    background-image: url("../img/miku_home.png");
     filter: blur(2.5px);
     height: 100%;
     background-position: center;

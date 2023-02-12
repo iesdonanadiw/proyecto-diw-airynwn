@@ -4,7 +4,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     color: white;
-    background: url("img/background.png");
+    background: url("../img/background.png");
     background-size: cover;
 } */
 
@@ -125,7 +125,7 @@ nav {
 /************************** PARTE DE LOGIN **************************/
 
 main {
-    background: url("img/background.png") round fixed;
+    background: url("../img/background.png") round fixed;
     background-size: contain;
     padding: 1em;
     color: white;

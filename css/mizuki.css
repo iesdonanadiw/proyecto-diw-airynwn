@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro&display=swap');
+/*** Variables ***/
+
+:root {
+    --mizuki: #E4A8CA;
+    --ena: #CCAA87;
+}
+
+/**************************/
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -16,10 +24,7 @@ h2 {
     font-family: 'Fredoka One', sans-serif;
     font-weight: 400;
     text-align: center;
-    background-image: linear-gradient(70deg, #EC64F5 25%, #4DF6C6 75%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--mizuki);
     /* ? Para que el degradado se vea bien */
     display: inline;
 }
@@ -39,7 +44,7 @@ h3 {
 
 /* El figure es más grande que el div */
 figure {
-    margin: 1rem 0 0 0 !important;
+    margin: 0;
     padding: 0;
 }
 
@@ -58,19 +63,6 @@ nav {
     gap: 2em;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
-    background-color: #ffffff30 !important; /*Sobreescribe bootstrap*/
-}
-
-.header-avatar {
-    border-radius: 20px;
-    border: solid 2px rgba(255, 255, 255, 0.5);
-}
-
-.navbar-text a {
-    text-decoration: none;
-}
-
 /********************* MODAL  *********************/
 
 .flexbox-cerrar {
@@ -87,7 +79,6 @@ nav {
 }
 
         /****** Contenido Modal ******/
-
 
 #modal-personajes .caja {
     background-image: none;
@@ -110,16 +101,79 @@ nav {
 
 /***********************************************/
 
-/********************* CARTAS  *********************/
+.opcion {
+    padding: 0.25em;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    background: #2F2957;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border: solid 1px transparent;
+    background-image: linear-gradient(#2F2957, #2F2957),
+        linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.caja {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    background-color: rgba(0, 0, 0, 0.38);
+    border: solid 1px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#0d071d, #09021b),
+    linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    /* v cuadrado */
+    /* border: 1px solid; */
+    /* border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.container .caja {
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-content {
+    /* margin-top: 0; */
+    /* margin: 0.5em 0.5em 0em 0.5em; */
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+
+.caja-content span {
+    margin-bottom: 0.5em;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #ffffff30 !important; /*Sobreescribe bootstrap*/
+}
+
+.header-avatar {
+    border-radius: 20px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-text a {
+    text-decoration: none;
+}
+
+/********************* PERSONAJE (Mizuki)  *********************/
 /*  TODO    Unificar los paneles que son glassmorphism oscuro + degradado de bordes,
     TODO    mirar los que son iguales. */
-
 * {
     box-sizing: border-box;
 }
 
 main {
-    background: url("img/background.png") round fixed;
+    background: url("../img/background.png") round fixed;
     background-size: contain;
     text-align: center;
     padding: 1em;
@@ -132,11 +186,27 @@ main {
     }
 }
 
-#filter-nav {
-    padding: 1em;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+main p,
+main span,
+main li {
+    -webkit-text-stroke: 0.5px #E4A8CA;
+}
+
+
+.centrar-fila {
+    justify-content: center;
+    gap: 3%;
+}
+
+#trivia-nav {
+    margin: 0.5em;
+    padding: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     border: solid 2px transparent;
     border-radius: 20px;
     background-image: linear-gradient(#27165D, #2F1B58),
@@ -145,123 +215,50 @@ main {
     background-clip: padding-box, border-box;
 }
 
-#filter-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+#trivia-nav h2 {
+    background-image: linear-gradient(70deg, #EC64F5 25%, #4DF6C6 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.opcion {
-    padding: 0.25em;
-    color: white;
-    background: #2F2957;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px 20px 0px 0px;
-    border: solid 1px transparent;
-    background-image: linear-gradient(#2F2957, #2F2957),
-        linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-}
-
-.caja {
-    background-color: rgba(0, 0, 0, 0.38);
-    border: solid 1px transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(#0d071d, #09021b),
-    linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+#personaje {
+    /* margin: 0.5em;
+    padding: 1.5em;
+    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
     display: flex;
     flex-direction: column;
-}
-
-.caja-content {
-    margin: 0.5em 0.5em 0em 0.5em;
-    display: flex;
-    flex-direction: column;
+    gap: 1em;
     text-align: initial;
 }
 
-.caja-content span {
-    margin-bottom: 0.5em;
-}
-
-.caja-icons {
-    margin: 0.5em;
-}
-
-ul li {
-    display: inline;
-    list-style: none;
-}
-
-button.buscar {
-    background: #2F2957;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+.panel {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.32) 100%);
+    border: 1px solid var(--mizuki);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     border-radius: 20px;
-    border: solid 2px transparent;
-    background-image: linear-gradient(#2F2957, #2F2957),
-    linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    padding: 0.5em;
-    width: 100%;
-    color: white;
-    text-align: initial;
 }
 
-i {
-    color: white;
-}
-
-.card-box {
+#personaje .caja {
     background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
-    border: solid 2px transparent;
-    background-image: linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    border-radius: 20px;
 }
 
-.card-box img {
-    background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
-    backdrop-filter: blur(12.5px);
-    border: solid 2px transparent;
-    background-image: linear-gradient(#2F2957, #2F2957),
-    linear-gradient(180deg, rgba(236, 100, 245, 0.5) 0%, rgba(77, 246, 198, 0.5) 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    border-radius: 20px;
+strong {
+    color: var(--mizuki);
 }
 
-.card {
-    position: relative;
-    max-width: 100%;
+.espacio {
+    margin: 10px 0 10px 0;
 }
 
-.card-idolized {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity .5s;
-}
-
-.card-idolized:hover {
-    opacity: 1;
-}
-
-/** Tab de añadir a colección/wishlist */
 .tabs {
     display: flex;
     justify-content: center;
@@ -287,11 +284,14 @@ i {
     border-radius: 0 0 20px 0;
 }
 
-.fa-bookmark {
-    padding: 0 3px 0 3px;
+i {
+    color: white;
 }
 
-/* ? Para que el espacio que sobra de columna en las cajas de una fila no se rellene */
-.row {
-    align-items: flex-start;
+.cuadrado {
+    border-radius: 0px;
+}
+
+.ena {
+    color: var(--ena);
 }

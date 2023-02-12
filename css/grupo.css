@@ -130,7 +130,7 @@ nav {
 }
 
 main {
-    background: url("img/background.png") round fixed;
+    background: url("../img/background.png") round fixed;
     background-size: contain;
     text-align: center;
     padding: 1em;
@@ -293,7 +293,7 @@ ul li {
     text-align: justify;
 }
 
-.caja-content img {
+.caja-content ../img {
     border-radius: 20px;
 }
 
