@@ -147,7 +147,7 @@ main {
 }
 
 .home {
-    background-image: url("imgtest/card_normal\ \(2\).png");
+    background-image: url("img/bg-pc.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,7 +155,7 @@ main {
 
 @media only screen and (max-width:991px) {
     .home {
-        background-image: url("imgtest/card_after_training\ \(19\).png");
+        background-image: url("img/bg-movil.png");
         background-position: right;
     }
 
