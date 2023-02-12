@@ -69,6 +69,8 @@ nav {
 .boton-cerrar {
     background-color: #b83131;
     padding: 0 0.5em 0 0.5em;
+    border-radius: 10px;
+    border: none;
 }
 
         /****** Contenido Modal ******/
@@ -76,9 +78,10 @@ nav {
 .modal-personajes-content {
     visibility: hidden;
     opacity: 0;
-    position: absolute;
+    position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
     transition: all .4s;
+    overflow: auto;
 }
 
 .modal-personajes-content:target {
