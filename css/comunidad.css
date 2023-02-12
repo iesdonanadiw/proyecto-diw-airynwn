@@ -11,58 +11,22 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    color: white;
-}
-
-a {
-    color: white;
-    box-sizing: border-box;
-    text-decoration-line: none;
 }
 
 h2 {
     font-family: 'Fredoka One', sans-serif;
-    font-weight: 400;
     text-align: center;
     background-image: linear-gradient(70deg, #EC64F5 25%, #4DF6C6 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* display: inline; */
-}
-
-h3 {
-    color: white;
-    font-family: 'Fredoka One', sans-serif;
-    text-align: center;
-    font-weight: 400;
 }
 
 .header {
     background: linear-gradient(90deg, #3AA89B 0%, #9D44FF 100%);
-    /* ? Más bonito el de abajo IMO */
-    /* background: linear-gradient(90deg, #249ABB 0%, #9D44FF 100%); */
 }
 
-/* El figure es más grande que el div */
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-/* TODO Resizear */
 #logo {
     height: 35px;
-}
-
-/*
-    Display flex para estar en el flexbox header
-    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
-*/
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
 }
 
 .header-avatar {
@@ -152,7 +116,6 @@ nav {
 }
 
 .caja-content {
-    /* margin-top: 0; */
     margin: 0.5em 0.5em 0em 0.5em;
     display: flex;
     flex-direction: column;
@@ -177,6 +140,10 @@ main {
     color: white;
 }
 
+nav {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 @media only screen and (max-width:576px) {
     main {
         background-size: cover;
@@ -184,21 +151,6 @@ main {
 }
 
 .contenedor {
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    background-color: rgba(0, 0, 0, 0.38);
-    border: solid 2px transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(#0d071d, #09021b),
-    linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    margin: 0.5em;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: fit-content; */
     margin: 0 0.5em 0.5em 0.5em;
     padding: 1.5em;
     display: flex;
@@ -235,7 +187,6 @@ button {
 }
 
 button[type=submit] {
-    background: #2F2957;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     border-radius: 20px;
@@ -311,12 +262,11 @@ i {
 .post-box {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 0.25em;
 }
 
 .post {
-    text-align: left;
+    text-align: initial;
 }
 
 .post-info {
