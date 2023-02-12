@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="css/cartas.css">
+    <script src="https://kit.fontawesome.com/5b4a872535.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.png" alt="Logo SekaiSchool">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="cartas.html">Cartas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#modal-personajes">Personajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="comunidad.html">Comunidad</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Grupos
+                    </a>
+                    <ul class="dropdown-menu header noborder">
+                      <li><a class="dropdown-item text-white" href="ln.html">Leo/need</a></li>
+                      <li><a class="dropdown-item text-white" href="mmj.html">MORE MORE JUMP!</a></li>
+                      <li><a class="dropdown-item text-white" href="vbs.html">Vivid BAD SQUAD</a></li>
+                      <li><a class="dropdown-item text-white" href="wxs.html">Wonderlands x Showtime</a></li>
+                      <li><a class="dropdown-item text-white" href="25ji.html">25-ji, Nightcord de.</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <a href="perfil.html">
+                    <img src="img/avatar-miko.png" alt="Avatar de usuario" class="header-avatar" width="30">
+                    Laura
+                </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    <!--  -->
+    <main>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12" id="filter-nav">
+            <form id="filter-wrapper">
+                <h2>Opciones de búsqueda</h2>  
+            <!--  -->   
+                <div class="caja">
+                    <span class="opcion">Grupo</span>
+                    <div class="caja-content">
+                        <span>Leo/need</span>
+                        <span>MORE MORE JUMP!</span>
+                        <span>Vivid BAD SQUAD</span>
+                        <span>Wonderlands x Showtime</span>
+                        <span>25-ji, Nightcord de.</span>
+                    </div>
+                </div>
+                <div class="caja">
+                    <!-- Rareza -->
+                    <span class="opcion">Rareza</span>
+                    <div class="caja-icons">
+                        <span><img src="img/icons/rainbow_star.png" alt="Estrella"></span>
+                        <span><img src="img/icons/rainbow_star.png" alt="Estrella"></span>
+                        <span><img src="img/icons/rainbow_star.png" alt="Estrella"></span>
+                        <span><img src="img/icons/rainbow_star.png" alt="Estrella"></span>
+                        <span><img src="img/icons/birthday.png" alt="Cumpleaños/Aniversario"></span>
+                    </div>
+                </div>
+                <div class="caja">
+                    <!-- Atributo -->
+                    <span class="opcion">Atributo</span>
+                    <div class="caja-icons">
+                        <span><img src="img/icons/cute.png" alt="Cute"></span>
+                        <span><img src="img/icons/mysterious.png" alt="Mysterious"></span>
+                        <span><img src="img/icons/cool.png" alt="Cool"></span>
+                        <span><img src="img/icons/happy.png" alt="Happy"></span>
+                        <span><img src="img/icons/pure.png" alt="Pure"></span>
+                    </div>
+                </div>
+                <div class="caja">
+                    <!-- TODO: Botón que abre un modal Personaje -->
+                    <span class="opcion">Personaje</span>
+                    <p>Aquí va el nombre del personaje seleccionado</p>
+                </div>
+                <div class="caja-icons">
+                    <button type="submit" class="buscar">
+                        <span class="fa-stack">
+                            <i class="fa-regular fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-magnifying-glass fa-stack-1x"></i>
+                        </span>
+                        Buscar
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col" id="cartas">
+            <div class="container">
+                <div class="row row-cols-sm-2 row-cols-1">
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/tsukasa_card_unidolized.png" alt="Tsukasa Unidolized" class="img-fluid card">
+                            <img src="img/tsukasa_card_idolized.png" alt="Tsukasa Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <div class="tabs">
+                            <div class="tab">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="tab">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/mizuki_card_unidolized.png" alt="Mizuki Unidolized" class="img-fluid card">
+                            <img src="img/mizuki_card_idolized.png" alt="Mizuki Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <div class="tabs">
+                            <div class="tab">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="tab">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/saki_card_unidolized.png" alt="Saki Unidolized" class="img-fluid card">
+                            <img src="img/saki_card_idolized.png" alt="Saki Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <div class="tabs">
+                            <div class="tab">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="tab">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/akito_card_unidolized.png" alt="Akito Unidolized" class="img-fluid card">
+                            <img src="img/akito_card_idolized.png" alt="Akito Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <div class="tabs">
+                            <div class="tab">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="tab">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/nene_card_unidolized.png" alt="Nene Unidolized" class="img-fluid card">
+                            <img src="img/nene_card_idolized.png" alt="Nene Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <div class="tabs">
+                            <div class="tab">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="tab">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/rui_card_unidolized.png" alt="Rui Unidolized" class="img-fluid card">
+                            <img src="img/rui_card_idolized.png" alt="Rui Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <div class="tabs">
+                            <div class="tab">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="tab">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/toya_card_unidolized.png" alt="Toya Unidolized" class="img-fluid card">
+                            <img src="img/toya_card_idolized.png" alt="Toya Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <div class="tabs">
+                            <div class="tab">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="tab">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="card-box">
+                            <img src="img/shiho_card_unidolized.png" alt="Shiho Unidolized" class="img-fluid card">
+                            <img src="img/shiho_card_idolized.png" alt="Shiho Idolized" class="img-fluid card-idolized">
+                        </figure>
+                        <div class="tabs">
+                            <div class="tab">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="tab">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<!-- ****** MODAL PERSONAJES ****** -->
+<div class="container justify-content-center d-flex modal-personajes-content" id="modal-personajes">
+    <div class="row">
+        <div class="col caja">
+            <div class="flexbox-cerrar">
+                <button type="button" class="boton-cerrar" onclick="location.href='#'">
+                    &times;
+                </button>
+            </div>
+            <div class="container caja-content">
+                <div class="row row-cols-3 row-cols-md-5 row-cols-lg-6 g-3">
+                    <div class="col">
+                        <img src="img/chibis/1.png" alt="Chibi Ichika" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/2.png" alt="Chibi Saki" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/3.png" alt="Chibi Honami" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/4.png" alt="Chibi Shiho" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/5.png" alt="Chibi Luka" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/6.png" alt="Chibi Miku" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/7.png" alt="Chibi Minori" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/8.png" alt="Chibi Haruka" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/9.png" alt="Chibi Airi" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/10.png" alt="Chibi Shizuku" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/11.png" alt="Chibi Rin" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/12.png" alt="Chibi Kohane" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/13.png" alt="Chibi An" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/14.png" alt="Chibi Akito" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/15.png" alt="Chibi Toya" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/16.png" alt="Chibi Len" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/17.png" alt="Chibi Tsukasa" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/18.png" alt="Chibi Emu" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/19.png" alt="Chibi Nene" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/20.png" alt="Chibi Rui" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/21.png" alt="Chibi Kaito" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/22.png" alt="Chibi Kanade" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/23.png" alt="Chibi Mafuyu" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="img/chibis/24.png" alt="Chibi Ena" class="img-fluid">
+                    </div>
+                    <!-- Mizuki (Este es el personaje con pÃ¡gina) -->
+                    <a href="mizuki.html">
+                        <div class="col">
+                            <img src="img/chibis/25.png" alt="Chibi Mizuki" class="img-fluid">
+                        </div>
+                    </a>
+                    <div class="col">
+                        <img src="img/chibis/26.png" alt="Chibi Meiko" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
