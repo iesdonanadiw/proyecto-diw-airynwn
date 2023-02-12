@@ -56,6 +56,10 @@ h2 {
     text-decoration: none;
 }
 
+.noborder {
+    border: none !important;
+}
+
 /********************* MODAL  *********************/
 
 .flexbox-cerrar {

@@ -25,6 +25,10 @@ h3 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
 
+.noborder {
+    border: none !important;
+}
+
 /********************* MODAL  *********************/
 
 .flexbox-cerrar {

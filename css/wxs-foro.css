@@ -45,6 +45,10 @@ a,
     text-decoration: none;
 }
 
+.noborder {
+    border: none !important;
+}
+
 /********************* MODAL  *********************/
 
 .flexbox-cerrar {
