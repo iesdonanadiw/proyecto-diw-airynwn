@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro&display=swap');
 
+
+:root {
+    /*** PJs ***/
+    --shizuku: #9AEEDE;
+    /*** VSs ***/
+    --rin: #FC1;
+    --len: #FFEE12;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -72,28 +81,42 @@ nav {
 
 /********************* MODAL  *********************/
 
-.modal {
-    overflow: hidden;
+.flexbox-cerrar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5em;
 }
 
-.modal-content {
-    z-index: 1;
+.boton-cerrar {
+    background-color: #b83131;
+    padding: 0 0.5em 0 0.5em;
+}
+
+        /****** Contenido Modal ******/
+
+.modal-personajes-content,
+.modal-calendario-content {
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
-    display: none;
-    /* ! FALTA CENTRARLO */
-    left: 300px;
-    top: 300px;
-    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.38) 100%);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    border-radius: 20px;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transition: all .4s;
 }
 
-.modal:active .modal-content {
-    display: block;
+.modal-personajes-content:target,
+.modal-calendario-content:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.lista-cumples {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
-/* ? **Cosas del modal a cambiar***/
+/***********************************************/
 
 .opcion {
     padding: 0.25em;
@@ -312,35 +335,6 @@ button[type=button] {
     background: linear-gradient(90deg, #EC64F5 0%, #4254F5 100%);
 }
 
-/****** Modal ******/
-
-.modal-personaje-content {
-    /* visibility: hidden; */
-    display: none;
-}
-
-.blur {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(30px);
-}
-
-/* Abre el modal cuando se pulsa el botón */
-#modal-personaje-toggle:checked ~ * .modal-personaje-content {
-    display: block;
-}
-
-#modal-personaje-toggle:not(:checked) ~ * .modal-personaje-content {
-    display: none;
-}
-
-.cerrar:checked ~ * .modal-personaje-content {
-    display: none;
-}
-
-/*******************/
 .off-topic {
     background: linear-gradient(81.48deg, #4DF6C6 0%, #4254F5 48.24%, #EC64F5 100%);
 }
@@ -349,10 +343,17 @@ button[type=button] {
     margin: 10px 0 10px 0;
 }
 
-/* 
-.caja {
-    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
-} */
+.shizuku {
+    color: var(--shizuku);
+}
+
+.rin {
+    color: var(--rin);
+}
+
+.len {
+    color: var(--len);
+}
 
 /* ? Para que el espacio que sobra de columna en las cajas de una fila no se rellene */
 .row {
