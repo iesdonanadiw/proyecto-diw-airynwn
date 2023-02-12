@@ -5,18 +5,6 @@
     --vbs: #E16;
 }
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    color: white;
-}
-
-a {
-    color: white;
-    box-sizing: border-box;
-    text-decoration-line: none;
-}
-
 h2 {
     font-family: 'Fredoka One', sans-serif;
     font-weight: 400;
@@ -28,38 +16,12 @@ h2 {
     display: inline;
 }
 
-h3 {
-    color: white;
-    font-family: 'Fredoka One', sans-serif;
-    text-align: center;
-    font-weight: 400;
-}
-
 .header {
     background: linear-gradient(90deg, #3AA89B 0%, #9D44FF 100%);
-    /* ? Más bonito el de abajo IMO */
-    /* background: linear-gradient(90deg, #249ABB 0%, #9D44FF 100%); */
 }
 
-/* El figure es más grande que el div */
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-/* TODO Resizear */
 #logo {
     height: 35px;
-}
-
-/*
-    Display flex para estar en el flexbox header
-    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
-*/
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -89,6 +51,7 @@ nav {
 
 #modal-personajes .caja {
     background-image: none;
+    outline: none;
 }
 
 .modal-personajes-content {
@@ -147,19 +110,22 @@ nav {
 }
 
 /********************* PERFIL  *********************/
-/*  TODO    Unificar los paneles que son glassmorphism oscuro + degradado de bordes,
-    TODO    mirar los que son iguales. Buscar alguna forma de que funcione el border-radius */
 
 * {
     box-sizing: border-box;
 }
 
 main {
+    font-family: 'Source Sans Pro', sans-serif;
     background: url("../img/background.png") round fixed;
     background-size: contain;
     text-align: center;
     padding: 1em;
     color: white;
+}
+
+nav {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media only screen and (max-width:576px) {
@@ -208,15 +174,7 @@ div.caja:nth-child(1) {
     outline: var(--usercolor) 2px solid;
 }
 
-
 #personaje {
-    /* margin: 0.5em;
-    padding: 1.5em;
-    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    border: 1px solid;
-    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -238,7 +196,6 @@ div.caja:nth-child(1) {
     font-size: medium;
     background: #2F2957;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    /* backdrop-filter: blur(12.5px); ESTO DA UNA SOMBRA RARA pero viene en figma..?*/
     border-radius: 20px 20px 0px 0px;
     border: solid 1px transparent;
     background-image: linear-gradient(#2F2957, #2F2957),
@@ -246,6 +203,8 @@ div.caja:nth-child(1) {
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
+
+/***TABS***/
 
 .tabs {
     display: flex;
@@ -258,8 +217,6 @@ div.caja:nth-child(1) {
     border-radius: 20px;
 }
 
-/* ? Esto es para que sea como la original, pero IMO queda mejor dejarlo de 3 colores */
-
 .tabs:nth-child(1) .tab {
     background: linear-gradient(90.86deg, #4254F5 0%, #EC64F5 100%);
 }
@@ -267,6 +224,8 @@ div.caja:nth-child(1) {
 .tabs:nth-child(2) .tab {
     background: linear-gradient(89.14deg, #EC64F5 0%, #4254F5 100%);
 }
+
+/******/
 
 button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -293,7 +252,6 @@ button {
 span a {
     color: #4DF6C6;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .espacio {
@@ -341,10 +299,3 @@ span a {
     color: white;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
-/* @media only screen and (min-width: 576px) {
-    .event-title {
-        width: 75%;
-        height: auto;
-    }
-} */
