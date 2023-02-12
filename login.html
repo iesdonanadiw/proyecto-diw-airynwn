@@ -13,8 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark header">
@@ -60,55 +60,56 @@
       </nav>
     <main>
         <div class="container">
-            <!-- margen vertical, gutter y separación uniforme -->
-            <div class="row g-5 my-auto justify-content-evenly">
+            <!--
+                Margen vertical, gutter 5, espacio uniforme
+                align-items-start hace que la caja no se extienda hasta el final de la fila
+            -->
+            <div class="row g-5 my-auto justify-content-evenly align-items-start">
             <div class="col-auto">
-                <form id="login-box">
+                <form id="login-box" class="p-3">
                 <h3>Iniciar sesión</h3>
                 <hr>
-                    <div class="campo">
-                        <label>Usuario</label>
-                        <br>
-                        <input type="text" name="usuario" class="input-form">
-                    </div>
-                    <div class="campo">
-                        <label>Contraseña</label>
-                        <br>
-                        <input type="password" name="contrasena" class="input-form">
-                    </div>
-                    <br>
-                    <button type="submit" class="button-form">Entrar</button>
+                <div class="mb-3">
+                    <label for="usuario-login" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="usuario-login">
+                </div>
+                <div class="mb-3">
+                    <label for="pw-login" class="form-label">Contraseña</label>
+                    <input type="text" class="form-control" id="pw-login">
+                </div>
+                <br>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary">Entrar</button>
+                </div>
                 </form>
                 <figure id="figure-box">
-                    <img src="img/Hatsune_Miku_chibi.webp" alt="chibi" id="chibi-login">
+                    <img src="img/Hatsune_Miku_chibi.webp" alt="chibi" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-auto" id="registro-box">
+            <div class="col-auto p-3" id="registro-box">
                 <h3>Registro</h3>
                 <hr>
                 <form>
-                    <div class="campo">
-                        <label>Usuario</label>
-                        <br>
-                        <input type="text" name="usuario" class="input-form">
+                    <div class="mb-3">
+                        <label for="usuario-registro" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="usuario-registro">
                     </div>
-                    <div class="campo">
-                        <label>Contraseña</label>
-                        <br>
-                        <input type="password" name="contrasena" class="input-form">
+                    <div class="mb-3">
+                        <label for="pw-registro" class="form-label">Contraseña</label>
+                        <input type="text" class="form-control" id="pw-registro">
                     </div>
-                    <div class="campo">
-                        <label>Repetir contraseña</label>
-                        <br>
-                        <input type="password" name="contrasena2" class="input-form">
+                    <div class="mb-3">
+                        <label for="pw2-registro" class="form-label">Repetir contraseña</label>
+                        <input type="text" class="form-control" id="pw2-registro">
                     </div>
-                    <div class="campo">
-                        <label>Correo electrónico</label>
-                        <br>
-                        <input type="email" name="correo" class="input-form">
+                    <div class="mb-3">
+                        <label for="correo-registro" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo-registro">
                     </div>
                     <br>
-                    <button type="submit" class="button-form">Registrarse</button>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">Registrarse</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -118,8 +119,9 @@
 <div class="container justify-content-center d-flex modal-personajes-content" id="modal-personajes">
     <div class="row">
         <div class="col caja">
-            <div class="flexbox-cerrar">
-                <button type="button" class="boton-cerrar" onclick="location.href='#'">
+            <!-- Botón X con margen superior y colocado al final-->
+            <div class="d-flex justify-content-end mt-1">
+                <button type="button" class="btn-danger redondeado" onclick="location.href='#'">
                     &times;
                 </button>
             </div>
@@ -197,7 +199,7 @@
                     <div class="col">
                         <img src="img/chibis/24.png" alt="Chibi Ena" class="img-fluid">
                     </div>
-                    <!-- Mizuki (Este es el personaje con pÃ¡gina) -->
+                    <!-- Mizuki (Este es el personaje con página) -->
                     <a href="mizuki.html">
                         <div class="col">
                             <img src="img/chibis/25.png" alt="Chibi Mizuki" class="img-fluid">
