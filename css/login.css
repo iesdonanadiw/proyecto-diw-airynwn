@@ -47,52 +47,17 @@ h3 {
     border: none;
 }
 
-        /****** Contenido Modal ******/
-
-#modal-personajes .caja {
-    background-image: none;
-}
-
-.modal-personajes-content {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    transition: all .4s;
-    overflow: auto;
-}
-
-.modal-personajes-content:target {
-    visibility: visible;
-    opacity: 1;
-  }
-
 
 /***********************************************/
 
-.caja {
-    background-color: rgba(0, 0, 0, 0.38);
-    border: solid 1px transparent;
+.modal-content {
     border-radius: 20px;
-    background-image: linear-gradient(#0d071d, #09021b),
-    linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
-    display: flex;
-    flex-direction: column;
 }
 
-.caja-content {
+.modal-body {
     margin: 0.5em 0.5em 0em 0.5em;
-    display: flex;
-    flex-direction: column;
-    text-align: initial;
-}
-
-.caja-content span {
-    margin-bottom: 0.5em;
 }
 
 /************************** PARTE DE LOGIN **************************/

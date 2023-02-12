@@ -13,8 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
-    <link rel="stylesheet" href="css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark header">
@@ -34,7 +34,7 @@
                     <a class="nav-link active" href="cartas.html">Cartas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#modal-personajes">Personajes</a>
+                    <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modal-personajes" href="">Personajes</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="comunidad.html">Comunidad</a>
@@ -116,16 +116,13 @@
     </div>
 </main>
 <!-- ****** MODAL PERSONAJES ****** -->
-<div class="container justify-content-center d-flex modal-personajes-content" id="modal-personajes">
-    <div class="row">
-        <div class="col caja">
-            <!-- Botón X con margen superior y colocado al final-->
-            <div class="d-flex justify-content-end mt-1">
-                <button type="button" class="btn-danger redondeado" onclick="location.href='#'">
-                    &times;
-                </button>
+<div class="modal fade" id="modal-personajes" tabindex="-1" aria-labelledby="modal-personajes" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content bg-transparent">
+            <div class="modal-header">
+                <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-            <div class="container caja-content">
+            <div class="modal-body container justify-content-center d-flex">
                 <div class="row row-cols-3 row-cols-md-5 row-cols-lg-6 g-3">
                     <div class="col">
                         <img src="img/chibis/1.png" alt="Chibi Ichika" class="img-fluid">
@@ -199,7 +196,7 @@
                     <div class="col">
                         <img src="img/chibis/24.png" alt="Chibi Ena" class="img-fluid">
                     </div>
-                    <!-- Mizuki (Este es el personaje con página) -->
+                    <!-- Mizuki (Este es el personaje con pÃ¡gina) -->
                     <a href="mizuki.html">
                         <div class="col">
                             <img src="img/chibis/25.png" alt="Chibi Mizuki" class="img-fluid">
