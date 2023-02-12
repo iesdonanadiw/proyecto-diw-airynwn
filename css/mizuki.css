@@ -10,14 +10,6 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    color: white;
-}
-
-a {
-    color: white;
-    box-sizing: border-box;
-    text-decoration-line: none;
 }
 
 h2 {
@@ -29,38 +21,12 @@ h2 {
     display: inline;
 }
 
-h3 {
-    color: white;
-    font-family: 'Fredoka One', sans-serif;
-    text-align: center;
-    font-weight: 400;
-}
-
 .header {
     background: linear-gradient(90deg, #3AA89B 0%, #9D44FF 100%);
-    /* ? Más bonito el de abajo IMO */
-    /* background: linear-gradient(90deg, #249ABB 0%, #9D44FF 100%); */
 }
 
-/* El figure es más grande que el div */
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-/* TODO Resizear */
 #logo {
     height: 35px;
-}
-
-/*
-    Display flex para estar en el flexbox header
-    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
-*/
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
 }
 
 /********************* MODAL  *********************/
@@ -76,6 +42,7 @@ nav {
     padding: 0 0.5em 0 0.5em;
     border-radius: 10px;
     border: none;
+    color: white;
 }
 
         /****** Contenido Modal ******/
@@ -125,11 +92,6 @@ nav {
     linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    /* v cuadrado */
-    /* border: 1px solid; */
-    /* border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .container .caja {
@@ -138,8 +100,6 @@ nav {
 }
 
 .caja-content {
-    /* margin-top: 0; */
-    /* margin: 0.5em 0.5em 0em 0.5em; */
     margin: 0.5em;
     display: flex;
     flex-direction: column;
@@ -165,8 +125,6 @@ nav {
 }
 
 /********************* PERSONAJE (Mizuki)  *********************/
-/*  TODO    Unificar los paneles que son glassmorphism oscuro + degradado de bordes,
-    TODO    mirar los que son iguales. */
 * {
     box-sizing: border-box;
 }
@@ -220,13 +178,6 @@ main li {
 }
 
 #personaje {
-    /* margin: 0.5em;
-    padding: 1.5em;
-    background: linear-gradient(214.91deg, rgba(0, 0, 0, 0.56) 14.51%, rgba(0, 0, 0, 0.38) 114.51%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    border: 1px solid;
-    border-image: linear-gradient(180deg, #EC64F5 0%, #4DF6C6 100%) 1; */
     display: flex;
     flex-direction: column;
     gap: 1em;
