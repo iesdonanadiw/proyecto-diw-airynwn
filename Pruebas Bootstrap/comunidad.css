@@ -158,7 +158,7 @@ nav {
     margin: 0.5em 0.5em 0em 0.5em;
     display: flex;
     flex-direction: column;
-    text-align: initial;
+    text-align: center;
 }
 
 .caja-content span {
