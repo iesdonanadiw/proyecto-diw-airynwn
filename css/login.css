@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro&display=swap');
 
-body {
-    font-family: 'Source Sans Pro', sans-serif  !important;
-}
-
 h3 {
     font-family: 'Fredoka One', sans-serif;
     text-align: center;
@@ -102,14 +98,22 @@ h3 {
 /************************** PARTE DE LOGIN **************************/
 
 main {
-    background: url("../img/background.png") round fixed;
-    background-size: contain;
+    font-family: 'Source Sans Pro', sans-serif;
     padding: 1em;
     color: white;
 }
 
+body {
+    background: url("../img/background.png") round fixed;
+    background-size: contain;
+}
+
+nav {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 @media only screen and (max-width:576px) {
-    main {
+    body {
         background-size: cover;
     }
 }
