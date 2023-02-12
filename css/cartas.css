@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro&display=swap');
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    color: white;
-}
-
 a {
     color: white;
     box-sizing: border-box;
@@ -14,7 +8,6 @@ a {
 
 h2 {
     font-family: 'Fredoka One', sans-serif;
-    font-weight: 400;
     text-align: center;
     background-image: linear-gradient(70deg, #EC64F5 25%, #4DF6C6 75%);
     -webkit-background-clip: text;
@@ -23,38 +16,17 @@ h2 {
     display: inline;
 }
 
-h3 {
-    color: white;
-    font-family: 'Fredoka One', sans-serif;
-    text-align: center;
-    font-weight: 400;
-}
-
 .header {
     background: linear-gradient(90deg, #3AA89B 0%, #9D44FF 100%);
-    /* ? Más bonito el de abajo IMO */
-    /* background: linear-gradient(90deg, #249ABB 0%, #9D44FF 100%); */
 }
 
-/* El figure es más grande que el div */
 figure {
     margin: 1rem 0 0 0 !important;
     padding: 0;
 }
 
-/* TODO Resizear */
 #logo {
     height: 35px;
-}
-
-/*
-    Display flex para estar en el flexbox header
-    Flex wrap para que al achicar la página se apilen los elementos en vez de empujar
-*/
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -104,14 +76,11 @@ nav {
 .modal-personajes-content:target {
     visibility: visible;
     opacity: 1;
-  }
-
+}
 
 /***********************************************/
 
 /********************* CARTAS  *********************/
-/*  TODO    Unificar los paneles que son glassmorphism oscuro + degradado de bordes,
-    TODO    mirar los que son iguales. */
 
 * {
     box-sizing: border-box;
@@ -123,7 +92,13 @@ main {
     text-align: center;
     padding: 1em;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
+nav {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 @media only screen and (max-width:576px) {
     main {
@@ -191,11 +166,6 @@ main {
     margin: 0.5em;
 }
 
-ul li {
-    display: inline;
-    list-style: none;
-}
-
 button.buscar {
     background: #2F2957;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -215,6 +185,8 @@ button.buscar {
 i {
     color: white;
 }
+
+/*** Cartas  ***/
 
 .card-box {
     background: linear-gradient(115.51deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.46) 100%);
@@ -283,6 +255,7 @@ i {
     border-radius: 0 0 20px 0;
 }
 
+/** El icono de bookmark tiene un tamaño distinto. Con padding se centra y se ven bien */
 .fa-bookmark {
     padding: 0 3px 0 3px;
 }

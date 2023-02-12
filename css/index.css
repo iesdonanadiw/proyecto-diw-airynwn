@@ -106,6 +106,10 @@ main {
     padding: 1em;
 }
 
+nav {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .home {
     background: url("../img/bg-pc.png") center no-repeat;
     background-size: cover;
