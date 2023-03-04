@@ -193,3 +193,7 @@ hr {
 .row {
     align-items: flex-start;
 }
+
+.espacio {
+    margin: 10px 0 10px 0;
+}
