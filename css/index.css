@@ -114,7 +114,7 @@ nav {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.home {
+/* .home {
     background: url("../img/bg-pc.png") center no-repeat;
     background-size: cover;
 }
@@ -127,7 +127,18 @@ nav {
     main {
         background-image: none;
     }
- }
+} */
+
+#bg-video {
+    filter: opacity(0.5);
+    position: absolute;
+    z-index: 0;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+}
 
 #logo-index {
     height: 70px;
