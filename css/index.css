@@ -138,6 +138,9 @@ nav {
     filter: opacity(0.3);
     position: absolute;
     z-index: 0;
+    -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgb(0, 0, 0)),
+    to(rgba(0,0,0,0)))
+
 }
 
 .overlay {
