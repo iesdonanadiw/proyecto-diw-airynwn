@@ -184,7 +184,30 @@ nav {
 
 /* ? El primer contenedor tiene el borde del color elegido por el usuario */
 div.container:nth-child(1) {
-    border: 1px solid var(--usercolor);
+    border: 1px solid;
+    animation: border-color 10s infinite;
+}
+
+@keyframes border-color {
+    0% {
+        border-color: var(--usercolor);
+    }
+
+    25% {
+        border-color: #4DF6C6
+    }
+
+    50% {
+        border-color: #EC64F5;
+    }
+
+    75% {
+        border-color: #4254F5;
+    }
+
+    100% {
+        border-color: var(--usercolor);
+    }
 }
 
 div.caja:nth-child(1) {
@@ -286,9 +309,31 @@ span a {
 .avatar-bg {
     display: flex;
     flex-direction: column;
-    background-color: var(--usercolor);
     border-radius: 20px;
     padding: 10px;
+    animation: bg-color 10s infinite;
+}
+
+@keyframes bg-color {
+    0% {
+        background-color: var(--usercolor);
+    }
+
+    25% {
+        background-color: #4DF6C6
+    }
+
+    50% {
+        background-color: #EC64F5;
+    }
+
+    75% {
+        background-color: #4254F5;
+    }
+
+    100% {
+        background-color: var(--usercolor);
+    }
 }
 
 .avatar {

@@ -103,8 +103,9 @@ Ya que los filtros no quedan bien con las imágenes de los proyectos con marca d
 
 ### * ACTIVIDAD 3
 
-1. La transición es, al igual que en el filtro de las cartas, un *drop-shadow* que hace que se ilumine el elemento al pasar el ratón por encima de los elementos del menú.
-2. 
+1. La transición del menú es, al igual que en el filtro de las cartas, un *drop-shadow* que hace que se ilumine el elemento al pasar el ratón por encima de los elementos del menú.
+2. **Otro elemento con transición**: En la página de `Cartas` hay una transición en la opacidad de las cartas al hacer *hover*. Al entrar en la página se ve la versión normal de todas las cartas, pero la idea es mostrar la versión mejorada de esta al pasar el ratón por encima. Para esto, la opacidad de la imagen de la versión mejorada empieza en 0 y va subiendo suavemente hasta mostrarse por completo en el transcurso de 0.5 segundos.
+3. **Otro elemento con animación**: En la página de `Perfil` hay una animación para el color del borde para la foto de perfil y la caja de la biografía. Esta animación consiste en pasar por los distintos colores de la página a lo largo de 10 segundos empezando desde el color elegido por el usuario. Es simple pero bonito y ayuda a la personalización del usuario sin ser una animación muy cargada.
 
 ## RECURSOS `<a name="id4"></a> `
 
