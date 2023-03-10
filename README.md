@@ -110,7 +110,7 @@ Ya que los filtros no quedan bien con las imágenes de los proyectos con marca d
 ### * ACTIVIDAD 4
 
 1. El elemento **details** se encuentra en la página de `Login`. Está estilizado acorde a la página y contiene el logo animado además de algo de texto.
-2. El elemento **dialog** también se encuentra en la página `Login`.
+2. El elemento **dialog** también se encuentra en la página `Login`. Es un botón al fondo de la página que, al pulsarlo, muestra una ventana de diálogo que contiene mis redes sociales como información de contacto, así como un botón para cerrar la ventana.
 
 ## RECURSOS `<a name="id4"></a> `
 
