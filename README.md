@@ -97,6 +97,8 @@ Los vídeos de testimonios se encuentran en una nueva página destinada para est
 
 El vídeo de fondo está situado en el `Inicio`. Para mantener la estética de la página, el fondo de esta sigue siendo el mismo, pero el vídeo está superpuesto con baja opacidad y un degradado transparente que ayuda a integrarlo con el resto de los elementos de la página.
 
+El segundo vídeo de testimonio es el mismo que he usado como vídeo de fondo en el index. Este vídeo viene de aquí: [https://www.youtube.com/watch?v=m__WcDdaF7k](https://www.youtube.com/watch?v=m__WcDdaF7k), el cual es una animación especial para el segundo aniversario del videojuego del que trata la página.
+
 ### * Filtro
 
 Ya que los filtros no quedan bien con las imágenes de los proyectos con marca de agua, le he aplicado un filtro *drop-shadow* a la lista de cartas en la página de perfil. De esta forma, al hacer *hover* sobre las cartas, se ilumina alrededor de estas.
