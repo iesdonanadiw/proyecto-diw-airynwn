@@ -18,7 +18,19 @@ h3 {
 
 #logo {
     height: 35px;
+    animation: logo-progresivo 2s;
 }
+
+@keyframes logo-progresivo {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
+}
+
 
 .dropdown-item:focus, .dropdown-item:hover {
     background-color: #ffffff30 !important; /*Sobreescribe bootstrap*/
@@ -99,22 +111,29 @@ h3 {
 /********************* INDEX  *********************/
 
 main {
-    background-image: linear-gradient(
-        100deg, transparent, transparent, transparent, transparent,
-        rgba(255,255,255,0.3),
-        rgba(255,255,255,0.8),
-        rgba(255,255,255,0.8),
-        transparent
-    );
     color: white;
     padding: 1em;
 }
+
+body {
+    background: url("../img/background.png") round fixed;
+    background-size: contain;
+}
+
+@media only screen and (max-width:576px) {
+    body {
+        background-size: cover;
+    }
+}
+
 
 nav {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.home {
+/*
+Antiguo fondo pre-vídeo
+ .home {
     background: url("../img/bg-pc.png") center no-repeat;
     background-size: cover;
 }
@@ -127,7 +146,21 @@ nav {
     main {
         background-image: none;
     }
- }
+} */
+
+#bg-video {
+    filter: opacity(0.3);
+    position: absolute;
+    z-index: 0;
+    -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgb(0, 0, 0)),
+    to(rgba(0,0,0,0)))
+
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+}
 
 #logo-index {
     height: 70px;
@@ -175,3 +208,9 @@ h1 {
 .centro {
     text-align: center;
 }
+
+.brillo:hover {
+    filter: drop-shadow(0 0 0.5em white);
+    transition: all 0.5s;
+}
+

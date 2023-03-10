@@ -27,6 +27,17 @@ figure {
 
 #logo {
     height: 35px;
+    animation: logo-progresivo 2s;
+}
+
+@keyframes logo-progresivo {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -270,4 +281,9 @@ i {
 /* ? Para que el espacio que sobra de columna en las cajas de una fila no se rellene */
 .row {
     align-items: flex-start;
+}
+
+.brillo:hover {
+    filter: drop-shadow(0 0 0.5em white);
+    transition: all 0.5s;
 }

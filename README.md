@@ -29,7 +29,6 @@ Las decisiones de diseño como la temática y los colores de SekaiSchool están 
 
 La temática de la página también se relaciona con el espacio y las estrellas, haciendo referencia a Leo/need, el grupo principal del juego. Esto es así porque toma su nombre de las leónidas, una lluvia de meteoros que viene de la consteación de Leo; además de que los apellidos de los integrantes del grupo hacen referencia a distintos cuerpos celestes.
 
-
 ## PROTOTIPO `<a name="id2"></a>`
 
 [https://www.figma.com/file/AHWj58PAo7JKzitmErZxnU/sekaischool?node-id=0%3A1&amp;t=igLO9ucvrDLjuPPU-0]()
@@ -37,7 +36,6 @@ La temática de la página también se relaciona con el espacio y las estrellas,
 ## MODIFICACIONES A LA GUÍA DE ESTILOS `<a name="id3"></a>`
 
 [Listado de modificaciones realizadas debidamente justificadas. ]
-
 
 ### * **Cambios genéricos**
 
@@ -82,6 +80,39 @@ La temática de la página también se relaciona con el espacio y las estrellas,
 1. Se ha ajustado el orden de los botones de `Temas populares` para que se vean agrupados por tamaño.
 2. Las fotos de las publicaciones ahora forman parte de la estructura de la publicación en sí, de forma que no es necesario recortarla y se integra mejor en la página.
 3. La caja `Escribir post` ahora se encuentra arriba, junto a `Temas populares`, para ser más accesible y que todas las funciones de la página se encuentren en la parte superior, mientras que en la parte inferior están las publicaciones.
+
+## ENTREGA 4
+
+### * Picture y puntos de ruptura
+
+Las imágenes son responsive gracias a Bootstrap, así que no tienen puntos de ruptura. Sin embago, para poner un ejemplo he cambiado la imagen del personaje en su página correspondiente: a partir de los 576 píxeles se muestra la imagen normal, mientras que antes de eso aparece su versión chibi.
+
+### * Audio
+
+El autoplay para la música de fondo sólo funciona dándole permisos en Firefox. El audio de los vídeos sí funciona correctamente en Chrome.
+
+### * Vídeos
+
+Los vídeos de testimonios se encuentran en una nueva página destinada para esto llamada `Testimonios`. 
+
+El vídeo de fondo está situado en el `Inicio`. Para mantener la estética de la página, el fondo de esta sigue siendo el mismo, pero el vídeo está superpuesto con baja opacidad y un degradado transparente que ayuda a integrarlo con el resto de los elementos de la página.
+
+El segundo vídeo de testimonio es el mismo que he usado como vídeo de fondo en el index. Este vídeo viene de aquí: [https://www.youtube.com/watch?v=m__WcDdaF7k](https://www.youtube.com/watch?v=m__WcDdaF7k), el cual es una animación especial para el segundo aniversario del videojuego del que trata la página.
+
+### * Filtro
+
+Ya que los filtros no quedan bien con las imágenes de los proyectos con marca de agua, le he aplicado un filtro *drop-shadow* a la lista de cartas en la página de perfil. De esta forma, al hacer *hover* sobre las cartas, se ilumina alrededor de estas.
+
+### * ACTIVIDAD 3
+
+1. La transición del menú es, al igual que en el filtro de las cartas, un *drop-shadow* que hace que se ilumine el elemento al pasar el ratón por encima de los elementos del menú.
+2. **Otro elemento con transición**: En la página de `Cartas` hay una transición en la opacidad de las cartas al hacer *hover*. Al entrar en la página se ve la versión normal de todas las cartas, pero la idea es mostrar la versión mejorada de esta al pasar el ratón por encima. Para esto, la opacidad de la imagen de la versión mejorada empieza en 0 y va subiendo suavemente hasta mostrarse por completo en el transcurso de 0.5 segundos.
+3. **Otro elemento con animación**: En la página de `Perfil` hay una animación para el color del borde para la foto de perfil y la caja de la biografía. Esta animación consiste en pasar por los distintos colores de la página a lo largo de 10 segundos empezando desde el color elegido por el usuario. Es simple pero bonito y ayuda a la personalización del usuario sin ser una animación muy cargada.
+
+### * ACTIVIDAD 4
+
+1. El elemento **details** se encuentra en la página de `Login`. Está estilizado acorde a la página y contiene el logo animado además de algo de texto.
+2. El elemento **dialog** también se encuentra en la página `Login`. Es un botón al fondo de la página que, al pulsarlo, muestra una ventana de diálogo que contiene mis redes sociales como información de contacto, así como un botón para cerrar la ventana.
 
 ## RECURSOS `<a name="id4"></a> `
 

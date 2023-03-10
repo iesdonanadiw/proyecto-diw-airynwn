@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,44 +15,56 @@
       <script src="js/wxs-foro.js" defer></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark header">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-              <img id="logo" src="img/logo.png" alt="Logo SekaiSchool">
-          </a>
+    <audio preload="auto" autoplay loop>
+      <source src="audio/bg-sound.mp3" type="audio/mpeg">
+      <source src="audio/bg-sound.ogg" type="audio/ogg">
+      El navegador no soporta el audio.
+  </audio>
+  <nav class="navbar navbar-expand-lg navbar-dark header">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <picture>
+                <img id="logo" class="brillo" src="img/logotipo.svg" alt="Logo SekaiSchool">
+            </picture>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
-              <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Inicio</a>
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active brillo" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="cartas.html">Cartas</a>
+                    <a class="nav-link active brillo" href="cartas.html">Cartas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#modal-personajes">Personajes</a>
+                    <a class="nav-link active brillo" href="#modal-personajes">Personajes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="comunidad.html">Comunidad</a>
+                    <a class="nav-link active brillo" href="comunidad.html">Comunidad</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active dropdown-toggle brillo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Grupos
-                  </a>
-                  <ul class="dropdown-menu header noborder">
-                    <li><a class="dropdown-item text-white" href="ln.html">Leo/need</a></li>
-                    <li><a class="dropdown-item text-white" href="mmj.html">MORE MORE JUMP!</a></li>
-                    <li><a class="dropdown-item text-white" href="vbs.html">Vivid BAD SQUAD</a></li>
-                    <li><a class="dropdown-item text-white" href="wxs.html">Wonderlands x Showtime</a></li>
-                    <li><a class="dropdown-item text-white" href="25ji.html">25-ji, Nightcord de.</a></li>
-                  </ul>
-              </li>
-          </ul>
+                    </a>
+                    <ul class="dropdown-menu header noborder">
+                    <li><a class="dropdown-item text-white brillo" href="ln.html">Leo/need</a></li>
+                    <li><a class="dropdown-item text-white brillo" href="mmj.html">MORE MORE JUMP!</a></li>
+                    <li><a class="dropdown-item text-white brillo" href="vbs.html">Vivid BAD SQUAD</a></li>
+                    <li><a class="dropdown-item text-white brillo" href="wxs.html">Wonderlands x Showtime</a></li>
+                    <li><a class="dropdown-item text-white brillo" href="25ji.html">25-ji, Nightcord de.</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active brillo" href="testimonios.html">Testimonios</a>
+                </li>
+            </ul>
           <span class="navbar-text">
-              <a href="perfil.html">
+              <a href="perfil.html" class="brillo">
+                <picture>
                   <img src="img/avatar-miko.png" alt="Avatar de usuario" class="header-avatar" width="30">
+                </picture>
                   Laura
               </a>
           </span>
@@ -71,7 +84,9 @@
                     <div class="caja">
                       <div class="columna avatar">
                         <div class="caja-content">
-                          <img src="img/wxs-avatar-1.jpg" alt="Avatar 1" class="avatar-foro">
+                          <picture>
+                            <img src="img/wxs-avatar-1.jpg" alt="Avatar 1" class="avatar-foro">
+                          </picture>
                         </div>
                         <span class="opcion">juan</span>
                       </div>
@@ -98,7 +113,9 @@
                       <div class="caja">
                         <div class="columna avatar">
                           <div class="caja-content">
-                            <img src="img/wxs-avatar-2.png" alt="Avatar 2" class="avatar-foro">
+                            <picture>
+                              <img src="img/wxs-avatar-2.png" alt="Avatar 2" class="avatar-foro">
+                            </picture>
                           </div>
                           <span class="opcion">EmpResS</span>
                         </div>
@@ -125,7 +142,9 @@
                       <div class="caja">
                         <div class="columna avatar">
                           <div class="caja-content">
-                            <img src="img/wxs-avatar-3.png" alt="Avatar 3" class="avatar-foro">
+                            <picture>
+                              <img src="img/wxs-avatar-3.png" alt="Avatar 3" class="avatar-foro">
+                            </picture>
                           </div>
                           <span class="opcion">xX_DemonLord_Xx</span>
                         </div>
@@ -153,7 +172,9 @@
                       <div class="caja">
                         <div class="columna avatar">
                           <div class="caja-content">
-                            <img src="img/wxs-avatar-4.png" alt="Avatar 4" class="avatar-foro">
+                            <picture>
+                              <img src="img/wxs-avatar-4.png" alt="Avatar 4" class="avatar-foro">
+                            </picture>
                           </div>
                           <span class="opcion">HatsuneMiku</span>
                         </div>
@@ -181,7 +202,9 @@
                       <div class="caja">
                         <div class="columna avatar">
                           <div class="caja-content">
-                            <img src="img/wxs-avatar-5.png" alt="Avatar 5" class="avatar-foro">
+                            <picture>  
+                              <img src="img/wxs-avatar-5.png" alt="Avatar 5" class="avatar-foro">
+                            </picture>
                           </div>
                           <span class="opcion">Shinchan</span>
                         </div>
@@ -209,7 +232,9 @@
                       <div class="caja">
                         <div class="columna avatar">
                           <div class="caja-content">
-                            <img src="img/wxs-avatar-6.png" alt="Avatar 6" class="avatar-foro">
+                            <picture>
+                              <img src="img/wxs-avatar-6.png" alt="Avatar 6" class="avatar-foro">
+                            </picture>
                           </div>
                           <span class="opcion">yuumara</span>
                         </div>
@@ -253,16 +278,24 @@
             </div>
             <!-- stickers! -->
             <figure>
+              <picture>
                 <img src="img/tsukasa-mini.png" alt="Tsukasa Mini">
+              </picture>
             </figure>
             <figure>
+              <picture>
                 <img src="img/rui-mini.png" alt="Rui Mini">
+              </picture>
             </figure>
             <figure>
+              <picture>
                 <img src="img/emu-mini.png" alt="Emu Mini">
+              </picture>
             </figure>
             <figure>
+              <picture>
                 <img src="img/nene-mini.png" alt="Nene Mini">
+              </picture>
             </figure>
           </div>
           <!-- ******* CUARTA COLUMNA: ICONO MAXIMIZE -->
@@ -289,87 +322,139 @@
           </div>
           <div class="container caja-content">
               <div class="row row-cols-3 row-cols-md-5 row-cols-lg-6 g-3">
-                  <div class="col">
-                    <img src="img/chibis/1.png" alt="Chibi Ichika" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/2.png" alt="Chibi Saki" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/3.png" alt="Chibi Honami" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/4.png" alt="Chibi Shiho" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/5.png" alt="Chibi Luka" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/6.png" alt="Chibi Miku" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/7.png" alt="Chibi Minori" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/8.png" alt="Chibi Haruka" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/9.png" alt="Chibi Airi" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/10.png" alt="Chibi Shizuku" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/11.png" alt="Chibi Rin" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/12.png" alt="Chibi Kohane" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/13.png" alt="Chibi An" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/14.png" alt="Chibi Akito" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/15.png" alt="Chibi Toya" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/16.png" alt="Chibi Len" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/17.png" alt="Chibi Tsukasa" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/18.png" alt="Chibi Emu" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/19.png" alt="Chibi Nene" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/20.png" alt="Chibi Rui" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/21.png" alt="Chibi Kaito" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/22.png" alt="Chibi Kanade" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/23.png" alt="Chibi Mafuyu" class="img-fluid">
-                  </div>
-                  <div class="col">
-                      <img src="img/chibis/24.png" alt="Chibi Ena" class="img-fluid">
-                  </div>
-                  <!-- Mizuki (Este es el personaje con pÃ¡gina) -->
-                  <a href="mizuki.html">
-                      <div class="col">
-                          <img src="img/chibis/25.png" alt="Chibi Mizuki" class="img-fluid">
-                      </div>
-                  </a>
-                  <div class="col">
-                      <img src="img/chibis/26.png" alt="Chibi Meiko" class="img-fluid">
-                  </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/1.png" alt="Chibi Ichika" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/2.png" alt="Chibi Saki" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/3.png" alt="Chibi Honami" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/4.png" alt="Chibi Shiho" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/5.png" alt="Chibi Luka" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/6.png" alt="Chibi Miku" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/7.png" alt="Chibi Minori" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/8.png" alt="Chibi Haruka" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/9.png" alt="Chibi Airi" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/10.png" alt="Chibi Shizuku" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/11.png" alt="Chibi Rin" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/12.png" alt="Chibi Kohane" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/13.png" alt="Chibi An" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/14.png" alt="Chibi Akito" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/15.png" alt="Chibi Toya" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/16.png" alt="Chibi Len" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/17.png" alt="Chibi Tsukasa" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/18.png" alt="Chibi Emu" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/19.png" alt="Chibi Nene" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/20.png" alt="Chibi Rui" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/21.png" alt="Chibi Kaito" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/22.png" alt="Chibi Kanade" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/23.png" alt="Chibi Mafuyu" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/24.png" alt="Chibi Ena" class="img-fluid">
+                    </picture>
+                </div>
+                <!-- Mizuki (Este es el personaje con pÃ¡gina) -->
+                <a href="mizuki.html">
+                    <div class="col">
+                        <picture>
+                            <img src="img/chibis/25.png" alt="Chibi Mizuki" class="img-fluid">
+                        </picture>
+                    </div>
+                </a>
+                <div class="col">
+                    <picture>
+                        <img src="img/chibis/26.png" alt="Chibi Meiko" class="img-fluid">
+                    </picture>
+                </div>
               </div>
           </div>
       </div>
