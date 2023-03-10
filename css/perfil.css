@@ -22,6 +22,17 @@ h2 {
 
 #logo {
     height: 35px;
+    animation: logo-progresivo 2s;
+}
+
+@keyframes logo-progresivo {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
 }
 
 .dropdown-item:focus, .dropdown-item:hover {

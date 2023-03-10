@@ -18,7 +18,19 @@ h3 {
 
 #logo {
     height: 35px;
+    animation: logo-progresivo 2s;
 }
+
+@keyframes logo-progresivo {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
+}
+
 
 .dropdown-item:focus, .dropdown-item:hover {
     background-color: #ffffff30 !important; /*Sobreescribe bootstrap*/
@@ -201,3 +213,4 @@ h1 {
     filter: drop-shadow(0 0 0.5em white);
     transition: all 0.5s;
 }
+

@@ -25,6 +25,17 @@
 
 #logo {
     height: 35px;
+    animation: logo-progresivo 2s;
+}
+
+@keyframes logo-progresivo {
+    0% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+    }
 }
 
 .header-avatar {
@@ -298,4 +309,9 @@ main.light {
 
 .kaito {
     color: var(--kaito)
+}
+
+.brillo:hover {
+    filter: drop-shadow(0 0 0.5em white);
+    transition: all 0.5s;
 }

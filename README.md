@@ -101,6 +101,10 @@ El vídeo de fondo está situado en el `Inicio`. Para mantener la estética de l
 
 Ya que los filtros no quedan bien con las imágenes de los proyectos con marca de agua, le he aplicado un filtro *drop-shadow* a la lista de cartas en la página de perfil. De esta forma, al hacer *hover* sobre las cartas, se ilumina alrededor de estas.
 
+### * ACTIVIDAD 3
+
+1. La transición es, al igual que en el filtro de las cartas, un *drop-shadow* que hace que se ilumine el elemento al pasar el ratón por encima de los elementos del menú.
+2. 
 
 ## RECURSOS `<a name="id4"></a> `
 
