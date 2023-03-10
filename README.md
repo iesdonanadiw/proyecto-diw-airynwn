@@ -29,7 +29,6 @@ Las decisiones de diseño como la temática y los colores de SekaiSchool están 
 
 La temática de la página también se relaciona con el espacio y las estrellas, haciendo referencia a Leo/need, el grupo principal del juego. Esto es así porque toma su nombre de las leónidas, una lluvia de meteoros que viene de la consteación de Leo; además de que los apellidos de los integrantes del grupo hacen referencia a distintos cuerpos celestes.
 
-
 ## PROTOTIPO `<a name="id2"></a>`
 
 [https://www.figma.com/file/AHWj58PAo7JKzitmErZxnU/sekaischool?node-id=0%3A1&amp;t=igLO9ucvrDLjuPPU-0]()
@@ -37,7 +36,6 @@ La temática de la página también se relaciona con el espacio y las estrellas,
 ## MODIFICACIONES A LA GUÍA DE ESTILOS `<a name="id3"></a>`
 
 [Listado de modificaciones realizadas debidamente justificadas. ]
-
 
 ### * **Cambios genéricos**
 
@@ -82,6 +80,16 @@ La temática de la página también se relaciona con el espacio y las estrellas,
 1. Se ha ajustado el orden de los botones de `Temas populares` para que se vean agrupados por tamaño.
 2. Las fotos de las publicaciones ahora forman parte de la estructura de la publicación en sí, de forma que no es necesario recortarla y se integra mejor en la página.
 3. La caja `Escribir post` ahora se encuentra arriba, junto a `Temas populares`, para ser más accesible y que todas las funciones de la página se encuentren en la parte superior, mientras que en la parte inferior están las publicaciones.
+
+## ENTREGA 4
+
+### * Picture y puntos de ruptura
+
+Las imágenes son responsive gracias a Bootstrap, así que no tienen puntos de ruptura. Sin embago, para poner un ejemplo he cambiado la imagen del personaje en su página correspondiente: a partir de los 576 píxeles se muestra la imagen normal, mientras que antes de eso aparece su versión chibi.
+
+### * Audio
+
+El autoplay para la música de fondo sólo funciona dándole permisos en Firefox. El audio de los vídeos sí funciona correctamente en Chrome.
 
 ## RECURSOS `<a name="id4"></a> `
 
