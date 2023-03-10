@@ -1,5 +1,5 @@
 let modo = document.getElementById('modo');
-let main = document.documentElement.childNodes[2].children[1];
+let main = document.documentElement.childNodes[2].children[2];
 let icon = document.getElementById('icon-modo');
 
 modo.addEventListener('change', () => {
