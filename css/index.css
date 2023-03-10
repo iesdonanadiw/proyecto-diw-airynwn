@@ -119,7 +119,9 @@ nav {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* .home {
+/*
+Antiguo fondo pre-vídeo
+ .home {
     background: url("../img/bg-pc.png") center no-repeat;
     background-size: cover;
 }
@@ -193,4 +195,9 @@ h1 {
 
 .centro {
     text-align: center;
+}
+
+.brillo:hover {
+    filter: drop-shadow(0 0 0.5em white);
+    transition: all 0.5s;
 }
