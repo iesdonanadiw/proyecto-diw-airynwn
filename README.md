@@ -91,6 +91,17 @@ Las imágenes son responsive gracias a Bootstrap, así que no tienen puntos de r
 
 El autoplay para la música de fondo sólo funciona dándole permisos en Firefox. El audio de los vídeos sí funciona correctamente en Chrome.
 
+### * Vídeos
+
+Los vídeos de testimonios se encuentran en una nueva página destinada para esto llamada `Testimonios`. 
+
+El vídeo de fondo está situado en el `Inicio`. Para mantener la estética de la página, el fondo de esta sigue siendo el mismo, pero el vídeo está superpuesto con baja opacidad y un degradado transparente que ayuda a integrarlo con el resto de los elementos de la página.
+
+### * Filtro
+
+Ya que los filtros no quedan bien con las imágenes de los proyectos con marca de agua, le he aplicado un filtro *drop-shadow* a la lista de cartas en la página de perfil. De esta forma, al hacer *hover* sobre las cartas, se ilumina alrededor de estas.
+
+
 ## RECURSOS `<a name="id4"></a> `
 
 [Listado de recursos usados]
