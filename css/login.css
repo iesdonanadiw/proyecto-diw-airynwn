@@ -279,3 +279,9 @@ dialog strong {
 dialog a {
     color: #EC64F5;
 }
+
+video::-webkit-media-controls-timeline {
+    background: linear-gradient(90.86deg, #4254F5 0%, #3AA89B 49.48%, #EC64F5 100%);
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
