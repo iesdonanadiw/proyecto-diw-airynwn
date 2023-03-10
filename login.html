@@ -117,6 +117,34 @@
                 </form>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <details>
+                    <summary>Información de la página</summary>
+                    <div class="details-flex">
+                        <img src="img/logotipo.gif" width="50" alt="Logo animado">
+                        <h3>¡Regístrate en SekaiSchool!</h3>
+                    </div>
+                    <p>Podrás comunicarte con otros usuarios sobre tu videojuego preferido, así como manejar tu perfil. ¿A qué esperas?</p>
+                </details>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button id="mostrar" class="boton-dialog" onclick="document.getElementById('contacto').show()">Información de contacto</button>
+                <dialog id="contacto">
+                    <h3>Información de contacto</h3>
+                    <ul>
+                        <li><strong>Correo electrónico:</strong> laura.alcon@iesdonana.org</li>
+                        <li><strong>Twitter</strong>: <a href="https://twitter.com/airynwn">@airynwn</a></li>
+                        <li><strong>Discord</strong>: Laura#7953</li>
+                        <li><strong>Github</strong>: <a href="https://github.com/airynwn">airynwn</a></li>
+                    </ul>
+                    <button id="cerrar" class="boton-dialog" onclick="document.getElementById('contacto').close()">&times; Cerrar</button>
+                </dialog>
+            </div>
+        </div>
     </div>
 </main>
 <!-- ****** MODAL PERSONAJES ****** -->
